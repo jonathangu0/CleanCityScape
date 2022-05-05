@@ -6,7 +6,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2010,BRONX,Graffiti,Closed,4776,,,77.9185510887772194
 2010,BRONX,Graffiti,Open,138,4318.3840579710144928,1586.0000000000000000,
 2010,BRONX,Litter Basket Complaint,Closed,288,,,1.8854166666666667
-2010,BRONX,Missed Collection (All Materials),Closed,1414,,,1.3500707213578501
+2010,BRONX,Missed Collection,Closed,1414,,,1.3500707213578501
 2010,BRONX,Other Enforcement,Closed,380,,,3.1657894736842105
 2010,BRONX,Overflowing Litter Baskets,Closed,117,,,1.1538461538461538
 2010,BRONX,Recycling Enforcement,Closed,99,,,5.1010101010101010
@@ -23,7 +23,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2010,BROOKLYN,Graffiti,Closed,5067,,,87.6408131044010262
 2010,BROOKLYN,Graffiti,Open,140,4327.7857142857142857,1894.3750000000000000,
 2010,BROOKLYN,Litter Basket Complaint,Closed,857,,,1.7246207701283547
-2010,BROOKLYN,Missed Collection (All Materials),Closed,4912,,,1.3764250814332248
+2010,BROOKLYN,Missed Collection,Closed,4912,,,1.3764250814332248
 2010,BROOKLYN,Other Enforcement,Closed,1651,,,4.2592368261659600
 2010,BROOKLYN,Overflowing Litter Baskets,Closed,564,,,0.99822695035460992908
 2010,BROOKLYN,Recycling Enforcement,Closed,481,,,6.3243243243243243
@@ -40,7 +40,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2010,MANHATTAN,Graffiti,Closed,5814,,,63.0677674578603371
 2010,MANHATTAN,Graffiti,Open,142,4326.5422535211267606,1788.1250000000000000,
 2010,MANHATTAN,Litter Basket Complaint,Closed,511,,,1.2367906066536204
-2010,MANHATTAN,Missed Collection (All Materials),Closed,1300,,,0.74692307692307692308
+2010,MANHATTAN,Missed Collection,Closed,1300,,,0.74692307692307692308
 2010,MANHATTAN,Other Enforcement,Closed,1294,,,1.6421947449768161
 2010,MANHATTAN,Overflowing Litter Baskets,Closed,262,,,0.89312977099236641221
 2010,MANHATTAN,Recycling Enforcement,Closed,408,,,4.8406862745098039
@@ -57,7 +57,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2010,QUEENS,Graffiti,Closed,3618,,,89.4151464897733554
 2010,QUEENS,Graffiti,Open,202,4302.6089108910891089,3465.8571428571428571,
 2010,QUEENS,Litter Basket Complaint,Closed,654,,,1.6865443425076453
-2010,QUEENS,Missed Collection (All Materials),Closed,5746,,,1.3731291333101288
+2010,QUEENS,Missed Collection,Closed,5746,,,1.3731291333101288
 2010,QUEENS,Other Enforcement,Closed,1138,,,2.5764499121265378
 2010,QUEENS,Overflowing Litter Baskets,Closed,463,,,1.1965442764578834
 2010,QUEENS,Recycling Enforcement,Closed,224,,,4.4508928571428571
@@ -73,7 +73,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2010,STATEN ISLAND,Graffiti,Closed,213,,,84.3145539906103286
 2010,STATEN ISLAND,Graffiti,Open,16,4286.3125000000000000,3261.0000000000000000,
 2010,STATEN ISLAND,Litter Basket Complaint,Closed,220,,,1.8681818181818182
-2010,STATEN ISLAND,Missed Collection (All Materials),Closed,2930,,,1.8696245733788396
+2010,STATEN ISLAND,Missed Collection,Closed,2930,,,1.8696245733788396
 2010,STATEN ISLAND,Other Enforcement,Closed,392,,,3.8341836734693878
 2010,STATEN ISLAND,Overflowing Litter Baskets,Closed,90,,,1.2111111111111111
 2010,STATEN ISLAND,Recycling Enforcement,Closed,77,,,5.7402597402597403
@@ -85,7 +85,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2010,Unspecified,Collection Truck Noise,Closed,3,,,1.00000000000000000000
 2010,Unspecified,Dirty Conditions,Closed,101,,,4.3069306930693069
 2010,Unspecified,Litter Basket Complaint,Closed,21,,,1.8571428571428571
-2010,Unspecified,Missed Collection (All Materials),Closed,7,,,1.1428571428571429
+2010,Unspecified,Missed Collection,Closed,7,,,1.1428571428571429
 2010,Unspecified,Other Enforcement,Closed,5,,,5.2000000000000000
 2010,Unspecified,Overflowing Litter Baskets,Closed,7,,,1.00000000000000000000
 2010,Unspecified,Sanitation Condition,Closed,132,,,1.8560606060606061
@@ -101,7 +101,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2011,BRONX,Graffiti,Closed,3174,,,68.8090737240075614
 2011,BRONX,Graffiti,Open,392,3932.6785714285714286,3682.6666666666666667,
 2011,BRONX,Litter Basket Complaint,Closed,340,,,1.8441176470588235
-2011,BRONX,Missed Collection (All Materials),Closed,1736,,,1.5737327188940092
+2011,BRONX,Missed Collection,Closed,1736,,,1.5737327188940092
 2011,BRONX,Other Enforcement,Closed,343,,,2.3265306122448980
 2011,BRONX,Overflowing Litter Baskets,Closed,123,,,1.2032520325203252
 2011,BRONX,Recycling Enforcement,Closed,76,,,5.3815789473684211
@@ -121,7 +121,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2011,BROOKLYN,Graffiti,Open,387,3923.4857881136950904,3593.4181818181818182,
 2011,BROOKLYN,Litter Basket Complaint,Closed,1022,,,2.3287671232876712
 2011,BROOKLYN,Litter Basket Complaint,Open,1,3914.0000000000000000,,
-2011,BROOKLYN,Missed Collection (All Materials),Closed,5536,,,1.7801661849710983
+2011,BROOKLYN,Missed Collection,Closed,5536,,,1.7801661849710983
 2011,BROOKLYN,Other Enforcement,Closed,1413,,,5.4932767162066525
 2011,BROOKLYN,Overflowing Litter Baskets,Closed,449,,,1.3518930957683742
 2011,BROOKLYN,Recycling Enforcement,Closed,291,,,15.8659793814432990
@@ -138,7 +138,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2011,MANHATTAN,Graffiti,Closed,3100,,,58.4919354838709677
 2011,MANHATTAN,Graffiti,Open,189,4016.6084656084656085,2793.0000000000000000,
 2011,MANHATTAN,Litter Basket Complaint,Closed,749,,,1.5193591455273698
-2011,MANHATTAN,Missed Collection (All Materials),Closed,1558,,,1.0487804878048780
+2011,MANHATTAN,Missed Collection,Closed,1558,,,1.0487804878048780
 2011,MANHATTAN,Other Enforcement,Closed,1066,,,2.6266416510318949
 2011,MANHATTAN,Overflowing Litter Baskets,Closed,220,,,1.3272727272727273
 2011,MANHATTAN,Recycling Enforcement,Closed,289,,,25.3287197231833910
@@ -156,7 +156,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2011,QUEENS,Graffiti,Closed,3530,,,53.7892351274787535
 2011,QUEENS,Graffiti,Open,417,3945.5083932853717026,3746.8448275862068966,
 2011,QUEENS,Litter Basket Complaint,Closed,771,,,2.1841763942931258
-2011,QUEENS,Missed Collection (All Materials),Closed,6465,,,1.7441608662026295
+2011,QUEENS,Missed Collection,Closed,6465,,,1.7441608662026295
 2011,QUEENS,Other Enforcement,Closed,1158,,,5.6951640759930915
 2011,QUEENS,Other Enforcement,Open,1,3910.0000000000000000,,
 2011,QUEENS,Overflowing Litter Baskets,Closed,465,,,1.4709677419354839
@@ -174,7 +174,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2011,STATEN ISLAND,Graffiti,Closed,212,,,52.9292452830188679
 2011,STATEN ISLAND,Graffiti,Open,31,3910.4516129032258065,3839.4285714285714286,
 2011,STATEN ISLAND,Litter Basket Complaint,Closed,224,,,2.9241071428571429
-2011,STATEN ISLAND,Missed Collection (All Materials),Closed,3619,,,2.9259463940315004
+2011,STATEN ISLAND,Missed Collection,Closed,3619,,,2.9259463940315004
 2011,STATEN ISLAND,Other Enforcement,Closed,382,,,3.6335078534031414
 2011,STATEN ISLAND,Overflowing Litter Baskets,Closed,93,,,2.5161290322580645
 2011,STATEN ISLAND,Recycling Enforcement,Closed,70,,,4.4428571428571429
@@ -187,7 +187,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2011,Unspecified,Derelict Bicycle,Closed,1,,,1.00000000000000000000
 2011,Unspecified,Dirty Conditions,Closed,75,,,7.4133333333333333
 2011,Unspecified,Litter Basket Complaint,Closed,17,,,3.1176470588235294
-2011,Unspecified,Missed Collection (All Materials),Closed,8,,,3.7500000000000000
+2011,Unspecified,Missed Collection,Closed,8,,,3.7500000000000000
 2011,Unspecified,Other Enforcement,Closed,5,,,4.4000000000000000
 2011,Unspecified,Overflowing Litter Baskets,Closed,6,,,1.6666666666666667
 2011,Unspecified,Sanitation Condition,Closed,148,,,2.6081081081081081
@@ -205,7 +205,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2012,BRONX,Graffiti,Open,689,3570.3526850507982583,3410.6754385964912281,
 2012,BRONX,Litter Basket Complaint,Closed,230,,,1.4565217391304348
 2012,BRONX,Litter Basket Complaint,Open,1,3725.0000000000000000,,
-2012,BRONX,Missed Collection (All Materials),Closed,978,,,1.1063394683026585
+2012,BRONX,Missed Collection,Closed,978,,,1.1063394683026585
 2012,BRONX,Other Enforcement,Closed,387,,,2.3514211886304910
 2012,BRONX,Overflowing Litter Baskets,Closed,168,,,1.1369047619047619
 2012,BRONX,Recycling Enforcement,Closed,74,,,2.9594594594594595
@@ -223,7 +223,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2012,BROOKLYN,Graffiti,Closed,5635,,,65.2214729370008873
 2012,BROOKLYN,Graffiti,Open,741,3578.5964912280701754,3498.0934065934065934,
 2012,BROOKLYN,Litter Basket Complaint,Closed,757,,,2.1426684280052840
-2012,BROOKLYN,Missed Collection (All Materials),Closed,3753,,,1.4084732214228617
+2012,BROOKLYN,Missed Collection,Closed,3753,,,1.4084732214228617
 2012,BROOKLYN,Other Enforcement,Closed,1583,,,3.3682880606443462
 2012,BROOKLYN,Overflowing Litter Baskets,Closed,342,,,1.2485380116959064
 2012,BROOKLYN,Recycling Enforcement,Closed,299,,,5.4816053511705686
@@ -241,7 +241,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2012,MANHATTAN,Graffiti,Closed,2103,,,61.7579648121730861
 2012,MANHATTAN,Graffiti,Open,147,3609.6054421768707483,3387.3611111111111111,
 2012,MANHATTAN,Litter Basket Complaint,Closed,650,,,1.2784615384615385
-2012,MANHATTAN,Missed Collection (All Materials),Closed,1158,,,0.91537132987910189983
+2012,MANHATTAN,Missed Collection,Closed,1158,,,0.91537132987910189983
 2012,MANHATTAN,Other Enforcement,Closed,1059,,,2.0047214353163362
 2012,MANHATTAN,Overflowing Litter Baskets,Closed,212,,,0.87735849056603773585
 2012,MANHATTAN,Recycling Enforcement,Closed,312,,,4.8141025641025641
@@ -259,7 +259,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2012,QUEENS,Graffiti,Closed,2278,,,57.8178226514486392
 2012,QUEENS,Graffiti,Open,611,3574.4533551554828151,3484.9900000000000000,
 2012,QUEENS,Litter Basket Complaint,Closed,538,,,1.8624535315985130
-2012,QUEENS,Missed Collection (All Materials),Closed,4687,,,1.3417964582888841
+2012,QUEENS,Missed Collection,Closed,4687,,,1.3417964582888841
 2012,QUEENS,Other Enforcement,Closed,1090,,,3.7935779816513761
 2012,QUEENS,Overflowing Litter Baskets,Closed,330,,,1.1242424242424242
 2012,QUEENS,Recycling Enforcement,Closed,192,,,6.5572916666666667
@@ -277,7 +277,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2012,STATEN ISLAND,Graffiti,Closed,264,,,92.8674242424242424
 2012,STATEN ISLAND,Graffiti,Open,90,3596.3666666666666667,3546.0333333333333333,
 2012,STATEN ISLAND,Litter Basket Complaint,Closed,195,,,1.9948717948717949
-2012,STATEN ISLAND,Missed Collection (All Materials),Closed,2903,,,1.9004478126076473
+2012,STATEN ISLAND,Missed Collection,Closed,2903,,,1.9004478126076473
 2012,STATEN ISLAND,Other Enforcement,Closed,360,,,2.7416666666666667
 2012,STATEN ISLAND,Overflowing Litter Baskets,Closed,108,,,1.4444444444444444
 2012,STATEN ISLAND,Recycling Enforcement,Closed,56,,,3.3571428571428571
@@ -291,7 +291,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2012,Unspecified,Derelict Bicycle,Closed,1,,,2.0000000000000000
 2012,Unspecified,Dirty Conditions,Closed,30,,,2.6666666666666667
 2012,Unspecified,Litter Basket Complaint,Closed,11,,,1.0909090909090909
-2012,Unspecified,Missed Collection (All Materials),Closed,9,,,1.2222222222222222
+2012,Unspecified,Missed Collection,Closed,9,,,1.2222222222222222
 2012,Unspecified,Other Enforcement,Closed,4,,,1.2500000000000000
 2012,Unspecified,Overflowing Litter Baskets,Closed,4,,,1.5000000000000000
 2012,Unspecified,Recycling Enforcement,Closed,1,,,1.00000000000000000000
@@ -307,8 +307,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2013,BRONX,Graffiti,Closed,2568,,,97.2348130841121495
 2013,BRONX,Graffiti,Open,438,3255.7168949771689498,2584.8695652173913043,
 2013,BRONX,Litter Basket Complaint,Closed,201,,,1.6517412935323383
-2013,BRONX,Missed Collection (All Materials),Closed,969,,,1.3787409700722394
-2013,BRONX,Missed Collection (All Materials),Open,2,3160.5000000000000000,,
+2013,BRONX,Missed Collection,Closed,969,,,1.3787409700722394
+2013,BRONX,Missed Collection,Open,2,3160.5000000000000000,,
 2013,BRONX,Other Enforcement,Closed,372,,,1.7956989247311828
 2013,BRONX,Overflowing Litter Baskets,Closed,98,,,1.2142857142857143
 2013,BRONX,Recycling Enforcement,Closed,85,,,2.9176470588235294
@@ -325,7 +325,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2013,BROOKLYN,Graffiti,Closed,4307,,,110.6891107499419550
 2013,BROOKLYN,Graffiti,Open,570,3246.8719298245614035,2934.7555555555555556,
 2013,BROOKLYN,Litter Basket Complaint,Closed,953,,,1.7660020986358867
-2013,BROOKLYN,Missed Collection (All Materials),Closed,4686,,,1.6517285531370038
+2013,BROOKLYN,Missed Collection,Closed,4686,,,1.6517285531370038
 2013,BROOKLYN,Other Enforcement,Closed,1757,,,5.6488332384746727
 2013,BROOKLYN,Overflowing Litter Baskets,Closed,325,,,1.3753846153846154
 2013,BROOKLYN,Recycling Enforcement,Closed,245,,,8.7102040816326531
@@ -342,7 +342,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2013,MANHATTAN,Graffiti,Closed,2384,,,121.4244966442953020
 2013,MANHATTAN,Graffiti,Open,175,3235.0571428571428571,2968.2857142857142857,
 2013,MANHATTAN,Litter Basket Complaint,Closed,709,,,1.2595204513399154
-2013,MANHATTAN,Missed Collection (All Materials),Closed,1424,,,0.96067415730337078652
+2013,MANHATTAN,Missed Collection,Closed,1424,,,0.96067415730337078652
 2013,MANHATTAN,Other Enforcement,Closed,1222,,,3.2446808510638298
 2013,MANHATTAN,Overflowing Litter Baskets,Closed,284,,,1.0704225352112676
 2013,MANHATTAN,Recycling Enforcement,Closed,308,,,5.8733766233766234
@@ -360,8 +360,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2013,QUEENS,Graffiti,Open,458,3242.3646288209606987,3145.0000000000000000,
 2013,QUEENS,Litter Basket Complaint,Closed,574,,,1.5400696864111498
 2013,QUEENS,Litter Basket Complaint,Open,1,3155.0000000000000000,,
-2013,QUEENS,Missed Collection (All Materials),Closed,5716,,,1.4972008397480756
-2013,QUEENS,Missed Collection (All Materials),Open,2,3094.5000000000000000,,
+2013,QUEENS,Missed Collection,Closed,5716,,,1.4972008397480756
+2013,QUEENS,Missed Collection,Open,2,3094.5000000000000000,,
 2013,QUEENS,Other Enforcement,Closed,1454,,,3.0144429160935351
 2013,QUEENS,Other Enforcement,Open,1,3141.0000000000000000,,
 2013,QUEENS,Overflowing Litter Baskets,Closed,249,,,1.0441767068273092
@@ -380,8 +380,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2013,STATEN ISLAND,Graffiti,Closed,252,,,118.4960317460317460
 2013,STATEN ISLAND,Graffiti,Open,56,3242.5178571428571429,3149.0000000000000000,
 2013,STATEN ISLAND,Litter Basket Complaint,Closed,240,,,1.8458333333333333
-2013,STATEN ISLAND,Missed Collection (All Materials),Closed,3808,,,1.8623949579831933
-2013,STATEN ISLAND,Missed Collection (All Materials),Open,1,3244.0000000000000000,,
+2013,STATEN ISLAND,Missed Collection,Closed,3808,,,1.8623949579831933
+2013,STATEN ISLAND,Missed Collection,Open,1,3244.0000000000000000,,
 2013,STATEN ISLAND,Other Enforcement,Closed,357,,,5.1484593837535014
 2013,STATEN ISLAND,Overflowing Litter Baskets,Closed,267,,,1.5468164794007491
 2013,STATEN ISLAND,Recycling Enforcement,Closed,44,,,6.0227272727272727
@@ -409,8 +409,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2014,BRONX,Graffiti,Open,485,2849.7938144329896907,2742.2857142857142857,
 2014,BRONX,Litter Basket Complaint,Closed,302,,,1.4503311258278146
 2014,BRONX,Litter Basket Complaint,Open,6,2796.0000000000000000,,
-2014,BRONX,Missed Collection (All Materials),Closed,1590,,,1.6232704402515723
-2014,BRONX,Missed Collection (All Materials),Open,1,2752.0000000000000000,,
+2014,BRONX,Missed Collection,Closed,1590,,,1.6232704402515723
+2014,BRONX,Missed Collection,Open,1,2752.0000000000000000,,
 2014,BRONX,Other Enforcement,Closed,434,,,1.8640552995391705
 2014,BRONX,Other Enforcement,Open,2,2830.5000000000000000,,
 2014,BRONX,Overflowing Litter Baskets,Closed,113,,,1.4513274336283186
@@ -435,8 +435,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2014,BROOKLYN,Graffiti,Open,593,2851.6424957841483980,2764.4729729729729730,
 2014,BROOKLYN,Litter Basket Complaint,Closed,907,,,1.9173098125689085
 2014,BROOKLYN,Litter Basket Complaint,Open,145,2793.4344827586206897,,
-2014,BROOKLYN,Missed Collection (All Materials),Closed,6329,,,1.8382050876915784
-2014,BROOKLYN,Missed Collection (All Materials),Open,10,2766.0000000000000000,,
+2014,BROOKLYN,Missed Collection,Closed,6329,,,1.8382050876915784
+2014,BROOKLYN,Missed Collection,Open,10,2766.0000000000000000,,
 2014,BROOKLYN,Other Enforcement,Closed,1979,,,4.2152602324406266
 2014,BROOKLYN,Other Enforcement,Open,9,2770.4444444444444444,,
 2014,BROOKLYN,Overflowing Litter Baskets,Closed,289,,,1.5570934256055363
@@ -462,7 +462,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2014,MANHATTAN,Graffiti,Open,283,2868.8586572438162544,2794.0723684210526316,
 2014,MANHATTAN,Litter Basket Complaint,Closed,663,,,1.2926093514328808
 2014,MANHATTAN,Litter Basket Complaint,Open,122,2766.8196721311475410,,
-2014,MANHATTAN,Missed Collection (All Materials),Closed,2045,,,1.0938875305623472
+2014,MANHATTAN,Missed Collection,Closed,2045,,,1.0938875305623472
 2014,MANHATTAN,Other Enforcement,Closed,1279,,,1.9835809225957780
 2014,MANHATTAN,Other Enforcement,Open,3,2826.0000000000000000,,
 2014,MANHATTAN,Overflowing Litter Baskets,Closed,303,,,1.2178217821782178
@@ -486,8 +486,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2014,QUEENS,Graffiti,Open,360,2896.2611111111111111,2794.5072463768115942,
 2014,QUEENS,Litter Basket Complaint,Closed,375,,,1.3840000000000000
 2014,QUEENS,Litter Basket Complaint,Open,186,2793.1935483870967742,,
-2014,QUEENS,Missed Collection (All Materials),Closed,7186,,,1.3935430002783190
-2014,QUEENS,Missed Collection (All Materials),Open,42,2773.8571428571428571,,
+2014,QUEENS,Missed Collection,Closed,7186,,,1.3935430002783190
+2014,QUEENS,Missed Collection,Open,42,2773.8571428571428571,,
 2014,QUEENS,Other Enforcement,Closed,1461,,,2.6208076659822040
 2014,QUEENS,Other Enforcement,Open,2,2840.0000000000000000,,
 2014,QUEENS,Overflowing Litter Baskets,Closed,262,,,0.93129770992366412214
@@ -511,8 +511,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2014,STATEN ISLAND,Graffiti,Open,54,2863.2407407407407407,2630.6666666666666667,
 2014,STATEN ISLAND,Litter Basket Complaint,Closed,197,,,1.9746192893401015
 2014,STATEN ISLAND,Litter Basket Complaint,Open,6,2834.5000000000000000,,
-2014,STATEN ISLAND,Missed Collection (All Materials),Closed,4382,,,2.3044272021907805
-2014,STATEN ISLAND,Missed Collection (All Materials),Open,4,2864.2500000000000000,,
+2014,STATEN ISLAND,Missed Collection,Closed,4382,,,2.3044272021907805
+2014,STATEN ISLAND,Missed Collection,Open,4,2864.2500000000000000,,
 2014,STATEN ISLAND,Other Enforcement,Closed,389,,,2.5321336760925450
 2014,STATEN ISLAND,Overflowing Litter Baskets,Closed,115,,,1.7391304347826087
 2014,STATEN ISLAND,Overflowing Recycling Baskets,Closed,3,,,46.0000000000000000
@@ -539,7 +539,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2015,BRONX,Graffiti,Open,206,2473.1067961165048544,2380.9014084507042254,
 2015,BRONX,Litter Basket Complaint,Closed,249,,,1.8152610441767068
 2015,BRONX,Litter Basket Complaint,Open,25,2419.6400000000000000,,
-2015,BRONX,Missed Collection (All Materials),Closed,1832,,,1.4224890829694323
+2015,BRONX,Missed Collection,Closed,1832,,,1.4224890829694323
 2015,BRONX,Other Enforcement,Closed,590,,,1.9254237288135593
 2015,BRONX,Overflowing Litter Baskets,Closed,179,,,1.0726256983240223
 2015,BRONX,Overflowing Recycling Baskets,Closed,3,,,0.66666666666666666667
@@ -562,8 +562,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2015,BROOKLYN,Graffiti,Open,554,2522.4151624548736462,2409.6327683615819209,
 2015,BROOKLYN,Litter Basket Complaint,Closed,625,,,-65.4032000000000000
 2015,BROOKLYN,Litter Basket Complaint,Open,368,2488.2418478260869565,,
-2015,BROOKLYN,Missed Collection (All Materials),Closed,8039,,,2.3286478417713646
-2015,BROOKLYN,Missed Collection (All Materials),Open,16,2519.0000000000000000,,
+2015,BROOKLYN,Missed Collection,Closed,8039,,,2.3286478417713646
+2015,BROOKLYN,Missed Collection,Open,16,2519.0000000000000000,,
 2015,BROOKLYN,Other Enforcement,Closed,2211,,,3.1221166892808684
 2015,BROOKLYN,Other Enforcement,Open,2,2538.5000000000000000,,
 2015,BROOKLYN,Overflowing Litter Baskets,Closed,433,,,1.5242494226327945
@@ -590,8 +590,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2015,MANHATTAN,Graffiti,Open,255,2453.4470588235294118,2384.0164835164835165,
 2015,MANHATTAN,Litter Basket Complaint,Closed,329,,,1.4893617021276596
 2015,MANHATTAN,Litter Basket Complaint,Open,293,2521.2013651877133106,,
-2015,MANHATTAN,Missed Collection (All Materials),Closed,2538,,,1.2344365642237983
-2015,MANHATTAN,Missed Collection (All Materials),Open,1,2624.0000000000000000,,
+2015,MANHATTAN,Missed Collection,Closed,2538,,,1.2344365642237983
+2015,MANHATTAN,Missed Collection,Open,1,2624.0000000000000000,,
 2015,MANHATTAN,Other Enforcement,Closed,1491,,,1.7786720321931590
 2015,MANHATTAN,Overflowing Litter Baskets,Closed,466,,,1.1437768240343348
 2015,MANHATTAN,Overflowing Litter Baskets,Open,1,2473.0000000000000000,,
@@ -615,8 +615,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2015,QUEENS,Graffiti,Open,242,2511.7066115702479339,2408.6428571428571429,
 2015,QUEENS,Litter Basket Complaint,Closed,216,,,1.7222222222222222
 2015,QUEENS,Litter Basket Complaint,Open,321,2509.0654205607476636,,
-2015,QUEENS,Missed Collection (All Materials),Closed,8255,,,-3.6193821926105391
-2015,QUEENS,Missed Collection (All Materials),Open,305,2515.2950819672131148,,
+2015,QUEENS,Missed Collection,Closed,8255,,,-3.6193821926105391
+2015,QUEENS,Missed Collection,Open,305,2515.2950819672131148,,
 2015,QUEENS,Other Enforcement,Closed,1754,,,3.7770809578107184
 2015,QUEENS,Other Enforcement,Open,3,2485.3333333333333333,,
 2015,QUEENS,Overflowing Litter Baskets,Closed,330,,,1.0939393939393939
@@ -640,7 +640,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2015,STATEN ISLAND,Graffiti,Open,42,2516.5476190476190476,2376.2500000000000000,
 2015,STATEN ISLAND,Litter Basket Complaint,Closed,172,,,1.8313953488372093
 2015,STATEN ISLAND,Litter Basket Complaint,Open,18,2494.7777777777777778,,
-2015,STATEN ISLAND,Missed Collection (All Materials),Closed,4296,,,2.4736964618249534
+2015,STATEN ISLAND,Missed Collection,Closed,4296,,,2.4736964618249534
 2015,STATEN ISLAND,Other Enforcement,Closed,443,,,2.0293453724604966
 2015,STATEN ISLAND,Overflowing Litter Baskets,Closed,125,,,1.5280000000000000
 2015,STATEN ISLAND,Overflowing Recycling Baskets,Closed,3,,,0.33333333333333333333
@@ -662,7 +662,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2016,BRONX,Graffiti,Closed,1840,,,119.6027173913043478
 2016,BRONX,Graffiti,Open,189,2112.6984126984126984,1945.0250000000000000,
 2016,BRONX,Litter Basket Complaint,Closed,215,,,1.5720930232558140
-2016,BRONX,Missed Collection (All Materials),Closed,1947,,,1.5418592706728300
+2016,BRONX,Missed Collection,Closed,1947,,,1.5418592706728300
 2016,BRONX,Other Enforcement,Closed,591,,,3.1133671742808799
 2016,BRONX,Overflowing Litter Baskets,Closed,103,,,1.1941747572815534
 2016,BRONX,Overflowing Recycling Baskets,Closed,5,,,1.8000000000000000
@@ -680,7 +680,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2016,BROOKLYN,Graffiti,Open,386,2132.4689119170984456,2006.6549707602339181,
 2016,BROOKLYN,Litter Basket Complaint,Closed,1102,,,1.9455535390199637
 2016,BROOKLYN,Litter Basket Complaint,Open,1,2117.0000000000000000,,
-2016,BROOKLYN,Missed Collection (All Materials),Closed,9659,,,2.1296200434827622
+2016,BROOKLYN,Missed Collection,Closed,9659,,,2.1296200434827622
 2016,BROOKLYN,Other Enforcement,Closed,2662,,,3.0570999248685199
 2016,BROOKLYN,Overflowing Litter Baskets,Closed,302,,,1.2350993377483444
 2016,BROOKLYN,Overflowing Recycling Baskets,Closed,6,,,1.00000000000000000000
@@ -700,7 +700,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2016,MANHATTAN,Graffiti,Closed,2921,,,165.1708319068812051
 2016,MANHATTAN,Graffiti,Open,181,2109.2430939226519337,1973.3015873015873016,
 2016,MANHATTAN,Litter Basket Complaint,Closed,558,,,1.5161290322580645
-2016,MANHATTAN,Missed Collection (All Materials),Closed,2476,,,1.2556542810985460
+2016,MANHATTAN,Missed Collection,Closed,2476,,,1.2556542810985460
 2016,MANHATTAN,Other Enforcement,Closed,1334,,,2.1844077961019490
 2016,MANHATTAN,Overflowing Litter Baskets,Closed,347,,,1.2190201729106628
 2016,MANHATTAN,Overflowing Recycling Baskets,Closed,15,,,0.80000000000000000000
@@ -722,8 +722,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2016,QUEENS,Graffiti,Open,137,2111.7591240875912409,1927.6923076923076923,
 2016,QUEENS,Litter Basket Complaint,Closed,582,,,0.01546391752577319588
 2016,QUEENS,Litter Basket Complaint,Open,6,2031.0000000000000000,,
-2016,QUEENS,Missed Collection (All Materials),Closed,11057,,,1.9044948901148594
-2016,QUEENS,Missed Collection (All Materials),Open,72,2030.5833333333333333,,
+2016,QUEENS,Missed Collection,Closed,11057,,,1.9044948901148594
+2016,QUEENS,Missed Collection,Open,72,2030.5833333333333333,,
 2016,QUEENS,Other Enforcement,Closed,2094,,,3.8104106972301815
 2016,QUEENS,Other Enforcement,Open,28,2030.4642857142857143,,
 2016,QUEENS,Overflowing Litter Baskets,Closed,267,,,1.3932584269662921
@@ -746,7 +746,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2016,STATEN ISLAND,Graffiti,Closed,168,,,167.0238095238095238
 2016,STATEN ISLAND,Graffiti,Open,24,2159.7916666666666667,2051.0000000000000000,
 2016,STATEN ISLAND,Litter Basket Complaint,Closed,203,,,1.5862068965517241
-2016,STATEN ISLAND,Missed Collection (All Materials),Closed,5051,,,2.5549396159176401
+2016,STATEN ISLAND,Missed Collection,Closed,5051,,,2.5549396159176401
 2016,STATEN ISLAND,Other Enforcement,Closed,503,,,2.6620278330019881
 2016,STATEN ISLAND,Overflowing Litter Baskets,Closed,126,,,1.5000000000000000
 2016,STATEN ISLAND,Overflowing Recycling Baskets,Closed,3,,,0.66666666666666666667
@@ -765,7 +765,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2017,BRONX,Graffiti,Closed,2880,,,80.7649305555555556
 2017,BRONX,Graffiti,Open,463,1761.2397408207343413,1801.1896551724137931,
 2017,BRONX,Litter Basket Complaint,Closed,306,,,1.8202614379084967
-2017,BRONX,Missed Collection (All Materials),Closed,2400,,,1.7295833333333333
+2017,BRONX,Missed Collection,Closed,2400,,,1.7295833333333333
 2017,BRONX,Other Enforcement,Closed,604,,,3.2566225165562914
 2017,BRONX,Overflowing Litter Baskets,Closed,176,,,1.1875000000000000
 2017,BRONX,Overflowing Recycling Baskets,Closed,4,,,1.5000000000000000
@@ -785,7 +785,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2017,BROOKLYN,Graffiti,Closed,8227,,,92.6301203354807342
 2017,BROOKLYN,Graffiti,Open,623,1752.4735152487961477,1774.6160714285714286,
 2017,BROOKLYN,Litter Basket Complaint,Closed,1173,,,1.8005115089514066
-2017,BROOKLYN,Missed Collection (All Materials),Closed,12884,,,2.3324278174479975
+2017,BROOKLYN,Missed Collection,Closed,12884,,,2.3324278174479975
 2017,BROOKLYN,Other Enforcement,Closed,3023,,,3.6364538537876282
 2017,BROOKLYN,Overflowing Litter Baskets,Closed,215,,,1.5395348837209302
 2017,BROOKLYN,Overflowing Recycling Baskets,Closed,6,,,3.3333333333333333
@@ -806,7 +806,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2017,MANHATTAN,Graffiti,Closed,3572,,,230.6651735722284434
 2017,MANHATTAN,Graffiti,Open,323,1750.3869969040247678,1758.0549450549450549,
 2017,MANHATTAN,Litter Basket Complaint,Closed,714,,,1.5028011204481793
-2017,MANHATTAN,Missed Collection (All Materials),Closed,2434,,,1.2777321281840592
+2017,MANHATTAN,Missed Collection,Closed,2434,,,1.2777321281840592
 2017,MANHATTAN,Other Enforcement,Closed,1621,,,3.3534855027760642
 2017,MANHATTAN,Other Enforcement,Open,1,1678.0000000000000000,,
 2017,MANHATTAN,Overflowing Litter Baskets,Closed,272,,,1.2977941176470588
@@ -830,8 +830,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2017,QUEENS,Graffiti,Open,380,1719.7684210526315789,1712.2000000000000000,
 2017,QUEENS,Litter Basket Complaint,Closed,586,,,1.3361774744027304
 2017,QUEENS,Litter Basket Complaint,Open,5,1646.0000000000000000,,
-2017,QUEENS,Missed Collection (All Materials),Closed,12902,,,2.4619438846690436
-2017,QUEENS,Missed Collection (All Materials),Open,69,1645.5652173913043478,,
+2017,QUEENS,Missed Collection,Closed,12902,,,2.4619438846690436
+2017,QUEENS,Missed Collection,Open,69,1645.5652173913043478,,
 2017,QUEENS,Other Enforcement,Closed,2210,,,4.3633484162895928
 2017,QUEENS,Other Enforcement,Open,11,1646.0000000000000000,,
 2017,QUEENS,Overflowing Litter Baskets,Closed,334,,,1.3023952095808383
@@ -857,7 +857,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2017,STATEN ISLAND,Graffiti,Closed,149,,,75.7114093959731544
 2017,STATEN ISLAND,Graffiti,Open,18,1746.2222222222222222,1609.6666666666666667,
 2017,STATEN ISLAND,Litter Basket Complaint,Closed,159,,,1.8238993710691824
-2017,STATEN ISLAND,Missed Collection (All Materials),Closed,5571,,,2.3898761443187938
+2017,STATEN ISLAND,Missed Collection,Closed,5571,,,2.3898761443187938
 2017,STATEN ISLAND,Other Enforcement,Closed,521,,,2.9692898272552783
 2017,STATEN ISLAND,Overflowing Litter Baskets,Closed,87,,,1.4367816091954023
 2017,STATEN ISLAND,Overflowing Recycling Baskets,Closed,2,,,1.5000000000000000
@@ -881,7 +881,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2018,BRONX,Graffiti,Closed,2970,,,92.7754208754208754
 2018,BRONX,Graffiti,Open,743,1364.5895020188425303,1251.2115384615384615,
 2018,BRONX,Litter Basket Complaint,Closed,372,,,1.8037634408602151
-2018,BRONX,Missed Collection (All Materials),Closed,3084,,,1.6935797665369650
+2018,BRONX,Missed Collection,Closed,3084,,,1.6935797665369650
 2018,BRONX,Other Enforcement,Closed,768,,,2.8593750000000000
 2018,BRONX,Overflowing Litter Baskets,Closed,172,,,1.4709302325581395
 2018,BRONX,Overflowing Recycling Baskets,Closed,1,,,0.00000000000000000000
@@ -903,7 +903,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2018,BROOKLYN,Graffiti,Closed,9057,,,98.9726178646350889
 2018,BROOKLYN,Graffiti,Open,1294,1358.7627511591962906,1239.5711947626841244,
 2018,BROOKLYN,Litter Basket Complaint,Closed,1480,,,1.8331081081081081
-2018,BROOKLYN,Missed Collection (All Materials),Closed,14282,,,2.4549082761517995
+2018,BROOKLYN,Missed Collection,Closed,14282,,,2.4549082761517995
 2018,BROOKLYN,Other Enforcement,Closed,3263,,,3.3588722034937174
 2018,BROOKLYN,Overflowing Litter Baskets,Closed,160,,,2.3437500000000000
 2018,BROOKLYN,Overflowing Recycling Baskets,Closed,5,,,3.0000000000000000
@@ -925,7 +925,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2018,MANHATTAN,Graffiti,Closed,2698,,,116.5856189770200148
 2018,MANHATTAN,Graffiti,Open,690,1356.0536231884057971,1227.3333333333333333,
 2018,MANHATTAN,Litter Basket Complaint,Closed,604,,,2.1258278145695364
-2018,MANHATTAN,Missed Collection (All Materials),Closed,2664,,,1.7496246246246246
+2018,MANHATTAN,Missed Collection,Closed,2664,,,1.7496246246246246
 2018,MANHATTAN,Other Enforcement,Closed,1664,,,3.4254807692307692
 2018,MANHATTAN,Overflowing Litter Baskets,Closed,242,,,1.6198347107438017
 2018,MANHATTAN,Overflowing Recycling Baskets,Closed,4,,,1.7500000000000000
@@ -950,8 +950,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2018,QUEENS,Graffiti,Open,737,1341.7394843962008141,1176.5269058295964126,
 2018,QUEENS,Litter Basket Complaint,Closed,601,,,2.3128119800332779
 2018,QUEENS,Litter Basket Complaint,Open,11,1241.0000000000000000,,
-2018,QUEENS,Missed Collection (All Materials),Closed,13838,,,2.6331839861251626
-2018,QUEENS,Missed Collection (All Materials),Open,79,1240.6329113924050633,,
+2018,QUEENS,Missed Collection,Closed,13838,,,2.6331839861251626
+2018,QUEENS,Missed Collection,Open,79,1240.6329113924050633,,
 2018,QUEENS,Other Enforcement,Closed,2257,,,2.4049623393885689
 2018,QUEENS,Other Enforcement,Open,29,1240.4827586206896552,,
 2018,QUEENS,Overflowing Litter Baskets,Closed,280,,,1.9821428571428571
@@ -977,7 +977,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2018,STATEN ISLAND,Graffiti,Closed,141,,,123.9007092198581560
 2018,STATEN ISLAND,Graffiti,Open,20,1370.8000000000000000,1285.0000000000000000,
 2018,STATEN ISLAND,Litter Basket Complaint,Closed,183,,,2.0327868852459016
-2018,STATEN ISLAND,Missed Collection (All Materials),Closed,6923,,,3.2631807020078001
+2018,STATEN ISLAND,Missed Collection,Closed,6923,,,3.2631807020078001
 2018,STATEN ISLAND,Other Enforcement,Closed,628,,,2.8312101910828025
 2018,STATEN ISLAND,Other Enforcement,Open,1,1459.0000000000000000,,
 2018,STATEN ISLAND,Overflowing Litter Baskets,Closed,92,,,1.7826086956521739
@@ -1001,9 +1001,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2019,BRONX,Graffiti,Closed,2671,,,140.8348932983901161
 2019,BRONX,Graffiti,Open,1177,989.4409515717926933,761.6808176100628931,
 2019,BRONX,Litter Basket Complaint,Closed,172,,,2.1220930232558140
-2019,BRONX,Missed Collection,Closed,1,,,425.0000000000000000
+2019,BRONX,Missed Collection,Closed,2840,,,2.6116197183098592
 2019,BRONX,Missed Collection,Open,17,1031.2352941176470588,,
-2019,BRONX,Missed Collection (All Materials),Closed,2839,,,2.4628390278266995
 2019,BRONX,Other Enforcement,Closed,353,,,3.4107648725212465
 2019,BRONX,Overflowing Litter Baskets,Closed,106,,,1.7452830188679245
 2019,BRONX,Recycling Enforcement,Closed,34,,,2.7352941176470588
@@ -1026,9 +1025,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2019,BROOKLYN,Graffiti,Closed,7756,,,153.0424187725631769
 2019,BROOKLYN,Graffiti,Open,2469,948.2920210611583637,735.0124153498871332,
 2019,BROOKLYN,Litter Basket Complaint,Closed,618,,,1.6197411003236246
-2019,BROOKLYN,Missed Collection,Closed,7,,,255.5714285714285714
+2019,BROOKLYN,Missed Collection,Closed,13584,,,2.8715400471142521
 2019,BROOKLYN,Missed Collection,Open,122,1029.5655737704918033,,
-2019,BROOKLYN,Missed Collection (All Materials),Closed,13577,,,2.7412535906312146
 2019,BROOKLYN,Other Enforcement,Closed,1469,,,2.6317222600408441
 2019,BROOKLYN,Overflowing Litter Baskets,Closed,70,,,1.3857142857142857
 2019,BROOKLYN,Overflowing Recycling Baskets,Closed,2,,,2.0000000000000000
@@ -1049,9 +1047,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2019,MANHATTAN,Graffiti,Closed,3858,,,138.2348367029548989
 2019,MANHATTAN,Graffiti,Open,1098,991.4289617486338798,723.5651515151515152,
 2019,MANHATTAN,Litter Basket Complaint,Closed,201,,,2.1741293532338308
-2019,MANHATTAN,Missed Collection,Closed,1,,,221.0000000000000000
+2019,MANHATTAN,Missed Collection,Closed,2734,,,2.2381126554498903
 2019,MANHATTAN,Missed Collection,Open,21,1031.2380952380952381,,
-2019,MANHATTAN,Missed Collection (All Materials),Closed,2733,,,2.1580680570801317
 2019,MANHATTAN,Other Enforcement,Closed,857,,,2.9428238039673279
 2019,MANHATTAN,Overflowing Litter Baskets,Closed,134,,,1.8208955223880597
 2019,MANHATTAN,Recycling Enforcement,Closed,161,,,5.5652173913043478
@@ -1074,10 +1071,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2019,QUEENS,Graffiti,Open,931,951.1643394199785177,610.2072213500784929,
 2019,QUEENS,Litter Basket Complaint,Closed,264,,,2.1022727272727273
 2019,QUEENS,Litter Basket Complaint,Open,10,922.0000000000000000,,
-2019,QUEENS,Missed Collection,Closed,4,,,161.7500000000000000
-2019,QUEENS,Missed Collection,Open,102,1029.3627450980392157,,
-2019,QUEENS,Missed Collection (All Materials),Closed,10671,,,2.8956986224346359
-2019,QUEENS,Missed Collection (All Materials),Open,75,921.6133333333333333,,
+2019,QUEENS,Missed Collection,Closed,10675,,,2.9552224824355972
+2019,QUEENS,Missed Collection,Open,177,983.7062146892655367,,
 2019,QUEENS,Other Enforcement,Closed,1013,,,2.5399802566633761
 2019,QUEENS,Other Enforcement,Open,28,921.4642857142857143,,
 2019,QUEENS,Overflowing Litter Baskets,Closed,101,,,1.5445544554455446
@@ -1102,8 +1097,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2019,STATEN ISLAND,Graffiti,Closed,249,,,127.7630522088353414
 2019,STATEN ISLAND,Graffiti,Open,52,1036.8461538461538462,875.4137931034482759,
 2019,STATEN ISLAND,Litter Basket Complaint,Closed,68,,,2.2794117647058824
+2019,STATEN ISLAND,Missed Collection,Closed,7200,,,3.9933333333333333
 2019,STATEN ISLAND,Missed Collection,Open,66,1028.0454545454545455,,
-2019,STATEN ISLAND,Missed Collection (All Materials),Closed,7200,,,3.9933333333333333
 2019,STATEN ISLAND,Other Enforcement,Closed,340,,,2.4029411764705882
 2019,STATEN ISLAND,Overflowing Litter Baskets,Closed,49,,,1.6734693877551020
 2019,STATEN ISLAND,Overflowing Recycling Baskets,Closed,1,,,1.00000000000000000000
@@ -1132,8 +1127,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2020,BRONX,Graffiti,Closed,162,,,518.1975308641975309
 2020,BRONX,Graffiti,Open,252,803.1071428571428571,424.0370370370370370,
 2020,BRONX,Litter Basket Complaint,Closed,1,,,4.0000000000000000
-2020,BRONX,Missed Collection,Closed,15,,,357.4666666666666667
-2020,BRONX,Missed Collection (All Materials),Closed,2892,,,2.6680497925311203
+2020,BRONX,Missed Collection,Closed,2907,,,4.4987960096319229
 2020,BRONX,Other Enforcement,Closed,88,,,10.8750000000000000
 2020,BRONX,Recycling Enforcement,Closed,21,,,7.4285714285714286
 2020,BRONX,Recycling Enforcement,Open,1,578.0000000000000000,,
@@ -1152,8 +1146,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2020,BROOKLYN,Employee Behavior,Closed,2,,,1.00000000000000000000
 2020,BROOKLYN,Graffiti,Closed,1307,,,557.2295332823259373
 2020,BROOKLYN,Graffiti,Open,1350,798.1200000000000000,394.6738721804511278,
-2020,BROOKLYN,Missed Collection,Closed,53,,,357.4150943396226415
-2020,BROOKLYN,Missed Collection (All Materials),Closed,14424,,,2.2273294509151414
+2020,BROOKLYN,Missed Collection,Closed,14477,,,3.5276645713891000
 2020,BROOKLYN,Other Enforcement,Closed,341,,,23.2521994134897361
 2020,BROOKLYN,Overflowing Litter Baskets,Closed,3,,,2.0000000000000000
 2020,BROOKLYN,Recycling Enforcement,Closed,84,,,20.2976190476190476
@@ -1172,8 +1165,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2020,MANHATTAN,Graffiti,Closed,500,,,576.6600000000000000
 2020,MANHATTAN,Graffiti,Open,579,801.4162348877374784,413.4977973568281938,
 2020,MANHATTAN,Litter Basket Complaint,Closed,2,,,2.0000000000000000
-2020,MANHATTAN,Missed Collection,Closed,6,,,357.8333333333333333
-2020,MANHATTAN,Missed Collection (All Materials),Closed,2613,,,2.4435514734022197
+2020,MANHATTAN,Missed Collection,Closed,2619,,,3.2577319587628866
 2020,MANHATTAN,Other Enforcement,Closed,206,,,8.8932038834951456
 2020,MANHATTAN,Overflowing Litter Baskets,Closed,6,,,1.6666666666666667
 2020,MANHATTAN,Recycling Enforcement,Closed,51,,,7.7450980392156863
@@ -1191,8 +1183,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2020,QUEENS,Employee Behavior,Closed,1,,,1.00000000000000000000
 2020,QUEENS,Graffiti,Closed,211,,,589.2701421800947867
 2020,QUEENS,Graffiti,Open,236,779.3305084745762712,272.7897435897435897,
-2020,QUEENS,Missed Collection,Closed,52,,,357.1923076923076923
-2020,QUEENS,Missed Collection (All Materials),Closed,12875,,,2.5755339805825243
+2020,QUEENS,Missed Collection,Closed,12927,,,4.0020112941904541
 2020,QUEENS,Other Enforcement,Closed,193,,,20.1606217616580311
 2020,QUEENS,Overflowing Litter Baskets,Closed,1,,,1.00000000000000000000
 2020,QUEENS,Recycling Enforcement,Closed,55,,,16.9272727272727273
@@ -1210,9 +1201,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2020,STATEN ISLAND,DSNY Spillage,Closed,1,,,43.0000000000000000
 2020,STATEN ISLAND,Graffiti,Closed,37,,,551.5135135135135135
 2020,STATEN ISLAND,Graffiti,Open,31,778.6451612903225806,283.4583333333333333,
-2020,STATEN ISLAND,Missed Collection,Closed,127,,,372.8267716535433071
+2020,STATEN ISLAND,Missed Collection,Closed,8305,,,10.5076459963877182
 2020,STATEN ISLAND,Missed Collection,Open,1,574.0000000000000000,,
-2020,STATEN ISLAND,Missed Collection (All Materials),Closed,8178,,,4.8810222548300318
 2020,STATEN ISLAND,Other Enforcement,Closed,39,,,14.0769230769230769
 2020,STATEN ISLAND,Recycling Enforcement,Closed,25,,,17.6000000000000000
 2020,STATEN ISLAND,Sanitation Condition,Closed,130,,,4.5384615384615385
@@ -1255,8 +1245,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2021,BRONX,Litter Basket Complaint,Closed,159,,,7.2515723270440252
 2021,BRONX,Lot Condition,Closed,70,,,71.7571428571428571
 2021,BRONX,Lot Condition,Open,15,166.4000000000000000,,
-2021,BRONX,Missed Collection,Closed,1994,,,9.6439317953861585
-2021,BRONX,Missed Collection (All Materials),Closed,2827,,,3.0930314821365405
+2021,BRONX,Missed Collection,Closed,4821,,,5.8025305953121759
 2021,BRONX,Obstruction,Closed,180,,,7.9722222222222222
 2021,BRONX,Obstruction,Open,1,158.0000000000000000,,
 2021,BRONX,Other Enforcement,Closed,85,,,3.2705882352941176
@@ -1300,10 +1289,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2021,BROOKLYN,Litter Basket Complaint,Closed,487,,,7.7556468172484600
 2021,BROOKLYN,Lot Condition,Closed,140,,,68.2428571428571429
 2021,BROOKLYN,Lot Condition,Open,36,191.6944444444444444,,
-2021,BROOKLYN,Missed Collection,Closed,11366,,,13.6991025866619743
-2021,BROOKLYN,Missed Collection,Open,15,176.8000000000000000,,
-2021,BROOKLYN,Missed Collection (All Materials),Closed,16129,,,2.6735073470146940
-2021,BROOKLYN,Missed Collection (All Materials),Open,2,243.5000000000000000,,
+2021,BROOKLYN,Missed Collection,Closed,27495,,,7.2313147845062739
+2021,BROOKLYN,Missed Collection,Open,17,184.6470588235294118,,
 2021,BROOKLYN,Obstruction,Closed,491,,,13.6558044806517312
 2021,BROOKLYN,Obstruction,Open,2,180.0000000000000000,,
 2021,BROOKLYN,Other Enforcement,Closed,256,,,5.9023437500000000
@@ -1340,10 +1327,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2021,MANHATTAN,Litter Basket Complaint,Closed,474,,,18.7257383966244726
 2021,MANHATTAN,Lot Condition,Closed,51,,,57.4705882352941176
 2021,MANHATTAN,Lot Condition,Open,7,163.0000000000000000,,
-2021,MANHATTAN,Missed Collection,Closed,2124,,,21.8036723163841808
-2021,MANHATTAN,Missed Collection,Open,2,204.0000000000000000,,
-2021,MANHATTAN,Missed Collection (All Materials),Closed,2573,,,2.5950252623396813
-2021,MANHATTAN,Missed Collection (All Materials),Open,5,229.4000000000000000,,
+2021,MANHATTAN,Missed Collection,Closed,4697,,,11.2812433468171173
+2021,MANHATTAN,Missed Collection,Open,7,222.1428571428571429,,
 2021,MANHATTAN,Obstruction,Closed,239,,,6.9037656903765690
 2021,MANHATTAN,Other Enforcement,Closed,162,,,2.9135802469135802
 2021,MANHATTAN,Other Enforcement,Open,1,232.0000000000000000,,
@@ -1380,9 +1365,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2021,QUEENS,Litter Basket Complaint,Closed,253,,,9.7075098814229249
 2021,QUEENS,Lot Condition,Closed,76,,,71.2631578947368421
 2021,QUEENS,Lot Condition,Open,11,159.2727272727272727,,
-2021,QUEENS,Missed Collection,Closed,8803,,,10.8408497103260252
+2021,QUEENS,Missed Collection,Closed,21108,,,5.7978491567178321
 2021,QUEENS,Missed Collection,Open,2,196.0000000000000000,,
-2021,QUEENS,Missed Collection (All Materials),Closed,12305,,,2.1900853311661926
 2021,QUEENS,Obstruction,Closed,541,,,10.3031423290203327
 2021,QUEENS,Obstruction,Open,4,195.0000000000000000,,
 2021,QUEENS,Other Enforcement,Closed,158,,,2.9746835443037975
@@ -1422,9 +1406,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2021,STATEN ISLAND,Litter Basket Complaint,Closed,79,,,10.5443037974683544
 2021,STATEN ISLAND,Lot Condition,Closed,31,,,59.5161290322580645
 2021,STATEN ISLAND,Lot Condition,Open,8,178.2500000000000000,,
-2021,STATEN ISLAND,Missed Collection,Closed,10127,,,9.0419670188604720
+2021,STATEN ISLAND,Missed Collection,Closed,17157,,,6.6639272600104913
 2021,STATEN ISLAND,Missed Collection,Open,14,187.8571428571428571,,
-2021,STATEN ISLAND,Missed Collection (All Materials),Closed,7030,,,3.2382645803698435
 2021,STATEN ISLAND,Obstruction,Closed,204,,,23.9607843137254902
 2021,STATEN ISLAND,Obstruction,Open,38,183.1842105263157895,,
 2021,STATEN ISLAND,Other Enforcement,Closed,35,,,2.5428571428571429
@@ -1446,7 +1429,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2021,Unspecified,Dirty Conditions,Closed,95,,,2.9052631578947368
 2021,Unspecified,Graffiti,Open,3,206.0000000000000000,,
 2021,Unspecified,Illegal Dumping,Closed,4,,,2.2500000000000000
-2021,Unspecified,Missed Collection (All Materials),Closed,3,,,3.3333333333333333
+2021,Unspecified,Missed Collection,Closed,3,,,3.3333333333333333
 2021,Unspecified,Other Enforcement,Closed,1,,,1.00000000000000000000
 2021,Unspecified,Sanitation Condition,Closed,3,,,4.3333333333333333
 2021,Unspecified,Sanitation Worker or Vehicle Complaint,Closed,1,,,11.0000000000000000
@@ -1455,7 +1438,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2021,,Derelict Bicycle,Closed,3,,,4.3333333333333333
 2021,,Derelict Vehicles,Closed,715,,,1.8237762237762238
 2021,,Dirty Conditions,Closed,151,,,3.1788079470198675
-2021,,Missed Collection (All Materials),Closed,1,,,2.0000000000000000
+2021,,Missed Collection,Closed,1,,,2.0000000000000000
 2021,,Other Enforcement,Closed,8,,,4.3750000000000000
 2021,,Sanitation Condition,Closed,15,,,3.8666666666666667
 2021,,snow,Closed,1,,,0.00000000000000000000

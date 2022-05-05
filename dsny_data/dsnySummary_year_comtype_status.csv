@@ -7,7 +7,7 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2010,Graffiti,Closed,19488,,,78.2201354679802956
 2010,Graffiti,Open,638,4316.4639498432601881,2336.0444444444444444,
 2010,Litter Basket Complaint,Closed,2551,,,1.6487651901215210
-2010,Missed Collection (All Materials),Closed,16309,,,1.4113066405052425
+2010,Missed Collection,Closed,16309,,,1.4113066405052425
 2010,Other Enforcement,Closed,4860,,,3.0495884773662551
 2010,Overflowing Litter Baskets,Closed,1503,,,1.0658682634730539
 2010,Recycling Enforcement,Closed,1289,,,5.4003103180760279
@@ -27,7 +27,7 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2011,Graffiti,Open,1416,3944.6603107344632768,3633.6000000000000000,
 2011,Litter Basket Complaint,Closed,3123,,,2.0931796349663785
 2011,Litter Basket Complaint,Open,1,3914.0000000000000000,,
-2011,Missed Collection (All Materials),Closed,18922,,,1.9086777296268893
+2011,Missed Collection,Closed,18922,,,1.9086777296268893
 2011,Other Enforcement,Closed,4367,,,4.4343943210441951
 2011,Other Enforcement,Open,1,3910.0000000000000000,,
 2011,Overflowing Litter Baskets,Closed,1356,,,1.4564896755162242
@@ -48,7 +48,7 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2012,Graffiti,Open,2278,3577.6949078138718174,3468.1709956709956710,
 2012,Litter Basket Complaint,Closed,2381,,,1.7601847963040739
 2012,Litter Basket Complaint,Open,1,3725.0000000000000000,,
-2012,Missed Collection (All Materials),Closed,13488,,,1.42682384341637010676
+2012,Missed Collection,Closed,13488,,,1.42682384341637010676
 2012,Other Enforcement,Closed,4483,,,3.0095917912112425
 2012,Overflowing Litter Baskets,Closed,1164,,,1.1486254295532646
 2012,Recycling Enforcement,Closed,934,,,5.1477516059957173
@@ -68,8 +68,8 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2013,Graffiti,Open,1697,3246.5763111373011196,2909.8000000000000000,
 2013,Litter Basket Complaint,Closed,2686,,,1.5826507818317200
 2013,Litter Basket Complaint,Open,1,3155.0000000000000000,,
-2013,Missed Collection (All Materials),Closed,16603,,,1.5716436788532193
-2013,Missed Collection (All Materials),Open,5,3150.8000000000000000,,
+2013,Missed Collection,Closed,16603,,,1.5716436788532193
+2013,Missed Collection,Open,5,3150.8000000000000000,,
 2013,Other Enforcement,Closed,5170,,,4.0234042553191489
 2013,Other Enforcement,Open,1,3141.0000000000000000,,
 2013,Overflowing Litter Baskets,Closed,1225,,,1.2604081632653061
@@ -91,8 +91,8 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2014,Graffiti,Open,1775,2863.2845070422535211,2766.6438356164383562,
 2014,Litter Basket Complaint,Closed,2450,,,1.6110204081632653
 2014,Litter Basket Complaint,Open,465,2786.9182795698924731,,
-2014,Missed Collection (All Materials),Closed,21532,,,1.6981237228311351
-2014,Missed Collection (All Materials),Open,57,2778.4385964912280702,,
+2014,Missed Collection,Closed,21532,,,1.6981237228311351
+2014,Missed Collection,Open,57,2778.4385964912280702,,
 2014,Other Enforcement,Closed,5542,,,2.9776254059906171
 2014,Other Enforcement,Open,16,2797.0625000000000000,,
 2014,Overflowing Litter Baskets,Closed,1085,,,1.3179723502304147
@@ -119,8 +119,8 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2015,Graffiti,Open,1299,2498.8722093918398768,2395.0270833333333333,
 2015,Litter Basket Complaint,Closed,1591,,,-24.6687617850408548
 2015,Litter Basket Complaint,Open,1025,2502.6263414634146341,,
-2015,Missed Collection (All Materials),Closed,24960,,,0.20865384615384615385
-2015,Missed Collection (All Materials),Open,322,2515.8167701863354037,,
+2015,Missed Collection,Closed,24960,,,0.20865384615384615385
+2015,Missed Collection,Open,322,2515.8167701863354037,,
 2015,Other Enforcement,Closed,6490,,,2.8066255778120185
 2015,Other Enforcement,Open,5,2506.6000000000000000,,
 2015,Overflowing Litter Baskets,Closed,1533,,,1.2635355512067841
@@ -149,8 +149,8 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2016,Graffiti,Open,917,2121.4307524536532170,1985.0298013245033113,
 2016,Litter Basket Complaint,Closed,2660,,,1.3755639097744361
 2016,Litter Basket Complaint,Open,7,2043.2857142857142857,,
-2016,Missed Collection (All Materials),Closed,30190,,,2.0087446174229877
-2016,Missed Collection (All Materials),Open,72,2030.5833333333333333,,
+2016,Missed Collection,Closed,30190,,,2.0087446174229877
+2016,Missed Collection,Open,72,2030.5833333333333333,,
 2016,Other Enforcement,Closed,7184,,,3.0915924276169265
 2016,Other Enforcement,Open,28,2030.4642857142857143,,
 2016,Overflowing Litter Baskets,Closed,1145,,,1.2925764192139738
@@ -178,8 +178,8 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2017,Graffiti,Open,1807,1747.4067515218594355,1766.0909090909090909,
 2017,Litter Basket Complaint,Closed,2938,,,1.6388699795779442
 2017,Litter Basket Complaint,Open,5,1646.0000000000000000,,
-2017,Missed Collection (All Materials),Closed,36191,,,2.2765328396562681
-2017,Missed Collection (All Materials),Open,69,1645.5652173913043478,,
+2017,Missed Collection,Closed,36191,,,2.2765328396562681
+2017,Missed Collection,Open,69,1645.5652173913043478,,
 2017,Other Enforcement,Closed,7979,,,3.7079834565735055
 2017,Other Enforcement,Open,12,1648.6666666666666667,,
 2017,Overflowing Litter Baskets,Closed,1084,,,1.3404059040590406
@@ -210,8 +210,8 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2018,Graffiti,Open,3484,1355.9368541905855339,1218.2093959731543624,
 2018,Litter Basket Complaint,Closed,3240,,,1.9845679012345679
 2018,Litter Basket Complaint,Open,11,1241.0000000000000000,,
-2018,Missed Collection (All Materials),Closed,40791,,,2.5489446201367949
-2018,Missed Collection (All Materials),Open,79,1240.6329113924050633,,
+2018,Missed Collection,Closed,40791,,,2.5489446201367949
+2018,Missed Collection,Open,79,1240.6329113924050633,,
 2018,Other Enforcement,Closed,8580,,,3.0375291375291375
 2018,Other Enforcement,Open,30,1247.7666666666666667,,
 2018,Overflowing Litter Baskets,Closed,946,,,1.8382663847780127
@@ -242,10 +242,8 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2019,Graffiti,Open,5736,966.1839260808926081,717.3717880085653105,
 2019,Litter Basket Complaint,Closed,1323,,,1.8994708994708995
 2019,Litter Basket Complaint,Open,10,922.0000000000000000,,
-2019,Missed Collection,Closed,13,,,237.0769230769230769
-2019,Missed Collection,Open,332,1029.4638554216867470,,
-2019,Missed Collection (All Materials),Closed,37020,,,2.9648838465694219
-2019,Missed Collection (All Materials),Open,75,921.6133333333333333,,
+2019,Missed Collection,Closed,37033,,,3.0470661302081927
+2019,Missed Collection,Open,407,1009.5896805896805897,,
 2019,Other Enforcement,Closed,4034,,,2.7233515121467526
 2019,Other Enforcement,Open,28,921.4642857142857143,,
 2019,Overflowing Litter Baskets,Closed,460,,,1.6608695652173913
@@ -274,9 +272,8 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2020,Graffiti,Closed,2217,,,561.7135769057284619
 2020,Graffiti,Open,2451,797.4031007751937984,388.9682702149437052,
 2020,Litter Basket Complaint,Closed,3,,,2.6666666666666667
-2020,Missed Collection,Closed,253,,,365.1185770750988142
+2020,Missed Collection,Closed,41235,,,5.1335030920334667
 2020,Missed Collection,Open,1,574.0000000000000000,,
-2020,Missed Collection (All Materials),Closed,40982,,,2.9111561173197989
 2020,Other Enforcement,Closed,914,,,17.8741794310722101
 2020,Overflowing Litter Baskets,Closed,10,,,1.7000000000000000
 2020,Recycling Enforcement,Closed,237,,,15.3924050632911392
@@ -314,10 +311,8 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2021,Litter Basket Complaint,Closed,1452,,,11.7734159779614325
 2021,Lot Condition,Closed,368,,,67.3070652173913043
 2021,Lot Condition,Open,77,178.1298701298701299,,
-2021,Missed Collection,Closed,34414,,,11.8627593421282036
-2021,Missed Collection,Open,33,184.3030303030303030,,
-2021,Missed Collection (All Materials),Closed,40868,,,2.6492120974845845
-2021,Missed Collection (All Materials),Open,7,233.4285714285714286,,
+2021,Missed Collection,Closed,75282,,,6.8610424802741691
+2021,Missed Collection,Open,40,192.9000000000000000,,
 2021,Obstruction,Closed,1655,,,12.2368580060422961
 2021,Obstruction,Open,45,183.5333333333333333,,
 2021,Other Enforcement,Closed,705,,,4.0510638297872340

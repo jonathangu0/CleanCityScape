@@ -46,6 +46,14 @@ body {
 	stroke: #fff;
 
 }
+
+.pointGraffiti{
+	fill: #5561ec;
+	fill-opacity: .7;
+	stroke: #fff;
+
+}
+
 .pointOther{
 	fill: #999A9C;
 	fill-opacity: .7;
@@ -266,39 +274,46 @@ svg {
   transition: .4s;
 }
 
-input:checked + #sliderSafe {
+input:checked + #sliderDirty {
   background-color: #59a14f;
 }
 
-input:focus + #sliderSafe {
+input:focus + #sliderDirty {
   box-shadow: 0 0 1px #59a14f;
 }
-input:checked + #sliderSWARMP {
+input:checked + #sliderMissed {
   background-color: #f28e2c;
 }
 
-input:focus + #sliderSWARMP {
+input:focus + #sliderMissed {
   box-shadow: 0 0 1px #f28e2c;
 }
-input:checked + #sliderSWARMPexp {
+input:checked + #sliderSanitation {
   background-color: #b55a9d;
 }
 
-input:focus + #sliderSWARMPexp {
+input:focus + #sliderSanitation {
   box-shadow: 0 0 1px #b55a9d;
 }
-input:checked + #sliderUnsafe {
+input:checked + #sliderDerelict {
   background-color: #DF3B20;
 }
 
-input:focus + #sliderUnsafe {
+input:focus + #sliderDerelict {
   box-shadow: 0 0 1px #DF3B20;
 }
-input:checked + #sliderNoRpt {
+input:checked + #sliderGraffiti {
+  background-color: #5561ec;
+}
+
+input:focus + #sliderGraffiti {
+  box-shadow: 0 0 1px #5561ec;
+}
+input:checked + #sliderOther {
   background-color: #999A9C;
 }
 
-input:focus + #sliderNoRpt {
+input:focus + #sliderOther {
   box-shadow: 0 0 1px #999A9C;
 }
 input:checked + .slider:before {
@@ -327,47 +342,57 @@ input:checked + .slider:before {
 
 						<span style="display:inline-block;">
 						<label class="switch">
-							<input type="checkbox" checked="true" id="chkSafe">
-							<span class="slider" id="sliderSafe"></span>						
+							<input type="checkbox" checked="true" id="chkDirty">
+							<span class="slider" id="sliderDirty"></span>						
 						</label>
 						
-						<span class="en" id="sliderTxt">SAFE</span>
+						<span class="en" id="sliderTxt">Dirty Condition</span>
 						</span>
 						<br/>
 
 						<span style="display:inline-block;">
 							<label class="switch">
-								<input type="checkbox" checked="true" id="chkSWARMP">
-								<span class="slider" id="sliderSWARMP"></span>
+								<input type="checkbox" checked="true" id="chkMissed">
+								<span class="slider" id="sliderMissed"></span>
 							</label>
-							<span class="en" id="sliderTxt">SWARMP</span>
+							<span class="en" id="sliderTxt">Missed Collection</span>
 						</span>
 						<br/>
 
 						<span style="display:inline-block;">
 							<label class="switch">
-								<input type="checkbox" checked="true" id="chkSWARMPexp">
-								<span class="slider" id="sliderSWARMPexp"></span>
+								<input type="checkbox" checked="true" id="chkSanitation">
+								<span class="slider" id="sliderSanitation"></span>
 							</label>
-							<span class="en" id="sliderTxt">SWARMP (EXPIRED)</span>
+							<span class="en" id="sliderTxt">Sanitation Condition</span>
 						</span>
 						<br/>
 
 						<span style="display:inline-block;">
 							<label class="switch">
-								<input type="checkbox" checked="true" id="chkUnsafe">
-								<span class="slider" id="sliderUnsafe"></span>
+								<input type="checkbox" checked="true" id="chkDerelict">
+								<span class="slider" id="sliderDerelict"></span>
 							</label>
-							<span class="en" id="sliderTxt">UNSAFE</span>
+							<span class="en" id="sliderTxt">Derelict Vehicles</span>
 						</span>
 						<br/>
 
 						<span style="display:inline-block;">
 							<label class="switch">
-								<input type="checkbox" id="chkNoRpt">
-								<span class="slider" id="sliderNoRpt"></span>
+								<input type="checkbox" checked="true" id="chkGraffiti">
+								<span class="slider" id="sliderGraffiti"></span>
 							</label>
-							<span class="en" id="sliderTxt">NO REPORT FILED</span>
+							<span class="en" id="sliderTxt">Graffiti</span>
+						</span>
+						<br/>
+						
+
+						<span style="display:inline-block;">
+							<label class="switch">
+								<input type="checkbox" id="chkOther">
+								<span class="slider" id="sliderOther"></span>
+							</label>
+							<span class="en" id="sliderTxt">Other Complaints</span>
 						</span>
 						<br/>
 					</div>
@@ -508,6 +533,9 @@ function ready(){
 					case 'Derelict Vehicles':
 						return 'pointDerelict';
 						break;
+					case 'Graffiti':
+						return 'pointGraffiti';
+						break;
 					case 'Other':
 						return 'pointOther';
 						break; 
@@ -529,7 +557,7 @@ function ready(){
 						'COMPLAINT TYPE: ' + d.complaintType + '(' + d.complaintOtherType + ')' + '</br>' +
 						'COMPLAINT DETAILS: ' + d.descriptor + '</br>' +
 						// 'AVG DAYS TO CLOSE: ' + d.daysToClose + '</br>' +
-						'DAYS SINCE CREATION: ' + (today - d.createdDate)
+						'DAYS SINCE CREATION: ' + d.duration
 					)
 					if (d3.event.pageX > (width - 200)) {
 					   tooltipFacades.style("left", (d3.event.pageX - 350) + "px");
@@ -561,13 +589,14 @@ function ready(){
 
 
 
-			var safeSlider = document.querySelector('input[id="chkSafe"]');
-				swarmpSlider = document.querySelector('input[id="chkSWARMP"]');
-				swarmpExpSlider = document.querySelector('input[id="chkSWARMPexp"]');
-				unsafeSlider = document.querySelector('input[id="chkUnsafe"]');
-				noRptSlider = document.querySelector('input[id="chkNoRpt"]');
+			var dirtySlider = document.querySelector('input[id="chkDirty"]');
+				missedSlider = document.querySelector('input[id="chkMissed"]');
+				sanitationSlider = document.querySelector('input[id="chkSanitation"]');
+				derelictSlider = document.querySelector('input[id="chkDerelict"]');
+				graffitiSlider = document.querySelector('input[id="chkGraffiti');
+				otherSlider = document.querySelector('input[id="chkOther"]');
 				
-				safeSlider.onchange = function(){
+				dirtySlider.onchange = function(){
 						if(this.checked){
 							d3.selectAll(".pointDirty").filter(function(d) {
 								return d.complaintType == "Dirty Conditions";
@@ -583,7 +612,7 @@ function ready(){
 						}
 				};		
 				
-				swarmpSlider.onchange = function(){
+				missedSlider.onchange = function(){
 						if(this.checked){
 							d3.selectAll(".pointMissed").filter(function(d) {
 								return d.complaintType == "Missed Collection";
@@ -599,7 +628,7 @@ function ready(){
 						}
 				};
 
-				swarmpExpSlider.onchange = function(){
+				sanitationSlider.onchange = function(){
 						if(this.checked){
 							d3.selectAll(".pointSanitation").filter(function(d) {
 								return d.complaintType == "Sanitation Condition";
@@ -615,9 +644,9 @@ function ready(){
 						}
 				};
 
-				unsafeSlider.onchange = function(){
+				derelictSlider.onchange = function(){
 						if(this.checked){
-							d3.selectAll(".Derelict").filter(function(d) {
+							d3.selectAll(".pointDerelict").filter(function(d) {
 								return d.complaintType == "Derelict Vehicles";
 							})
 							.style("display", "block");	
@@ -631,7 +660,23 @@ function ready(){
 						}
 				};
 
-				noRptSlider.onchange = function(){
+				graffitiSlider.onchange = function(){
+						if(this.checked){
+							d3.selectAll(".pointGraffiti").filter(function(d) {
+								return d.complaintType == "Graffiti";
+							})
+							.style("display", "block");	
+
+						} else {
+							d3.selectAll(".pointGraffiti").filter(function(d) {
+								return d.complaintType == "Graffiti";
+							})
+							.style("display", "none");
+										
+						}
+				};
+
+				otherSlider.onchange = function(){
 						if(this.checked){
 							d3.selectAll(".pointOther").filter(function(d) {
 								return d.complaintType == "Other";
@@ -652,7 +697,7 @@ function ready(){
 	
 	
 	 //d3.csv("data/facadeLL11.csv",function(data){
-		d3.csv("../../dsny_data/dsny_new_2020_only_open.csv",function(data){
+		d3.csv("../../dsny_data/dsny_new_2022_only_open.csv",function(data){
 				points = data.filter(function(d) {
 					if( ((+d["latitude"] != 0) && (+d["longitude"] !=0 ))) {
 						return d;
@@ -671,6 +716,7 @@ function ready(){
 				d.daysToClose = [d.number_of_days_to_close];
 				d.status = d["status_cal"];
 				d.pastDue = d["number_of_past_due_days"];
+				d.duration = d["duration"]
 			return d;
 			});
 			
@@ -681,6 +727,7 @@ function ready(){
 			d3.selectAll(".pointMissed").style("display", "block");
 			d3.selectAll(".pointSanitation").style("display", "block");
 			d3.selectAll(".pointDerelict").style("display", "block");
+			d3.selectAll(".pointGraffiti").style("display", "block");
 			d3.selectAll(".pointOther").style("display", "none");
 			
 						

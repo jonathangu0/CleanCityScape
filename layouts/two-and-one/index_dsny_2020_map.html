@@ -322,7 +322,7 @@ input:checked + .slider:before {
 				<div id="map">
 				<svg></svg>
 					<div id="ui-container" class="ui" style="z-index: 401">
-						<h5><b>CYCLE 7: FACADE FILING STATUS</b></h5>
+						<h5><b>2020 OPEN COMPLAINT STATUS</b></h5>
 						<h6>(TOGGLE LAYERS ON & OFF)</h6>
 
 						<span style="display:inline-block;">
@@ -526,10 +526,10 @@ function ready(){
 						'CREATED DATE: ' + d.createdDate + '</br>' +
 						'CLOSED DATE: ' + d.closedDate + '</br>' +
 						'DUE DATE: ' + d.dueDate + '</br>' +
-						'COMPLAINT TYPE: ' + d.complaintType + '</br>' +
+						'COMPLAINT TYPE: ' + d.complaintType + '(' + d.complaintOtherType + ')' + '</br>' +
 						'COMPLAINT DETAILS: ' + d.descriptor + '</br>' +
-						'AVG DAYS TO CLOSE: ' + d.daysToClose + '</br>' +
-						'AVG DAYS PAST DUE: ' + d.pastDue
+						// 'AVG DAYS TO CLOSE: ' + d.daysToClose + '</br>' +
+						'DAYS SINCE CREATION: ' + (today - d.createdDate)
 					)
 					if (d3.event.pageX > (width - 200)) {
 					   tooltipFacades.style("left", (d3.event.pageX - 350) + "px");
@@ -570,13 +570,13 @@ function ready(){
 				safeSlider.onchange = function(){
 						if(this.checked){
 							d3.selectAll(".pointDirty").filter(function(d) {
-								return d.filingStatus == "Dirty Conditions";
+								return d.complaintType == "Dirty Conditions";
 							})
 							.style("display", "block");	
 
 						} else {
 							d3.selectAll(".pointDirty").filter(function(d) {
-								return d.filingStatus == "Dirty Conditions";
+								return d.complaintType == "Dirty Conditions";
 							})
 							.style("display", "none");
 										
@@ -586,13 +586,13 @@ function ready(){
 				swarmpSlider.onchange = function(){
 						if(this.checked){
 							d3.selectAll(".pointMissed").filter(function(d) {
-								return d.filingStatus == "Missed Collection";
+								return d.complaintType == "Missed Collection";
 							})
 							.style("display", "block");	
 
 						} else {
 							d3.selectAll(".pointMissed").filter(function(d) {
-								return d.filingStatus == "Missed Collection";
+								return d.complaintType == "Missed Collection";
 							})
 							.style("display", "none");
 										
@@ -602,13 +602,13 @@ function ready(){
 				swarmpExpSlider.onchange = function(){
 						if(this.checked){
 							d3.selectAll(".pointSanitation").filter(function(d) {
-								return d.filingStatus == "Sanitation Condition";
+								return d.complaintType == "Sanitation Condition";
 							})
 							.style("display", "block");	
 
 						} else {
 							d3.selectAll(".pointSanitation").filter(function(d) {
-								return d.filingStatus == "Sanitation Condition";
+								return d.complaintType == "Sanitation Condition";
 							})
 							.style("display", "none");
 										
@@ -618,13 +618,13 @@ function ready(){
 				unsafeSlider.onchange = function(){
 						if(this.checked){
 							d3.selectAll(".Derelict").filter(function(d) {
-								return d.filingStatus == "Derelict Vehicles";
+								return d.complaintType == "Derelict Vehicles";
 							})
 							.style("display", "block");	
 
 						} else {
 							d3.selectAll(".pointDerelict").filter(function(d) {
-								return d.filingStatus == "Derelict Vehicles";
+								return d.complaintType == "Derelict Vehicles";
 							})
 							.style("display", "none");
 										
@@ -634,13 +634,13 @@ function ready(){
 				noRptSlider.onchange = function(){
 						if(this.checked){
 							d3.selectAll(".pointOther").filter(function(d) {
-								return d.filingStatus == "Other";
+								return d.complaintType == "Other";
 							})
 							.style("display", "block");	
 
 						} else {
 							d3.selectAll(".pointOther").filter(function(d) {
-								return d.filingStatus == "Other";
+								return d.complaintType == "Other";
 							})
 							.style("display", "none");
 										
@@ -652,7 +652,7 @@ function ready(){
 	
 	
 	 //d3.csv("data/facadeLL11.csv",function(data){
-		d3.csv("../../dsny_data/dsny_new_2020_only.csv",function(data){
+		d3.csv("../../dsny_data/dsny_new_2020_only_open.csv",function(data){
 				points = data.filter(function(d) {
 					if( ((+d["latitude"] != 0) && (+d["longitude"] !=0 ))) {
 						return d;
@@ -666,6 +666,7 @@ function ready(){
 				d.closedDate = d["closed_date"];
 				d.dueDate = d["due_date"];
 				d.complaintType = d["complaint_type_cal"];
+				d.complaintOtherType = d["complaint_type"]
 				d.descriptor = d["descriptors"];
 				d.daysToClose = [d.number_of_days_to_close];
 				d.status = d["status_cal"];

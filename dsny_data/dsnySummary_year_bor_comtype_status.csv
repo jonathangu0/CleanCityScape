@@ -11,7 +11,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2010,BRONX,Overflowing Litter Baskets,Closed,117,,,1.1538461538461538
 2010,BRONX,Recycling Enforcement,Closed,99,,,5.1010101010101010
 2010,BRONX,Sanitation Condition,Closed,3491,,,1.3162417645373818
-2010,BRONX,Snow,Closed,919,,,2.7116430903155604
+2010,BRONX,snow,Closed,919,,,2.7116430903155604
 2010,BRONX,Sweeping Complaint,Closed,77,,,0.93506493506493506494
 2010,BRONX,Vacant Lot,Closed,283,,,35.7632508833922261
 2010,BRONX,Vacant Lot,Open,3,4348.3333333333333333,,
@@ -28,7 +28,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2010,BROOKLYN,Overflowing Litter Baskets,Closed,564,,,0.99822695035460992908
 2010,BROOKLYN,Recycling Enforcement,Closed,481,,,6.3243243243243243
 2010,BROOKLYN,Sanitation Condition,Closed,10669,,,1.31249414190645796232
-2010,BROOKLYN,Snow,Closed,4551,,,3.9274884640738299
+2010,BROOKLYN,snow,Closed,4551,,,3.9274884640738299
 2010,BROOKLYN,Sweeping Complaint,Closed,655,,,1.1374045801526718
 2010,BROOKLYN,Vacant Lot,Closed,691,,,21.3675832127351664
 2010,BROOKLYN,Vacant Lot,Open,33,4322.5151515151515152,,
@@ -45,7 +45,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2010,MANHATTAN,Overflowing Litter Baskets,Closed,262,,,0.89312977099236641221
 2010,MANHATTAN,Recycling Enforcement,Closed,408,,,4.8406862745098039
 2010,MANHATTAN,Sanitation Condition,Closed,2561,,,0.70636470128855915658
-2010,MANHATTAN,Snow,Closed,811,,,3.4056720098643650
+2010,MANHATTAN,snow,Closed,811,,,3.4056720098643650
 2010,MANHATTAN,Sweeping Complaint,Closed,142,,,1.0774647887323944
 2010,MANHATTAN,Vacant Lot,Closed,142,,,18.7394366197183099
 2010,MANHATTAN,Vacant Lot,Open,7,4303.2857142857142857,,
@@ -62,7 +62,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2010,QUEENS,Overflowing Litter Baskets,Closed,463,,,1.1965442764578834
 2010,QUEENS,Recycling Enforcement,Closed,224,,,4.4508928571428571
 2010,QUEENS,Sanitation Condition,Closed,8770,,,1.4237172177879133
-2010,QUEENS,Snow,Closed,3704,,,2.3390928725701944
+2010,QUEENS,snow,Closed,3704,,,2.3390928725701944
 2010,QUEENS,Sweeping Complaint,Closed,303,,,1.4224422442244224
 2010,QUEENS,Vacant Lot,Closed,469,,,16.2089552238805970
 2010,QUEENS,Vacant Lot,Open,21,4334.8571428571428571,,
@@ -78,7 +78,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2010,STATEN ISLAND,Overflowing Litter Baskets,Closed,90,,,1.2111111111111111
 2010,STATEN ISLAND,Recycling Enforcement,Closed,77,,,5.7402597402597403
 2010,STATEN ISLAND,Sanitation Condition,Closed,2467,,,1.7952979327117957
-2010,STATEN ISLAND,Snow,Closed,1975,,,2.6030379746835443
+2010,STATEN ISLAND,snow,Closed,1975,,,2.6030379746835443
 2010,STATEN ISLAND,Sweeping Complaint,Closed,17,,,2.0000000000000000
 2010,STATEN ISLAND,Vacant Lot,Closed,256,,,13.4101562500000000
 2010,STATEN ISLAND,Vacant Lot,Open,3,4460.6666666666666667,,
@@ -89,7 +89,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2010,Unspecified,Other Enforcement,Closed,5,,,5.2000000000000000
 2010,Unspecified,Overflowing Litter Baskets,Closed,7,,,1.00000000000000000000
 2010,Unspecified,Sanitation Condition,Closed,132,,,1.8560606060606061
-2010,Unspecified,Snow,Closed,64,,,2.5468750000000000
+2010,Unspecified,snow,Closed,64,,,2.5468750000000000
 2010,Unspecified,Sweeping Complaint,Closed,6,,,2.0000000000000000
 2010,Unspecified,Vacant Lot,Closed,129,,,32.1472868217054264
 2010,Unspecified,Vacant Lot,Open,10,4333.9000000000000000,,
@@ -106,7 +106,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2011,BRONX,Overflowing Litter Baskets,Closed,123,,,1.2032520325203252
 2011,BRONX,Recycling Enforcement,Closed,76,,,5.3815789473684211
 2011,BRONX,Sanitation Condition,Closed,2895,,,1.5160621761658031
-2011,BRONX,Snow,Closed,1296,,,3.5895061728395062
+2011,BRONX,snow,Closed,1296,,,3.5895061728395062
 2011,BRONX,Sweeping Complaint,Closed,105,,,1.5904761904761905
 2011,BRONX,Vacant Lot,Closed,277,,,25.0216606498194946
 2011,BRONX,Vacant Lot,Open,2,4062.5000000000000000,,
@@ -126,7 +126,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2011,BROOKLYN,Overflowing Litter Baskets,Closed,449,,,1.3518930957683742
 2011,BROOKLYN,Recycling Enforcement,Closed,291,,,15.8659793814432990
 2011,BROOKLYN,Sanitation Condition,Closed,9319,,,1.8155381478699431
-2011,BROOKLYN,Snow,Closed,4138,,,7.4260512324794587
+2011,BROOKLYN,snow,Closed,4138,,,7.4260512324794587
 2011,BROOKLYN,Sweeping Complaint,Closed,968,,,1.6807851239669421
 2011,BROOKLYN,Vacant Lot,Closed,662,,,25.1148036253776435
 2011,BROOKLYN,Vacant Lot,Open,15,4025.4666666666666667,,
@@ -143,7 +143,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2011,MANHATTAN,Overflowing Litter Baskets,Closed,220,,,1.3272727272727273
 2011,MANHATTAN,Recycling Enforcement,Closed,289,,,25.3287197231833910
 2011,MANHATTAN,Sanitation Condition,Closed,1998,,,1.0605605605605606
-2011,MANHATTAN,Snow,Closed,843,,,3.5907473309608541
+2011,MANHATTAN,snow,Closed,843,,,3.5907473309608541
 2011,MANHATTAN,Sweeping Complaint,Closed,157,,,1.5222929936305732
 2011,MANHATTAN,Vacant Lot,Closed,112,,,21.8660714285714286
 2011,MANHATTAN,Vacant Lot,Open,5,3888.6000000000000000,,
@@ -162,7 +162,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2011,QUEENS,Overflowing Litter Baskets,Closed,465,,,1.4709677419354839
 2011,QUEENS,Recycling Enforcement,Closed,247,,,15.7489878542510121
 2011,QUEENS,Sanitation Condition,Closed,7826,,,1.8589317659085101
-2011,QUEENS,Snow,Closed,4065,,,5.4814268142681427
+2011,QUEENS,snow,Closed,4065,,,5.4814268142681427
 2011,QUEENS,Sweeping Complaint,Closed,498,,,1.7771084337349398
 2011,QUEENS,Vacant Lot,Closed,522,,,16.8141762452107280
 2011,QUEENS,Vacant Lot,Open,5,3994.8000000000000000,,
@@ -180,7 +180,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2011,STATEN ISLAND,Recycling Enforcement,Closed,70,,,4.4428571428571429
 2011,STATEN ISLAND,Sanitation Condition,Closed,2376,,,2.8350168350168350
 2011,STATEN ISLAND,Sanitation Condition,Open,1,3792.0000000000000000,,
-2011,STATEN ISLAND,Snow,Closed,1710,,,7.0485380116959064
+2011,STATEN ISLAND,snow,Closed,1710,,,7.0485380116959064
 2011,STATEN ISLAND,Sweeping Complaint,Closed,16,,,4.2500000000000000
 2011,STATEN ISLAND,Vacant Lot,Closed,237,,,15.2067510548523207
 2011,STATEN ISLAND,Vacant Lot,Open,1,4082.0000000000000000,,
@@ -191,7 +191,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2011,Unspecified,Other Enforcement,Closed,5,,,4.4000000000000000
 2011,Unspecified,Overflowing Litter Baskets,Closed,6,,,1.6666666666666667
 2011,Unspecified,Sanitation Condition,Closed,148,,,2.6081081081081081
-2011,Unspecified,Snow,Closed,71,,,6.7887323943661972
+2011,Unspecified,snow,Closed,71,,,6.7887323943661972
 2011,Unspecified,Sweeping Complaint,Closed,11,,,3.2727272727272727
 2011,Unspecified,Vacant Lot,Closed,116,,,22.7327586206896552
 2011,Unspecified,Vacant Lot,Open,3,3986.3333333333333333,,
@@ -210,7 +210,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2012,BRONX,Overflowing Litter Baskets,Closed,168,,,1.1369047619047619
 2012,BRONX,Recycling Enforcement,Closed,74,,,2.9594594594594595
 2012,BRONX,Sanitation Condition,Closed,2819,,,1.1543100390209294
-2012,BRONX,Snow,Closed,84,,,1.3928571428571429
+2012,BRONX,snow,Closed,84,,,1.3928571428571429
 2012,BRONX,Standpipe - Mechanical,Closed,2,,,1.5000000000000000
 2012,BRONX,Sweeping Complaint,Closed,101,,,1.0396039603960396
 2012,BRONX,Vacant Lot,Closed,250,,,31.1480000000000000
@@ -229,7 +229,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2012,BROOKLYN,Recycling Enforcement,Closed,299,,,5.4816053511705686
 2012,BROOKLYN,Sanitation Condition,Closed,9367,,,1.6134301270417423
 2012,BROOKLYN,Sanitation Condition,Open,1,3592.0000000000000000,,
-2012,BROOKLYN,Snow,Closed,118,,,3.0000000000000000
+2012,BROOKLYN,snow,Closed,118,,,3.0000000000000000
 2012,BROOKLYN,Standpipe - Mechanical,Closed,1,,,0.00000000000000000000
 2012,BROOKLYN,Sweeping Complaint,Closed,774,,,1.6020671834625323
 2012,BROOKLYN,Vacant Lot,Closed,833,,,41.5810324129651861
@@ -246,7 +246,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2012,MANHATTAN,Overflowing Litter Baskets,Closed,212,,,0.87735849056603773585
 2012,MANHATTAN,Recycling Enforcement,Closed,312,,,4.8141025641025641
 2012,MANHATTAN,Sanitation Condition,Closed,2118,,,0.84560906515580736544
-2012,MANHATTAN,Snow,Closed,48,,,1.6041666666666667
+2012,MANHATTAN,snow,Closed,48,,,1.6041666666666667
 2012,MANHATTAN,Sweeping Complaint,Closed,152,,,1.7763157894736842
 2012,MANHATTAN,Vacant Lot,Closed,120,,,22.0000000000000000
 2012,MANHATTAN,Vacant Lot,Open,9,3600.8888888888888889,,
@@ -264,7 +264,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2012,QUEENS,Overflowing Litter Baskets,Closed,330,,,1.1242424242424242
 2012,QUEENS,Recycling Enforcement,Closed,192,,,6.5572916666666667
 2012,QUEENS,Sanitation Condition,Closed,7709,,,1.4188610714748995
-2012,QUEENS,Snow,Closed,168,,,5.9821428571428571
+2012,QUEENS,snow,Closed,168,,,5.9821428571428571
 2012,QUEENS,Standpipe - Mechanical,Closed,2,,,6.0000000000000000
 2012,QUEENS,Sweeping Complaint,Closed,295,,,1.9898305084745763
 2012,QUEENS,Vacant Lot,Closed,562,,,30.3042704626334520
@@ -282,7 +282,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2012,STATEN ISLAND,Overflowing Litter Baskets,Closed,108,,,1.4444444444444444
 2012,STATEN ISLAND,Recycling Enforcement,Closed,56,,,3.3571428571428571
 2012,STATEN ISLAND,Sanitation Condition,Closed,2336,,,2.1999143835616438
-2012,STATEN ISLAND,Snow,Closed,149,,,1.2080536912751678
+2012,STATEN ISLAND,snow,Closed,149,,,1.2080536912751678
 2012,STATEN ISLAND,Standpipe - Mechanical,Closed,1,,,6.0000000000000000
 2012,STATEN ISLAND,Sweeping Complaint,Closed,10,,,2.4000000000000000
 2012,STATEN ISLAND,Vacant Lot,Closed,485,,,22.6742268041237113
@@ -313,7 +313,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2013,BRONX,Overflowing Litter Baskets,Closed,98,,,1.2142857142857143
 2013,BRONX,Recycling Enforcement,Closed,85,,,2.9176470588235294
 2013,BRONX,Sanitation Condition,Closed,2856,,,1.3511904761904762
-2013,BRONX,Snow,Closed,417,,,1.3357314148681055
+2013,BRONX,snow,Closed,417,,,1.3357314148681055
 2013,BRONX,Sweeping Complaint,Closed,102,,,1.1960784313725490
 2013,BRONX,Vacant Lot,Closed,258,,,29.9534883720930233
 2013,BRONX,Vacant Lot,Open,3,3196.3333333333333333,,
@@ -330,7 +330,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2013,BROOKLYN,Overflowing Litter Baskets,Closed,325,,,1.3753846153846154
 2013,BROOKLYN,Recycling Enforcement,Closed,245,,,8.7102040816326531
 2013,BROOKLYN,Sanitation Condition,Closed,9631,,,1.6443775308898349
-2013,BROOKLYN,Snow,Closed,690,,,3.0202898550724638
+2013,BROOKLYN,snow,Closed,690,,,3.0202898550724638
 2013,BROOKLYN,Sweeping Complaint,Closed,796,,,1.9334170854271357
 2013,BROOKLYN,Vacant Lot,Closed,929,,,38.9817007534983854
 2013,BROOKLYN,Vacant Lot,Open,7,3166.0000000000000000,,
@@ -347,7 +347,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2013,MANHATTAN,Overflowing Litter Baskets,Closed,284,,,1.0704225352112676
 2013,MANHATTAN,Recycling Enforcement,Closed,308,,,5.8733766233766234
 2013,MANHATTAN,Sanitation Condition,Closed,2129,,,0.98168154062940347581
-2013,MANHATTAN,Snow,Closed,357,,,1.9327731092436975
+2013,MANHATTAN,snow,Closed,357,,,1.9327731092436975
 2013,MANHATTAN,Sweeping Complaint,Closed,175,,,1.7371428571428571
 2013,MANHATTAN,Vacant Lot,Closed,98,,,41.8163265306122449
 2013,MANHATTAN,Vacant Lot,Open,3,3067.6666666666666667,,
@@ -368,7 +368,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2013,QUEENS,Recycling Enforcement,Closed,153,,,4.4509803921568627
 2013,QUEENS,Sanitation Condition,Closed,7831,,,1.3939471331886094
 2013,QUEENS,Sanitation Condition,Open,4,3139.7500000000000000,,
-2013,QUEENS,Snow,Closed,611,,,1.9247135842880524
+2013,QUEENS,snow,Closed,611,,,1.9247135842880524
 2013,QUEENS,Sweeping Complaint,Closed,366,,,1.6038251366120219
 2013,QUEENS,Vacant Lot,Closed,598,,,35.8762541806020067
 2013,QUEENS,Vacant Lot,Open,2,3276.0000000000000000,,
@@ -386,7 +386,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2013,STATEN ISLAND,Overflowing Litter Baskets,Closed,267,,,1.5468164794007491
 2013,STATEN ISLAND,Recycling Enforcement,Closed,44,,,6.0227272727272727
 2013,STATEN ISLAND,Sanitation Condition,Closed,2383,,,1.8367603860679815
-2013,STATEN ISLAND,Snow,Closed,400,,,1.4175000000000000
+2013,STATEN ISLAND,snow,Closed,400,,,1.4175000000000000
 2013,STATEN ISLAND,Sweeping Complaint,Closed,3,,,1.00000000000000000000
 2013,STATEN ISLAND,Vacant Lot,Closed,557,,,23.8689407540394973
 2013,Unspecified,Adopt-A-Basket,Closed,1,,,0.00000000000000000000
@@ -419,7 +419,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2014,BRONX,Request Xmas Tree Collection,Closed,78,,,1.8846153846153846
 2014,BRONX,Sanitation Condition,Closed,3181,,,1.3718956303049356
 2014,BRONX,Sanitation Condition,Open,1,2757.0000000000000000,,
-2014,BRONX,Snow,Closed,2254,,,3.2848269742679681
+2014,BRONX,snow,Closed,2254,,,3.2848269742679681
 2014,BRONX,Sweeping Complaint,Closed,128,,,1.4375000000000000
 2014,BRONX,Sweeping Complaint,Open,1,2694.0000000000000000,,
 2014,BRONX,Vacant Lot,Closed,250,,,101.3280000000000000
@@ -446,7 +446,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2014,BROOKLYN,Request Xmas Tree Collection,Closed,252,,,1.7341269841269841
 2014,BROOKLYN,Sanitation Condition,Closed,10459,,,1.76728176689932115881
 2014,BROOKLYN,Sanitation Condition,Open,10,2779.2000000000000000,,
-2014,BROOKLYN,Snow,Closed,4611,,,7.9188896117978746
+2014,BROOKLYN,snow,Closed,4611,,,7.9188896117978746
 2014,BROOKLYN,Sweeping Complaint,Closed,1231,,,2.3379366368805849
 2014,BROOKLYN,Sweeping Complaint,Open,1,2738.0000000000000000,,
 2014,BROOKLYN,Vacant Lot,Closed,757,,,59.8863936591809775
@@ -471,7 +471,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2014,MANHATTAN,Request Xmas Tree Collection,Closed,49,,,0.57142857142857142857
 2014,MANHATTAN,Sanitation Condition,Closed,2814,,,1.0223880597014925
 2014,MANHATTAN,Sanitation Condition,Open,16,2811.7500000000000000,,
-2014,MANHATTAN,Snow,Closed,1420,,,5.5274647887323944
+2014,MANHATTAN,snow,Closed,1420,,,5.5274647887323944
 2014,MANHATTAN,Sweeping Complaint,Closed,243,,,1.5720164609053498
 2014,MANHATTAN,Vacant Lot,Closed,87,,,55.5517241379310345
 2014,MANHATTAN,Vacant Lot,Open,4,2885.0000000000000000,,
@@ -497,7 +497,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2014,QUEENS,Request Xmas Tree Collection,Closed,181,,,0.97790055248618784530
 2014,QUEENS,Sanitation Condition,Closed,8278,,,1.2382217927035516
 2014,QUEENS,Sanitation Condition,Open,9,2792.7777777777777778,,
-2014,QUEENS,Snow,Closed,4407,,,5.0714771953710007
+2014,QUEENS,snow,Closed,4407,,,5.0714771953710007
 2014,QUEENS,Sweeping Complaint,Closed,416,,,1.3413461538461538
 2014,QUEENS,Sweeping Complaint,Open,13,2741.6153846153846154,,
 2014,QUEENS,Vacant Lot,Closed,556,,,63.8219424460431655
@@ -519,7 +519,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2014,STATEN ISLAND,Recycling Enforcement,Closed,38,,,3.8421052631578947
 2014,STATEN ISLAND,Request Xmas Tree Collection,Closed,114,,,1.4210526315789474
 2014,STATEN ISLAND,Sanitation Condition,Closed,2322,,,1.7928509905254091
-2014,STATEN ISLAND,Snow,Closed,2072,,,2.4295366795366795
+2014,STATEN ISLAND,snow,Closed,2072,,,2.4295366795366795
 2014,STATEN ISLAND,Sweeping Complaint,Closed,6,,,0.83333333333333333333
 2014,STATEN ISLAND,Vacant Lot,Closed,368,,,65.8315217391304348
 2014,STATEN ISLAND,Vacant Lot,Open,4,2779.2500000000000000,,
@@ -546,7 +546,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2015,BRONX,Recycling Enforcement,Closed,72,,,1.5277777777777778
 2015,BRONX,Sanitation Condition,Closed,3875,,,1.4725161290322581
 2015,BRONX,Sanitation Condition,Open,2,2552.5000000000000000,,
-2015,BRONX,Snow,Closed,1747,,,1.7830566685746995
+2015,BRONX,snow,Closed,1747,,,1.7830566685746995
 2015,BRONX,Sweeping Complaint,Closed,124,,,1.5161290322580645
 2015,BRONX,Vacant Lot,Closed,312,,,42.7660256410256410
 2015,BRONX,Vacant Lot,Open,2,2610.0000000000000000,,
@@ -572,8 +572,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2015,BROOKLYN,Recycling Enforcement,Closed,229,,,3.8384279475982533
 2015,BROOKLYN,Sanitation Condition,Closed,12007,,,1.9720163238111102
 2015,BROOKLYN,Sanitation Condition,Open,69,2482.5942028985507246,,
-2015,BROOKLYN,Snow,Closed,4101,,,4.8466227749329432
-2015,BROOKLYN,Snow,Open,1,2623.0000000000000000,,
+2015,BROOKLYN,snow,Closed,4101,,,4.8466227749329432
+2015,BROOKLYN,snow,Open,1,2623.0000000000000000,,
 2015,BROOKLYN,Sweeping Complaint,Closed,990,,,2.3646464646464646
 2015,BROOKLYN,Sweeping Complaint,Open,4,2576.7500000000000000,,
 2015,BROOKLYN,Vacant Lot,Closed,695,,,41.5625899280575540
@@ -599,7 +599,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2015,MANHATTAN,Recycling Enforcement,Closed,165,,,4.2484848484848485
 2015,MANHATTAN,Sanitation Condition,Closed,3421,,,1.1622332651271558
 2015,MANHATTAN,Sanitation Condition,Open,1,2466.0000000000000000,,
-2015,MANHATTAN,Snow,Closed,1021,,,3.5083251714005877
+2015,MANHATTAN,snow,Closed,1021,,,3.5083251714005877
 2015,MANHATTAN,Sweeping Complaint,Closed,242,,,2.2851239669421488
 2015,MANHATTAN,Vacant Lot,Closed,97,,,30.7938144329896907
 2015,MANHATTAN,Vacant Lot,Open,2,2517.5000000000000000,,
@@ -626,7 +626,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2015,QUEENS,Recycling Enforcement,Open,1,2594.0000000000000000,,
 2015,QUEENS,Sanitation Condition,Closed,10012,,,1.40801038753495805034
 2015,QUEENS,Sanitation Condition,Open,17,2476.9411764705882353,,
-2015,QUEENS,Snow,Closed,4477,,,5.4123296850569578
+2015,QUEENS,snow,Closed,4477,,,5.4123296850569578
 2015,QUEENS,Sweeping Complaint,Closed,344,,,1.6511627906976744
 2015,QUEENS,Sweeping Complaint,Open,68,2521.0294117647058824,,
 2015,QUEENS,Vacant Lot,Closed,570,,,32.4421052631578947
@@ -646,13 +646,13 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2015,STATEN ISLAND,Overflowing Recycling Baskets,Closed,3,,,0.33333333333333333333
 2015,STATEN ISLAND,Recycling Enforcement,Closed,38,,,2.7631578947368421
 2015,STATEN ISLAND,Sanitation Condition,Closed,3054,,,1.9250163719711853
-2015,STATEN ISLAND,Snow,Closed,1654,,,0.71886336154776299879
+2015,STATEN ISLAND,snow,Closed,1654,,,0.71886336154776299879
 2015,STATEN ISLAND,Sweeping Complaint,Closed,2,,,0.50000000000000000000
 2015,STATEN ISLAND,Vacant Lot,Closed,340,,,31.0088235294117647
 2015,STATEN ISLAND,Vacant Lot,Open,2,2530.0000000000000000,,
 2015,Unspecified,Other Enforcement,Closed,1,,,0.00000000000000000000
 2015,Unspecified,Sanitation Condition,Closed,2,,,1.00000000000000000000
-2015,Unspecified,Snow,Closed,1,,,0.00000000000000000000
+2015,Unspecified,snow,Closed,1,,,0.00000000000000000000
 2015,,Derelict Vehicles,Closed,395,,,1.0379746835443038
 2016,BRONX,Adopt-A-Basket,Closed,10,,,2.2000000000000000
 2016,BRONX,Collection Truck Noise,Closed,12,,,1.1666666666666667
@@ -668,7 +668,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2016,BRONX,Overflowing Recycling Baskets,Closed,5,,,1.8000000000000000
 2016,BRONX,Recycling Enforcement,Closed,59,,,3.8644067796610169
 2016,BRONX,Sanitation Condition,Closed,3996,,,1.5180180180180180
-2016,BRONX,Snow,Closed,544,,,4.9944852941176471
+2016,BRONX,snow,Closed,544,,,4.9944852941176471
 2016,BRONX,Sweeping Complaint,Closed,130,,,1.5230769230769231
 2016,BRONX,Vacant Lot,Closed,339,,,28.9056047197640118
 2016,BROOKLYN,Adopt-A-Basket,Closed,33,,,3.4848484848484848
@@ -688,7 +688,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2016,BROOKLYN,Request Xmas Tree Collection,Closed,1,,,2.0000000000000000
 2016,BROOKLYN,Sanitation Condition,Closed,13376,,,1.6710526315789474
 2016,BROOKLYN,Sanitation Condition,Open,1,2164.0000000000000000,,
-2016,BROOKLYN,Snow,Closed,1820,,,4.4401098901098901
+2016,BROOKLYN,snow,Closed,1820,,,4.4401098901098901
 2016,BROOKLYN,Sweeping Complaint,Closed,383,,,2.2297650130548303
 2016,BROOKLYN,Vacant Lot,Closed,748,,,30.6604278074866310
 2016,BROOKLYN,Vacant Lot,Open,2,2171.0000000000000000,,
@@ -707,7 +707,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2016,MANHATTAN,Recycling Enforcement,Closed,200,,,6.1450000000000000
 2016,MANHATTAN,Request Xmas Tree Collection,Closed,1,,,1.00000000000000000000
 2016,MANHATTAN,Sanitation Condition,Closed,3476,,,1.2735903337169160
-2016,MANHATTAN,Snow,Closed,554,,,4.5433212996389892
+2016,MANHATTAN,snow,Closed,554,,,4.5433212996389892
 2016,MANHATTAN,Sweeping Complaint,Closed,200,,,1.9050000000000000
 2016,MANHATTAN,Vacant Lot,Closed,85,,,23.4588235294117647
 2016,MANHATTAN,Vacant Lot,Open,1,2181.0000000000000000,,
@@ -731,7 +731,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2016,QUEENS,Recycling Enforcement,Closed,174,,,5.1896551724137931
 2016,QUEENS,Sanitation Condition,Closed,10636,,,1.51476118841669800677
 2016,QUEENS,Sanitation Condition,Open,40,2030.6750000000000000,,
-2016,QUEENS,Snow,Closed,1905,,,5.4320209973753281
+2016,QUEENS,snow,Closed,1905,,,5.4320209973753281
 2016,QUEENS,Sweeping Complaint,Closed,255,,,-3.3450980392156863
 2016,QUEENS,Sweeping Complaint,Open,20,2030.3000000000000000,,
 2016,QUEENS,Vacant Lot,Closed,634,,,18.0977917981072555
@@ -753,7 +753,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2016,STATEN ISLAND,Recycling Enforcement,Closed,32,,,3.5000000000000000
 2016,STATEN ISLAND,Request Xmas Tree Collection,Closed,1,,,1.00000000000000000000
 2016,STATEN ISLAND,Sanitation Condition,Closed,3453,,,1.6562409498986389
-2016,STATEN ISLAND,Snow,Closed,662,,,3.9667673716012085
+2016,STATEN ISLAND,snow,Closed,662,,,3.9667673716012085
 2016,STATEN ISLAND,Sweeping Complaint,Closed,7,,,2.7142857142857143
 2016,STATEN ISLAND,Vacant Lot,Closed,351,,,21.0997150997150997
 2016,,Derelict Vehicles,Closed,521,,,1.2687140115163148
@@ -773,7 +773,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2017,BRONX,Request Large Bulky Item Collection,Closed,2262,,,2.2665782493368700
 2017,BRONX,Request Xmas Tree Collection,Closed,89,,,1.2022471910112360
 2017,BRONX,Sanitation Condition,Closed,4681,,,1.7256996368297372
-2017,BRONX,Snow,Closed,1331,,,2.8354620586025545
+2017,BRONX,snow,Closed,1331,,,2.8354620586025545
 2017,BRONX,Sweeping Complaint,Closed,148,,,1.8513513513513514
 2017,BRONX,Vacant Lot,Closed,338,,,27.0887573964497041
 2017,BROOKLYN,Adopt-A-Basket,Closed,31,,,4.0967741935483871
@@ -793,7 +793,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2017,BROOKLYN,Request Large Bulky Item Collection,Closed,16798,,,3.2087748541493035
 2017,BROOKLYN,Request Xmas Tree Collection,Closed,317,,,2.0157728706624606
 2017,BROOKLYN,Sanitation Condition,Closed,15045,,,1.7633100697906281
-2017,BROOKLYN,Snow,Closed,4160,,,3.2064903846153846
+2017,BROOKLYN,snow,Closed,4160,,,3.2064903846153846
 2017,BROOKLYN,Sweeping Complaint,Closed,581,,,2.6265060240963855
 2017,BROOKLYN,Vacant Lot,Closed,796,,,33.4346733668341709
 2017,BROOKLYN,Vacant Lot,Open,2,1789.5000000000000000,,
@@ -816,7 +816,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2017,MANHATTAN,Request Large Bulky Item Collection,Closed,3385,,,2.7760709010339734
 2017,MANHATTAN,Request Xmas Tree Collection,Closed,70,,,0.97142857142857142857
 2017,MANHATTAN,Sanitation Condition,Closed,3842,,,1.2483081728266528
-2017,MANHATTAN,Snow,Closed,1263,,,3.0403800475059382
+2017,MANHATTAN,snow,Closed,1263,,,3.0403800475059382
 2017,MANHATTAN,Sweeping Complaint,Closed,224,,,2.1339285714285714
 2017,MANHATTAN,Vacant Lot,Closed,100,,,24.9900000000000000
 2017,QUEENS,Adopt-A-Basket,Closed,25,,,4.2000000000000000
@@ -842,7 +842,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2017,QUEENS,Request Xmas Tree Collection,Closed,479,,,1.8810020876826722
 2017,QUEENS,Sanitation Condition,Closed,11459,,,1.60214678418710184135
 2017,QUEENS,Sanitation Condition,Open,10,1645.4000000000000000,,
-2017,QUEENS,Snow,Closed,3713,,,6.1257743064907083
+2017,QUEENS,snow,Closed,3713,,,6.1257743064907083
 2017,QUEENS,Sweeping Complaint,Closed,323,,,1.2229102167182663
 2017,QUEENS,Sweeping Complaint,Open,22,1645.3181818181818182,,
 2017,QUEENS,Vacant Lot,Closed,672,,,17.2827380952380952
@@ -865,7 +865,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2017,STATEN ISLAND,Request Large Bulky Item Collection,Closed,2784,,,2.6853448275862069
 2017,STATEN ISLAND,Request Xmas Tree Collection,Closed,346,,,1.7196531791907514
 2017,STATEN ISLAND,Sanitation Condition,Closed,3899,,,1.7368556040010259
-2017,STATEN ISLAND,Snow,Closed,1325,,,1.9607547169811321
+2017,STATEN ISLAND,snow,Closed,1325,,,1.9607547169811321
 2017,STATEN ISLAND,Sweeping Complaint,Closed,5,,,2.2000000000000000
 2017,STATEN ISLAND,Vacant Lot,Closed,393,,,29.5139949109414758
 2017,STATEN ISLAND,Vacant Lot,Open,2,1765.5000000000000000,,
@@ -889,7 +889,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2018,BRONX,Request Large Bulky Item Collection,Closed,10035,,,2.7026407573492775
 2018,BRONX,Request Xmas Tree Collection,Closed,1,,,2.0000000000000000
 2018,BRONX,Sanitation Condition,Closed,5644,,,1.7108433734939759
-2018,BRONX,Snow,Closed,444,,,2.4684684684684685
+2018,BRONX,snow,Closed,444,,,2.4684684684684685
 2018,BRONX,Sweeping Complaint,Closed,203,,,1.8029556650246305
 2018,BRONX,Vacant Lot,Closed,349,,,52.7994269340974212
 2018,BRONX,Vacant Lot,Open,5,1363.0000000000000000,,
@@ -912,7 +912,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2018,BROOKLYN,Request Xmas Tree Collection,Closed,1,,,2.0000000000000000
 2018,BROOKLYN,Sanitation Condition,Closed,17298,,,1.9060585038732801
 2018,BROOKLYN,Sanitation Condition,Open,1,1288.0000000000000000,,
-2018,BROOKLYN,Snow,Closed,1497,,,4.2925851703406814
+2018,BROOKLYN,snow,Closed,1497,,,4.2925851703406814
 2018,BROOKLYN,Sweeping Complaint,Closed,734,,,3.1049046321525886
 2018,BROOKLYN,Vacant Lot,Closed,716,,,58.1648044692737430
 2018,BROOKLYN,Vacant Lot,Open,3,1347.0000000000000000,,
@@ -933,7 +933,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2018,MANHATTAN,Request Large Bulky Item Collection,Closed,18160,,,3.5888215859030837
 2018,MANHATTAN,Request Xmas Tree Collection,Closed,1,,,2.0000000000000000
 2018,MANHATTAN,Sanitation Condition,Closed,4068,,,1.5243362831858407
-2018,MANHATTAN,Snow,Closed,376,,,2.9840425531914894
+2018,MANHATTAN,snow,Closed,376,,,2.9840425531914894
 2018,MANHATTAN,Sweeping Complaint,Closed,213,,,2.9201877934272300
 2018,MANHATTAN,Vacant Lot,Closed,108,,,59.0277777777777778
 2018,MANHATTAN,Vacant Lot,Open,1,1309.0000000000000000,,
@@ -961,7 +961,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2018,QUEENS,Request Xmas Tree Collection,Closed,1,,,2.0000000000000000
 2018,QUEENS,Sanitation Condition,Closed,12590,,,1.9858617950754567
 2018,QUEENS,Sanitation Condition,Open,31,1240.6129032258064516,,
-2018,QUEENS,Snow,Closed,1547,,,2.6903684550743374
+2018,QUEENS,snow,Closed,1547,,,2.6903684550743374
 2018,QUEENS,Sweeping Complaint,Closed,363,,,2.3112947658402204
 2018,QUEENS,Sweeping Complaint,Open,27,1240.4444444444444444,,
 2018,QUEENS,Vacant Lot,Closed,638,,,37.1536050156739812
@@ -986,7 +986,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2018,STATEN ISLAND,Request Large Bulky Item Collection,Closed,14138,,,3.1110482387890791
 2018,STATEN ISLAND,Request Xmas Tree Collection,Closed,1,,,7.0000000000000000
 2018,STATEN ISLAND,Sanitation Condition,Closed,4189,,,2.0964430651706851
-2018,STATEN ISLAND,Snow,Closed,729,,,1.8751714677640604
+2018,STATEN ISLAND,snow,Closed,729,,,1.8751714677640604
 2018,STATEN ISLAND,Sweeping Complaint,Closed,13,,,1.9230769230769231
 2018,STATEN ISLAND,Vacant Lot,Closed,361,,,45.1052631578947368
 2018,Unspecified,Dirty Conditions,Closed,2,,,4.0000000000000000
@@ -1010,8 +1010,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2019,BRONX,Request Large Bulky Item Collection,Closed,6019,,,2.6486127263665061
 2019,BRONX,Request Xmas Tree Collection,Closed,1,,,1.00000000000000000000
 2019,BRONX,Sanitation Condition,Closed,2700,,,1.8285185185185185
-2019,BRONX,Snow,Closed,183,,,1.6065573770491803
-2019,BRONX,Snow Removal,Closed,2,,,21.5000000000000000
+2019,BRONX,snow,Closed,185,,,1.8216216216216216
 2019,BRONX,Sweeping Complaint,Closed,78,,,1.9487179487179487
 2019,BRONX,Vacant Lot,Closed,126,,,36.0952380952380952
 2019,BROOKLYN,Collection Truck Noise,Closed,28,,,2.6428571428571429
@@ -1037,8 +1036,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2019,BROOKLYN,Request Large Bulky Item Collection,Closed,36352,,,3.4455325704225352
 2019,BROOKLYN,Request Xmas Tree Collection,Closed,2,,,3.0000000000000000
 2019,BROOKLYN,Sanitation Condition,Closed,8500,,,1.7808235294117647
-2019,BROOKLYN,Snow,Closed,658,,,1.7431610942249240
-2019,BROOKLYN,Snow Removal,Closed,28,,,34.0714285714285714
+2019,BROOKLYN,snow,Closed,686,,,3.0626822157434402
 2019,BROOKLYN,Sweeping Complaint,Closed,195,,,3.4410256410256410
 2019,BROOKLYN,Vacant Lot,Closed,266,,,64.6766917293233083
 2019,BROOKLYN,Vacant Lot,Open,3,1126.0000000000000000,,
@@ -1059,8 +1057,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2019,MANHATTAN,Recycling Enforcement,Closed,161,,,5.5652173913043478
 2019,MANHATTAN,Request Large Bulky Item Collection,Closed,11367,,,3.6539104425090173
 2019,MANHATTAN,Sanitation Condition,Closed,2238,,,1.3704200178731010
-2019,MANHATTAN,Snow,Closed,162,,,1.3641975308641975
-2019,MANHATTAN,Snow Removal,Closed,1,,,35.0000000000000000
+2019,MANHATTAN,snow,Closed,163,,,1.5705521472392638
 2019,MANHATTAN,Sweeping Complaint,Closed,74,,,2.9459459459459459
 2019,MANHATTAN,Vacant Lot,Closed,64,,,55.7031250000000000
 2019,QUEENS,Adopt-A-Basket,Closed,1,,,1.00000000000000000000
@@ -1088,8 +1085,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2019,QUEENS,Request Large Bulky Item Collection,Closed,37056,,,4.1989421416234888
 2019,QUEENS,Sanitation Condition,Closed,5898,,,1.9164123431671753
 2019,QUEENS,Sanitation Condition,Open,31,921.5806451612903226,,
-2019,QUEENS,Snow,Closed,493,,,1.5050709939148073
-2019,QUEENS,Snow Removal,Closed,9,,,26.2222222222222222
+2019,QUEENS,snow,Closed,502,,,1.9482071713147410
 2019,QUEENS,Sweeping Complaint,Closed,85,,,2.7176470588235294
 2019,QUEENS,Sweeping Complaint,Open,24,921.3750000000000000,,
 2019,QUEENS,Vacant Lot,Closed,245,,,25.8285714285714286
@@ -1114,9 +1110,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2019,STATEN ISLAND,Recycling Enforcement,Closed,29,,,5.2413793103448276
 2019,STATEN ISLAND,Request Large Bulky Item Collection,Closed,8744,,,3.0805123513266240
 2019,STATEN ISLAND,Sanitation Condition,Closed,2131,,,1.9990614734866260
-2019,STATEN ISLAND,Snow,Closed,330,,,1.2333333333333333
-2019,STATEN ISLAND,Snow,Open,2,1158.0000000000000000,,
-2019,STATEN ISLAND,Snow Removal,Closed,19,,,17.0000000000000000
+2019,STATEN ISLAND,snow,Closed,349,,,2.0916905444126074
+2019,STATEN ISLAND,snow,Open,2,1158.0000000000000000,,
 2019,STATEN ISLAND,Sweeping Complaint,Closed,8,,,1.6250000000000000
 2019,STATEN ISLAND,Vacant Lot,Closed,155,,,42.9741935483870968
 2019,Unspecified,Derelict Bicycle,Closed,2,,,1.5000000000000000
@@ -1126,7 +1121,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2019,Unspecified,Missed Collection,Open,4,1035.5000000000000000,,
 2019,Unspecified,Other Enforcement,Closed,2,,,2.0000000000000000
 2019,Unspecified,Sanitation Condition,Closed,6,,,2.5000000000000000
-2019,Unspecified,Snow,Closed,34,,,0.97058823529411764706
+2019,Unspecified,snow,Closed,34,,,0.97058823529411764706
 2019,,Derelict Vehicles,Closed,1778,,,1.7362204724409449
 2020,BRONX,Derelict Bicycle,Closed,110,,,1.7454545454545455
 2020,BRONX,Derelict Vehicles,Closed,6482,,,1.5256093798210429
@@ -1143,9 +1138,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2020,BRONX,Recycling Enforcement,Closed,21,,,7.4285714285714286
 2020,BRONX,Recycling Enforcement,Open,1,578.0000000000000000,,
 2020,BRONX,Sanitation Condition,Closed,399,,,3.6691729323308271
-2020,BRONX,Snow,Closed,409,,,2.5158924205378973
-2020,BRONX,Snow Removal,Closed,28,,,5.0000000000000000
-2020,BRONX,Snow Removal,Open,151,502.5231788079470199,,
+2020,BRONX,snow,Closed,437,,,2.6750572082379863
+2020,BRONX,snow,Open,151,502.5231788079470199,,
 2020,BRONX,Vacant Lot,Closed,11,,,41.2727272727272727
 2020,BRONX,Vacant Lot,Open,1,693.0000000000000000,,
 2020,BROOKLYN,Abandoned Bike,Closed,2,,,357.0000000000000000
@@ -1164,9 +1158,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2020,BROOKLYN,Overflowing Litter Baskets,Closed,3,,,2.0000000000000000
 2020,BROOKLYN,Recycling Enforcement,Closed,84,,,20.2976190476190476
 2020,BROOKLYN,Sanitation Condition,Closed,1053,,,3.0569800569800570
-2020,BROOKLYN,Snow,Closed,917,,,6.0054525627044711
-2020,BROOKLYN,Snow Removal,Closed,16,,,4.8125000000000000
-2020,BROOKLYN,Snow Removal,Open,122,502.6639344262295082,,
+2020,BROOKLYN,snow,Closed,933,,,5.9849946409431940
+2020,BROOKLYN,snow,Open,122,502.6639344262295082,,
 2020,BROOKLYN,Sweeping Complaint,Closed,3,,,3.6666666666666667
 2020,BROOKLYN,Vacant Lot,Closed,23,,,44.4782608695652174
 2020,BROOKLYN,Vacant Lot,Open,5,603.2000000000000000,,
@@ -1186,9 +1179,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2020,MANHATTAN,Recycling Enforcement,Closed,51,,,7.7450980392156863
 2020,MANHATTAN,Recycling Enforcement,Open,2,743.5000000000000000,,
 2020,MANHATTAN,Sanitation Condition,Closed,481,,,2.6112266112266112
-2020,MANHATTAN,Snow,Closed,300,,,4.0266666666666667
-2020,MANHATTAN,Snow Removal,Closed,5,,,5.0000000000000000
-2020,MANHATTAN,Snow Removal,Open,47,502.6595744680851064,,
+2020,MANHATTAN,snow,Closed,305,,,4.0426229508196721
+2020,MANHATTAN,snow,Open,47,502.6595744680851064,,
 2020,MANHATTAN,Vacant Lot,Closed,6,,,70.6666666666666667
 2020,QUEENS,Derelict Bicycle,Closed,167,,,2.1017964071856287
 2020,QUEENS,Derelict Vehicles,Closed,8799,,,1.4175474485737016
@@ -1205,9 +1197,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2020,QUEENS,Overflowing Litter Baskets,Closed,1,,,1.00000000000000000000
 2020,QUEENS,Recycling Enforcement,Closed,55,,,16.9272727272727273
 2020,QUEENS,Sanitation Condition,Closed,560,,,3.5714285714285714
-2020,QUEENS,Snow,Closed,1000,,,4.3740000000000000
-2020,QUEENS,Snow Removal,Closed,20,,,4.9000000000000000
-2020,QUEENS,Snow Removal,Open,211,502.5497630331753555,,
+2020,QUEENS,snow,Closed,1020,,,4.3843137254901961
+2020,QUEENS,snow,Open,211,502.5497630331753555,,
 2020,QUEENS,Vacant Lot,Closed,16,,,84.3125000000000000
 2020,QUEENS,Vacant Lot,Open,1,675.0000000000000000,,
 2020,STATEN ISLAND,Abandoned Bike,Closed,1,,,356.0000000000000000
@@ -1225,24 +1216,22 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2020,STATEN ISLAND,Other Enforcement,Closed,39,,,14.0769230769230769
 2020,STATEN ISLAND,Recycling Enforcement,Closed,25,,,17.6000000000000000
 2020,STATEN ISLAND,Sanitation Condition,Closed,130,,,4.5384615384615385
-2020,STATEN ISLAND,Snow,Closed,323,,,4.8699690402476780
-2020,STATEN ISLAND,Snow Removal,Closed,21,,,5.0000000000000000
-2020,STATEN ISLAND,Snow Removal,Open,142,502.5211267605633803,,
+2020,STATEN ISLAND,snow,Closed,344,,,4.8779069767441860
+2020,STATEN ISLAND,snow,Open,142,502.5211267605633803,,
 2020,STATEN ISLAND,Vacant Lot,Closed,16,,,30.0000000000000000
 2020,STATEN ISLAND,Vacant Lot,Open,1,610.0000000000000000,,
 2020,Unspecified,Derelict Vehicles,Closed,7,,,3.8571428571428571
 2020,Unspecified,Dirty Conditions,Closed,71,,,3.3098591549295775
 2020,Unspecified,Graffiti,Open,3,836.6666666666666667,794.0000000000000000,
 2020,Unspecified,Other Enforcement,Closed,1,,,3.0000000000000000
-2020,Unspecified,Snow,Closed,13,,,0.61538461538461538462
-2020,Unspecified,Snow Removal,Closed,1,,,0.00000000000000000000
+2020,Unspecified,snow,Closed,14,,,0.57142857142857142857
 2020,,Derelict Bicycle,Closed,69,,,3.3478260869565217
 2020,,Derelict Vehicles,Closed,2949,,,1.3692777212614446
 2020,,Dirty Conditions,Closed,1582,,,21.2983565107458913
 2020,,Other Enforcement,Closed,46,,,25.5652173913043478
 2020,,Recycling Enforcement,Closed,1,,,21.0000000000000000
 2020,,Sanitation Condition,Closed,102,,,3.4901960784313725
-2020,,Snow,Closed,229,,,3.6943231441048035
+2020,,snow,Closed,229,,,3.6943231441048035
 2020,,Vacant Lot,Closed,5,,,6.6000000000000000
 2020,,Vacant Lot,Open,1,665.0000000000000000,,
 2021,BRONX,Abandoned Bike,Closed,19,,,9.1578947368421053
@@ -1280,9 +1269,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2021,BRONX,Sanitation Worker or Vehicle Complaint,Closed,83,,,10.2650602409638554
 2021,BRONX,Sanitation Worker or Vehicle Complaint,Open,1,132.0000000000000000,,
 2021,BRONX,Seasonal Collection,Closed,8,,,269.0000000000000000
-2021,BRONX,Snow,Closed,481,,,3.3160083160083160
-2021,BRONX,Snow or Ice,Closed,4,,,2.5000000000000000
-2021,BRONX,Snow Removal,Open,159,452.7106918238993711,,
+2021,BRONX,snow,Closed,485,,,3.3092783505154639
+2021,BRONX,snow,Open,159,452.7106918238993711,,
 2021,BRONX,Storm,Closed,352,,,1.4914772727272727
 2021,BRONX,Sweeping Complaint,Closed,249,,,8.4056224899598394
 2021,BRONX,Transfer Station Complaint,Closed,1,,,3.0000000000000000
@@ -1325,9 +1313,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2021,BROOKLYN,Sanitation Condition,Open,2,232.5000000000000000,,
 2021,BROOKLYN,Sanitation Worker or Vehicle Complaint,Closed,183,,,12.3934426229508197
 2021,BROOKLYN,Seasonal Collection,Closed,76,,,91.7894736842105263
-2021,BROOKLYN,Snow,Closed,2257,,,10.8630926007975188
-2021,BROOKLYN,Snow or Ice,Closed,10,,,1.9000000000000000
-2021,BROOKLYN,Snow Removal,Open,379,452.4168865435356201,,
+2021,BROOKLYN,snow,Closed,2267,,,10.8235553595059550
+2021,BROOKLYN,snow,Open,379,452.4168865435356201,,
 2021,BROOKLYN,Storm,Closed,613,,,1.1060358890701468
 2021,BROOKLYN,Sweeping Complaint,Closed,820,,,16.1170731707317073
 2021,BROOKLYN,Transfer Station Complaint,Closed,9,,,5.4444444444444444
@@ -1368,10 +1355,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2021,MANHATTAN,Sanitation Condition,Closed,499,,,2.6472945891783567
 2021,MANHATTAN,Sanitation Worker or Vehicle Complaint,Closed,139,,,18.3309352517985612
 2021,MANHATTAN,Seasonal Collection,Closed,2,,,307.0000000000000000
-2021,MANHATTAN,Snow,Closed,510,,,5.6941176470588235
-2021,MANHATTAN,Snow or Ice,Closed,8,,,3.2500000000000000
-2021,MANHATTAN,Snow Removal,Closed,1,,,215.0000000000000000
-2021,MANHATTAN,Snow Removal,Open,79,451.6835443037974684,,
+2021,MANHATTAN,snow,Closed,519,,,6.0597302504816956
+2021,MANHATTAN,snow,Open,79,451.6835443037974684,,
 2021,MANHATTAN,Storm,Closed,26,,,1.1538461538461538
 2021,MANHATTAN,Sweeping Complaint,Closed,222,,,22.9639639639639640
 2021,MANHATTAN,Vacant Lot,Closed,1,,,89.0000000000000000
@@ -1410,9 +1395,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2021,QUEENS,Sanitation Worker or Vehicle Complaint,Closed,190,,,12.6631578947368421
 2021,QUEENS,Sanitation Worker or Vehicle Complaint,Open,2,152.5000000000000000,,
 2021,QUEENS,Seasonal Collection,Closed,38,,,244.2894736842105263
-2021,QUEENS,Snow,Closed,1802,,,4.8695893451720311
-2021,QUEENS,Snow or Ice,Closed,21,,,7.5714285714285714
-2021,QUEENS,Snow Removal,Open,607,453.3542009884678748,,
+2021,QUEENS,snow,Closed,1823,,,4.9007131102578168
+2021,QUEENS,snow,Open,607,453.3542009884678748,,
 2021,QUEENS,Storm,Closed,1538,,,1.2444733420026008
 2021,QUEENS,Sweeping Complaint,Closed,215,,,11.5069767441860465
 2021,QUEENS,Transfer Station Complaint,Closed,1,,,1.00000000000000000000
@@ -1450,9 +1434,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2021,STATEN ISLAND,Sanitation Worker or Vehicle Complaint,Closed,82,,,11.8048780487804878
 2021,STATEN ISLAND,Sanitation Worker or Vehicle Complaint,Open,1,200.0000000000000000,,
 2021,STATEN ISLAND,Seasonal Collection,Closed,22,,,71.0909090909090909
-2021,STATEN ISLAND,Snow,Closed,1046,,,1.6261950286806883
-2021,STATEN ISLAND,Snow or Ice,Closed,11,,,14.5454545454545455
-2021,STATEN ISLAND,Snow Removal,Open,758,453.1068601583113456,,
+2021,STATEN ISLAND,snow,Closed,1057,,,1.7606433301797540
+2021,STATEN ISLAND,snow,Open,758,453.1068601583113456,,
 2021,STATEN ISLAND,Storm,Closed,476,,,1.5252100840336134
 2021,STATEN ISLAND,Sweeping Complaint,Closed,6,,,4.3333333333333333
 2021,STATEN ISLAND,Vacant Lot,Closed,10,,,23.6000000000000000
@@ -1467,7 +1450,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2021,Unspecified,Other Enforcement,Closed,1,,,1.00000000000000000000
 2021,Unspecified,Sanitation Condition,Closed,3,,,4.3333333333333333
 2021,Unspecified,Sanitation Worker or Vehicle Complaint,Closed,1,,,11.0000000000000000
-2021,Unspecified,Snow,Closed,93,,,1.2795698924731183
+2021,Unspecified,snow,Closed,93,,,1.2795698924731183
 2021,Unspecified,Sweeping Complaint,Closed,5,,,11.2000000000000000
 2021,,Derelict Bicycle,Closed,3,,,4.3333333333333333
 2021,,Derelict Vehicles,Closed,715,,,1.8237762237762238
@@ -1475,7 +1458,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2021,,Missed Collection (All Materials),Closed,1,,,2.0000000000000000
 2021,,Other Enforcement,Closed,8,,,4.3750000000000000
 2021,,Sanitation Condition,Closed,15,,,3.8666666666666667
-2021,,Snow,Closed,1,,,0.00000000000000000000
+2021,,snow,Closed,1,,,0.00000000000000000000
 2021,,Sweeping Complaint,Closed,1,,,8.0000000000000000
 2021,,Vacant Lot,Closed,1,,,0.00000000000000000000
 2022,BRONX,Abandoned Bike,Closed,12,,,5.1666666666666667
@@ -1511,7 +1494,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2022,BRONX,Sanitation Worker or Vehicle Complaint,Closed,78,,,4.7692307692307692
 2022,BRONX,Sanitation Worker or Vehicle Complaint,Open,4,39.0000000000000000,,
 2022,BRONX,Seasonal Collection,Closed,1,,,3.0000000000000000
-2022,BRONX,Snow or Ice,Closed,516,,,2.9244186046511628
+2022,BRONX,snow,Closed,516,,,2.9244186046511628
 2022,BRONX,Sweeping Complaint,Closed,309,,,5.4077669902912621
 2022,BRONX,Sweeping Complaint,Open,11,7.5454545454545455,,
 2022,BROOKLYN,Abandoned Bike,Closed,184,,,7.9565217391304348
@@ -1551,8 +1534,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2022,BROOKLYN,Sanitation Worker or Vehicle Complaint,Closed,228,,,9.2149122807017544
 2022,BROOKLYN,Sanitation Worker or Vehicle Complaint,Open,42,22.5952380952380952,,
 2022,BROOKLYN,Seasonal Collection,Closed,97,,,7.2371134020618557
-2022,BROOKLYN,Snow or Ice,Closed,1838,,,5.8536452665941240
-2022,BROOKLYN,Snow or Ice,Open,1,93.0000000000000000,,
+2022,BROOKLYN,snow,Closed,1838,,,5.8536452665941240
+2022,BROOKLYN,snow,Open,1,93.0000000000000000,,
 2022,BROOKLYN,Sweeping Complaint,Closed,780,,,9.7525641025641026
 2022,BROOKLYN,Sweeping Complaint,Open,54,11.6296296296296296,,
 2022,MANHATTAN,Abandoned Bike,Closed,129,,,12.0930232558139535
@@ -1590,7 +1573,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2022,MANHATTAN,Sanitation Worker or Vehicle Complaint,Closed,74,,,9.5810810810810811
 2022,MANHATTAN,Sanitation Worker or Vehicle Complaint,Open,14,29.6428571428571429,,
 2022,MANHATTAN,Seasonal Collection,Closed,23,,,13.3478260869565217
-2022,MANHATTAN,Snow or Ice,Closed,530,,,4.8358490566037736
+2022,MANHATTAN,snow,Closed,530,,,4.8358490566037736
 2022,MANHATTAN,Sweeping Complaint,Closed,203,,,15.8374384236453202
 2022,MANHATTAN,Sweeping Complaint,Open,30,12.6333333333333333,,
 2022,QUEENS,Abandoned Bike,Closed,60,,,5.7000000000000000
@@ -1628,7 +1611,7 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2022,QUEENS,Sanitation Worker or Vehicle Complaint,Closed,232,,,5.7758620689655172
 2022,QUEENS,Sanitation Worker or Vehicle Complaint,Open,21,11.9047619047619048,,
 2022,QUEENS,Seasonal Collection,Closed,39,,,3.9487179487179487
-2022,QUEENS,Snow or Ice,Closed,1744,,,2.7660550458715596
+2022,QUEENS,snow,Closed,1744,,,2.7660550458715596
 2022,QUEENS,Sweeping Complaint,Closed,171,,,5.6315789473684211
 2022,QUEENS,Sweeping Complaint,Open,6,8.0000000000000000,,
 2022,QUEENS,Transfer Station Complaint,Closed,1,,,1.00000000000000000000
@@ -1663,8 +1646,8 @@ year,borough,complaint_type,status_cal,count,avg,avg,avg
 2022,STATEN ISLAND,Sanitation Worker or Vehicle Complaint,Closed,97,,,5.2989690721649485
 2022,STATEN ISLAND,Sanitation Worker or Vehicle Complaint,Open,5,11.2000000000000000,,
 2022,STATEN ISLAND,Seasonal Collection,Closed,24,,,10.7500000000000000
-2022,STATEN ISLAND,Snow or Ice,Closed,731,,,3.4021887824897401
-2022,STATEN ISLAND,Snow or Ice,Open,13,92.0000000000000000,,
+2022,STATEN ISLAND,snow,Closed,731,,,3.4021887824897401
+2022,STATEN ISLAND,snow,Open,13,92.0000000000000000,,
 2022,STATEN ISLAND,Sweeping Complaint,Closed,5,,,3.8000000000000000
 2022,Unspecified,Dead Animal,Closed,1,,,12.0000000000000000
 2022,Unspecified,Derelict Vehicles,Closed,47,,,1.1489361702127660

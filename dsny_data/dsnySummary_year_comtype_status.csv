@@ -12,7 +12,7 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2010,Overflowing Litter Baskets,Closed,1503,,,1.0658682634730539
 2010,Recycling Enforcement,Closed,1289,,,5.4003103180760279
 2010,Sanitation Condition,Closed,28090,,,1.3373798504805981
-2010,Snow,Closed,12024,,,3.0851630073186959
+2010,snow,Closed,12024,,,3.0851630073186959
 2010,Sweeping Complaint,Closed,1200,,,1.2058333333333333
 2010,Vacant Lot,Closed,1970,,,21.6898477157360406
 2010,Vacant Lot,Open,77,4332.0000000000000000,,
@@ -34,7 +34,7 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2011,Recycling Enforcement,Closed,973,,,17.0061664953751285
 2011,Sanitation Condition,Closed,24562,,,1.8360475531308525
 2011,Sanitation Condition,Open,1,3792.0000000000000000,,
-2011,Snow,Closed,12123,,,6.0401715746927328
+2011,snow,Closed,12123,,,6.0401715746927328
 2011,Sweeping Complaint,Closed,1755,,,1.7219373219373219
 2011,Vacant Lot,Closed,1926,,,21.3001038421599169
 2011,Vacant Lot,Open,31,3998.8709677419354839,,
@@ -54,7 +54,7 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2012,Recycling Enforcement,Closed,934,,,5.1477516059957173
 2012,Sanitation Condition,Closed,24450,,,1.4887525562372188
 2012,Sanitation Condition,Open,1,3592.0000000000000000,,
-2012,Snow,Closed,567,,,3.0564373897707231
+2012,snow,Closed,567,,,3.0564373897707231
 2012,Standpipe - Mechanical,Closed,6,,,3.5000000000000000
 2012,Sweeping Complaint,Closed,1337,,,1.6716529543754675
 2012,Vacant Lot,Closed,2264,,,32.4765901060070671
@@ -76,7 +76,7 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2013,Recycling Enforcement,Closed,835,,,6.1520958083832335
 2013,Sanitation Condition,Closed,24884,,,1.4936907249638322
 2013,Sanitation Condition,Open,4,3139.7500000000000000,,
-2013,Snow,Closed,2475,,,2.0501010101010101
+2013,snow,Closed,2475,,,2.0501010101010101
 2013,Sweeping Complaint,Closed,1443,,,1.7720027720027720
 2013,Vacant Lot,Closed,2446,,,33.8609975470155356
 2013,Vacant Lot,Open,15,3167.0666666666666667,,
@@ -102,7 +102,7 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2014,Request Xmas Tree Collection,Closed,674,,,1.4109792284866469
 2014,Sanitation Condition,Closed,27113,,,1.4834581197211670
 2014,Sanitation Condition,Open,36,2796.4444444444444444,,
-2014,Snow,Closed,14764,,,5.3610810078569493
+2014,snow,Closed,14764,,,5.3610810078569493
 2014,Sweeping Complaint,Closed,2026,,,1.9787759131293189
 2014,Sweeping Complaint,Open,15,2738.2000000000000000,,
 2014,Vacant Lot,Closed,2020,,,66.9376237623762376
@@ -130,8 +130,8 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2015,Recycling Enforcement,Open,1,2594.0000000000000000,,
 2015,Sanitation Condition,Closed,32371,,,1.6477093694973896
 2015,Sanitation Condition,Open,89,2482.8988764044943820,,
-2015,Snow,Closed,13001,,,3.9991539112375971
-2015,Snow,Open,1,2623.0000000000000000,,
+2015,snow,Closed,13001,,,3.9991539112375971
+2015,snow,Open,1,2623.0000000000000000,,
 2015,Sweeping Complaint,Closed,1702,,,2.1451233842538190
 2015,Sweeping Complaint,Open,72,2524.1250000000000000,,
 2015,Vacant Lot,Closed,2014,,,36.8674280039721946
@@ -159,7 +159,7 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2016,Request Xmas Tree Collection,Closed,3,,,1.3333333333333333
 2016,Sanitation Condition,Closed,34937,,,1.5649597847554169
 2016,Sanitation Condition,Open,41,2033.9268292682926829,,
-2016,Snow,Closed,5485,,,4.7928896991795807
+2016,snow,Closed,5485,,,4.7928896991795807
 2016,Sweeping Complaint,Closed,975,,,0.61435897435897435897
 2016,Sweeping Complaint,Open,20,2030.3000000000000000,,
 2016,Vacant Lot,Closed,2157,,,24.8525730180806676
@@ -191,7 +191,7 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2017,Request Xmas Tree Collection,Closed,1301,,,1.7755572636433513
 2017,Sanitation Condition,Closed,38927,,,1.6578467387674365
 2017,Sanitation Condition,Open,10,1645.4000000000000000,,
-2017,Snow,Closed,11792,,,3.9260515603799186
+2017,snow,Closed,11792,,,3.9260515603799186
 2017,Sweeping Complaint,Closed,1281,,,2.0952380952380952
 2017,Sweeping Complaint,Open,22,1645.3181818181818182,,
 2017,Vacant Lot,Closed,2299,,,26.7429317094388865
@@ -221,7 +221,7 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2018,Request Xmas Tree Collection,Closed,5,,,3.0000000000000000
 2018,Sanitation Condition,Closed,43794,,,1.8866511394254921
 2018,Sanitation Condition,Open,32,1242.0937500000000000,,
-2018,Snow,Closed,4593,,,3.0857827128238624
+2018,snow,Closed,4593,,,3.0857827128238624
 2018,Sweeping Complaint,Closed,1526,,,2.7070773263433814
 2018,Sweeping Complaint,Open,27,1240.4444444444444444,,
 2018,Vacant Lot,Closed,2172,,,49.0032228360957643
@@ -255,9 +255,8 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2019,Request Xmas Tree Collection,Closed,3,,,2.3333333333333333
 2019,Sanitation Condition,Closed,21473,,,1.8031481395240535
 2019,Sanitation Condition,Open,31,921.5806451612903226,,
-2019,Snow,Closed,1860,,,1.5290322580645161
-2019,Snow,Open,2,1158.0000000000000000,,
-2019,Snow Removal,Closed,59,,,26.9661016949152542
+2019,snow,Closed,1919,,,2.3110995310057322
+2019,snow,Open,2,1158.0000000000000000,,
 2019,Sweeping Complaint,Closed,440,,,2.9204545454545455
 2019,Sweeping Complaint,Open,24,921.3750000000000000,,
 2019,Vacant Lot,Closed,856,,,44.7500000000000000
@@ -283,9 +282,8 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2020,Recycling Enforcement,Closed,237,,,15.3924050632911392
 2020,Recycling Enforcement,Open,3,688.3333333333333333,,
 2020,Sanitation Condition,Closed,2725,,,3.2605504587155963
-2020,Snow,Closed,3191,,,4.5581322469445315
-2020,Snow Removal,Closed,91,,,4.8901098901098901
-2020,Snow Removal,Open,673,502.5661218424962853,,
+2020,snow,Closed,3282,,,4.5673369896404631
+2020,snow,Open,673,502.5661218424962853,,
 2020,Sweeping Complaint,Closed,3,,,3.6666666666666667
 2020,Vacant Lot,Closed,77,,,48.8701298701298701
 2020,Vacant Lot,Open,9,628.7777777777777778,,
@@ -334,10 +332,8 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2021,Sanitation Worker or Vehicle Complaint,Closed,678,,,13.3525073746312684
 2021,Sanitation Worker or Vehicle Complaint,Open,4,159.2500000000000000,,
 2021,Seasonal Collection,Closed,146,,,141.0205479452054795
-2021,Snow,Closed,6190,,,6.3993537964458805
-2021,Snow or Ice,Closed,54,,,6.9259259259259259
-2021,Snow Removal,Closed,1,,,215.0000000000000000
-2021,Snow Removal,Open,1982,452.9621594349142281,,
+2021,snow,Closed,6245,,,6.4373098478783026
+2021,snow,Open,1982,452.9621594349142281,,
 2021,Storm,Closed,3005,,,1.2888519134775374
 2021,Sweeping Complaint,Closed,1518,,,15.1324110671936759
 2021,Transfer Station Complaint,Closed,11,,,4.8181818181818182
@@ -382,8 +378,8 @@ year,complaint_type,status_cal,count,avg,avg,avg
 2022,Sanitation Worker or Vehicle Complaint,Closed,709,,,7.1029619181946403
 2022,Sanitation Worker or Vehicle Complaint,Open,87,21.0459770114942529,,
 2022,Seasonal Collection,Closed,184,,,7.7391304347826087
-2022,Snow or Ice,Closed,5359,,,4.1317409964545624
-2022,Snow or Ice,Open,14,92.0714285714285714,,
+2022,snow,Closed,5359,,,4.1317409964545624
+2022,snow,Open,14,92.0714285714285714,,
 2022,Sweeping Complaint,Closed,1468,,,9.1791553133514986
 2022,Sweeping Complaint,Open,101,11.2673267326732673,,
 2022,Transfer Station Complaint,Closed,1,,,1.00000000000000000000

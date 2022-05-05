@@ -63,7 +63,7 @@ created_date, closed_date, (extract(EPOCH from cast((closed_date - created_date)
 case when closed_date is  null then (extract(EPOCH from cast((current_date - created_date) as interval))/60/60/24)::integer end as duration,
 case when closed_date is  null then (extract(EPOCH from cast((current_date - due_date) as interval))/60/60/24)::integer end as number_of_past_due_days,
 case when complaint_type = 'Dirty Condition' then 'Dirty Conditions' when complaint_type = 'Electronics Waste Appointment' then 'Electronics Waste'
-when complaint_type like 'Litter Basket%' then 'Litter Basket Complaint' when complaint_type like '%snow%' then 'snow'when complaint_type like '%Sweeping%' then 'Sweeping Complaint'
+when complaint_type like 'Litter Basket%' then 'Litter Basket Complaint' when complaint_type like '%Snow%' then 'snow'when complaint_type like '%Sweeping%' then 'Sweeping Complaint'
 else complaint_type end as complaint_type, Descriptors,
 location_type, incident_zip as zip, incident_address as adress,  city, facility_type, status, case when closed_date is not null then 'Closed' else 'Open' end as status_cal, 
 due_date,
@@ -97,7 +97,8 @@ group by year, borough, community_board, complaint_type, descriptors, status_cal
  copy (
 select year, borough, community_board, complaint_type, status_cal, count(*), avg(duration), avg(number_of_past_due_days), avg(number_of_days_to_close) from dsny_new
 group by year, borough, community_board, complaint_type,  status_cal order by 1,2,3,4)
- to 'C:\Users\fguo\Documents\work\ad-hoc\20220504dsny\dsnySummary_year_bor_comm_comtype_status.csv' header csv delimiter ','*/
+ to 'C:\Users\fguo\Documents\work\ad-hoc\20220504dsny\dsnySummary_year_bor_comm_comtype_status.csv' header csv delimiter ','
+ */
  /*
  copy (
 select year, borough, complaint_type, status_cal, count(*), avg(duration), avg(number_of_past_due_days), avg(number_of_days_to_close) from dsny_new
@@ -134,8 +135,21 @@ select year, borough, count(*), avg(duration), avg(number_of_past_due_days), avg
 group by year, borough order by 1,2)
  to 'C:\Users\fguo\Documents\work\ad-hoc\20220504dsny\dsnySummary_year_bor.csv' header csv delimiter ','
  */
- 
+/* 
  copy (
 select  complaint_type,   count(*), avg(duration), avg(number_of_past_due_days), avg(number_of_days_to_close) from dsny_new
 group by  complaint_type order by 1)
  to 'C:\Users\fguo\Documents\work\ad-hoc\20220504dsny\dsnySummary_comtype.csv' header csv delimiter ','
+ */
+ /*
+copy (
+select * from dsny_new where year >=2020
+	) 
+	to 'C:\Users\fguo\Documents\work\ad-hoc\20220504dsny\dsny_new_2020.csv' header csv delimiter ','
+	*/
+/* 
+ copy (
+select  year, complaint_type,   count(*), avg(duration), avg(number_of_past_due_days), avg(number_of_days_to_close) from dsny_new
+group by year, complaint_type order by 1,2)
+ to 'C:\Users\fguo\Documents\work\ad-hoc\20220504dsny\dsnySummary_year_comtype.csv' header csv delimiter ','
+ */

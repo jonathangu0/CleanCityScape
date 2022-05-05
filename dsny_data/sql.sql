@@ -146,9 +146,9 @@ group by  complaint_type order by 1)
  */
  /*
 copy (
-select * from dsny_new where year >=2019
+select * from dsny_new where year >=2020
 	) 
-	to 'C:\Users\fguo\Documents\work\ad-hoc\20220504dsny\dsny_new_2019.csv' header csv delimiter ','
+	to 'C:\Users\fguo\Documents\work\ad-hoc\20220504dsny\dsny_new_2020.csv' header csv delimiter ','
 	*/
 /* 
  copy (
@@ -156,11 +156,36 @@ select  year, complaint_type,   count(*), avg(duration), avg(number_of_past_due_
 group by year, complaint_type order by 1,2)
  to 'C:\Users\fguo\Documents\work\ad-hoc\20220504dsny\dsnySummary_year_comtype.csv' header csv delimiter ','
  */
- 
+ /*
  copy (
-select * from dsny_new where year = 2020
+select *, case when complaint_type not in ('Dirty Conditions','Missed Collection',
+'Sanitation Condition','Derelict Vehicles') then 'Other'
+else complaint_type end as complaint_type_cal
+
+
+from dsny_new where year = 2020 and status_cal = 'Open'
 	) 
-	to 'C:\Users\fguo\Documents\work\ad-hoc\20220504dsny\dsny_new_2020_only.csv' header csv delimiter ','
+	to 'C:\Users\fguo\Documents\work\ad-hoc\20220504dsny\dsny_new_2020_only_open.csv' header csv delimiter ','
+*/
+ /*
+ copy (
+select *,case when complaint_type not in ('Dirty Conditions','Missed Collection',
+'Sanitation Condition','Derelict Vehicles') then 'Other'
+else complaint_type end as complaint_type_cal from dsny_new where year = 2021 and status_cal = 'Open'
+	) 
+	to 'C:\Users\fguo\Documents\work\ad-hoc\20220504dsny\dsny_new_2021_only_open.csv' header csv delimiter ','
+*/
+
+ /*
+ copy (
+select *,case when complaint_type not in ('Dirty Conditions','Missed Collection',
+'Sanitation Condition','Derelict Vehicles') then 'Other'
+else complaint_type end as complaint_type_cal from dsny_new where year = 2022
+	) 
+	to 'C:\Users\fguo\Documents\work\ad-hoc\20220504dsny\dsny_new_2022_only.csv' header csv delimiter ','
+*/
+
+
 
  
  

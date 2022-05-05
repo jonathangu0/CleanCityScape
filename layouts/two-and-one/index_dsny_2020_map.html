@@ -697,7 +697,7 @@ function ready(){
 	
 	
 	 //d3.csv("data/facadeLL11.csv",function(data){
-		d3.csv("../../dsny_data/dsny_new_2022_only_open.csv",function(data){
+		d3.csv("../../dsny_data/dsny_new_2020_only_open.csv",function(data){
 				points = data.filter(function(d) {
 					if( ((+d["latitude"] != 0) && (+d["longitude"] !=0 ))) {
 						return d;

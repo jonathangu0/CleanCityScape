@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <title>Local Law 11</title>
+  <title>2020 Complaint</title>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="https://nycdob.github.io/ActiveNB_A1enlargements/keen/keen-dashboards.css" />
+  <link rel="stylesheet" type="text/css" href="../../keen/keen-dashboards.css" />
   <link href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css' rel='stylesheet' type='text/css'/>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.12/r-2.1.0/se-1.2.0/datatables.min.css">
@@ -416,14 +416,14 @@ input:checked + .slider:before {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.9/d3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/d3-format@3"></script>
-<script src="https://nycdob.github.io/EssentialActiveConstruction/Leaflet.D3SvgOverlay-master/L.D3SvgOverlay.min.js"></script>
+<script src="../../Leaflet.D3SvgOverlay-master/L.D3SvgOverlay.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdn.datatables.net/v/dt/dt-1.10.12/r-2.1.0/se-1.2.0/datatables.min.js"  type="text/javascript" charset="utf8" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
-<script src="https://nycdob.github.io/ActiveNB_A1enlargements/build/nv.d3.js"></script>
+<script src="../../build/nv.d3.js"></script>
 <script src="https://d3js.org/d3-time-format.v2.min.js"></script>
-<script type="text/javascript" src="https://nycdob.github.io/ActiveNB_A1enlargements/keen/keen.min.js"></script>
+<script type="text/javascript" src="../../keen/keen.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/rowgroup/1.1.1/js/dataTables.rowGroup.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script>
@@ -446,7 +446,7 @@ $(document).ready(function(){
     L.Control.include({
       _refocusOnMap: L.Util.falseFn // Do nothing.
     });	
-var map = L.map('map').setView([40.72215448921957, -73.98616799064006], 14);
+var map = L.map('map').setView([40.72215448921957, -73.98616799064006], 11);
 L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png', {attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
 
 
@@ -482,7 +482,7 @@ onload = ready();
 function ready(){
 
 	pointsOverlaySQFT = L.d3SvgOverlay(function(sel,proj){
-		var pointsUpdSQFT = sel.selectAll('circle').data(points);
+		var pointUpdComplaint = sel.selectAll('circle').data(points);
 
 		function pendVal(pend) { 
 		if(pend=='Y'){
@@ -490,7 +490,7 @@ function ready(){
 				return 'FALSE'
 			}
 		}
-		pointsUpdSQFT.enter()
+		pointUpdComplaint.enter()
 			.append('circle')		
 			.attr('cx',function(d){return proj.latLngToLayerPoint(d.latLng).x;})
 			.attr('cy',function(d){return proj.latLngToLayerPoint(d.latLng).y;})
@@ -557,8 +557,8 @@ function ready(){
 				return tooltipFacades.transition().delay(500).style("visibility", "hidden");
 			});
 		
-			pointsUpdSQFT.attr("stroke-width", 1 / proj.scale);
-			pointsUpdSQFT.attr("r", 5 /proj.scale);
+			pointUpdComplaint.attr("stroke-width", 1 / proj.scale);
+			pointUpdComplaint.attr("r", 5 /proj.scale);
 
 
 
@@ -653,31 +653,27 @@ function ready(){
 	
 	
 	 //d3.csv("data/facadeLL11.csv",function(data){
-		d3.csv("https://raw.githubusercontent.com/NYCDOB/data_store/master/facadeLL11.csv",function(data){
+		d3.csv("../../dsny_data/dsny_new_2020.csv",function(data){
 				points = data.filter(function(d) {
-					if( ((+d["Lat"] != 0) && (+d["Lon"] !=0 )) && (([d.Cycle] == "7A") || [d.Cycle] == "7B" || [d.Cycle] == "7C") ) {
+					if( ((+d["latitude"] != 0) && (+d["longitude"] !=0 )) && ([d.year] == 2020 )) {
 						return d;
 					}
 				}).map(function(d){
-				d.latLng = [+d["Lat"],+d["Lon"]];
-				d.bin = [d.Bin];
-				d.houseNum = d["house Number"];
-				d.street = d["Street Name"];
-				d.Borough = [d.Borough];
-				d.block = [d.Block];
-				d.lot = [d.Lot];
-				d.swarmpRecoDate = d["SWARMP Recommended Date"];
-				d.inspReqDate = d[" Inspection Request Date"];
-				d.inspCompleteDate = d[" Inspection Complete Date"];
-				d.controlNum = d["Control Number"];
-				d.filingStatus = d["CN Filing Status"];
-				d.cycle = [d.Cycle];
-				d.filingDate = d["CN Filing Date"];
-				d.pending = d[" Pending"];
+				d.latLng = [+d["latitude"],+d["longitude"]];
+				d.address = d["address"];
+				d.Borough = d["borough"];
+				d.communityBoard = d["community_board"];
+				d.createdDate = d["created_date"];
+				d.closedDate = d["closed_date"];
+				d.dueDate = d["due_date"];
+				d.complaintType = d["complaint_type"];
+				d.descriptor = d["descriptors"];
+				d.daysToClose = [d.number_of_days_to_close];
+				d.status = d["status_cal"];
+				d.pastDue = d["number_of_past_due_days"];
 			return d;
 			});
 			
-
 			pointsOverlaySQFT.addTo(map);
 			
 			//d3.selectAll(".pointShed").style("display", "block");

@@ -22,31 +22,31 @@ body {
 	pointer-events: all;
 }
 
-.pointSafe{
+.pointDirty{
 	fill: #59a14f;
 	fill-opacity: .7;
 	stroke: #fff;
 
 }
-.pointSWARMP{
+.pointMissed{
 	fill: #f28e2c;
 	fill-opacity: .7;
 	stroke: #fff;
 
 }
-.pointSWARMPexp{
+.pointSanitation{
 	fill: #b55a9d;
 	fill-opacity: .7;
 	stroke: #fff;
 
 }
-.pointUnsafe{
+.pointDerelict{
 	fill: #DF3B20;
 	fill-opacity: .7;
 	stroke: #fff;
 
 }
-.pointNoRptFiled{
+.pointOther{
 	fill: #999A9C;
 	fill-opacity: .7;
 	stroke: #fff;
@@ -467,7 +467,7 @@ var width = $("#map").width(),
 	table_map = [],
 	filteredData,
 	latLngs = [],
-	pointsOverlaySQFT,
+	pointsOverlayComplaint,
 	legendShed,
 	legendCD,
 	cat,
@@ -481,7 +481,7 @@ onload = ready();
 	
 function ready(){
 
-	pointsOverlaySQFT = L.d3SvgOverlay(function(sel,proj){
+	pointsOverlayComplaint = L.d3SvgOverlay(function(sel,proj){
 		var pointUpdComplaint = sel.selectAll('circle').data(points);
 
 		function pendVal(pend) { 
@@ -495,21 +495,21 @@ function ready(){
 			.attr('cx',function(d){return proj.latLngToLayerPoint(d.latLng).x;})
 			.attr('cy',function(d){return proj.latLngToLayerPoint(d.latLng).y;})
 			.attr('class', function(d){
-				switch(d.filingStatus){
-					case 'SAFE':
-						return 'pointSafe';
+				switch(d.complaintType){
+					case 'Dirty Conditions':
+						return 'pointDirty';
 						break;
-					case 'SWARMP':
-						return 'pointSWARMP';
+					case 'Missed Collection':
+						return 'pointMissed';
 						break;
-					case 'SWARMP (EXPIRED)':
-						return 'pointSWARMPexp';
+					case 'Sanitation Condition':
+						return 'pointSanitation';
 						break;
-					case 'UNSAFE':
-						return 'pointUnsafe';
+					case 'Derelict Vehicles':
+						return 'pointDerelict';
 						break;
-					case 'No Report Filed':
-						return 'pointNoRptFiled';
+					case 'Other':
+						return 'pointOther';
 						break; 
 				}
 			})
@@ -519,18 +519,17 @@ function ready(){
 				if(d3.select(this).style("fill-opacity") != 0){
 					tooltipFacades.style("visibility", "visible");
 					tooltipFacades.html(
-						'CONTROL NUMBER: ' + [d.controlNum] + '</br>' +
-						'CYCLE: ' + d.cycle + '</br>' +	
-						'FILING STATUS: ' + (d.filingStatus).toUpperCase() + '</br>' +	
-						'FILING DATE: ' + d.filingDate + '</br>' +
-						'BIN: ' + d.bin + '</br>' +								
-						'ADDRESS: '+ d.houseNum + ' ' + d.street + ', ' + d.Borough + '</br>' +
-						'BLOCK: ' + d.block + '</br>' +	
-						'LOT: ' + d.lot + '</br>' +	
-						'SWARMP RECOMMENDED DATE: ' + d.swarmpRecoDate + '</br>' +
-						'INSPECTION REQUEST DATE: ' + d.inspReqDate + '</br>' +
-						'INSPECTION COMPLETE DATE: ' + d.inspCompleteDate + '</br>' +
-						'PENDING INSPECTION: ' + pendVal(d.pending)
+						'ADDRESS: ' + d.address + '</br>' +
+						'BOROUGH: ' + d.Borough + '</br>' +	
+						'COMMUNITY BOARD: ' + (d.communityBoard).toUpperCase() + '</br>' +	
+						'COMPLAINT STATUS: ' + d.status + '</br>' +
+						'CREATED DATE: ' + d.createdDate + '</br>' +
+						'CLOSED DATE: ' + d.closedDate + '</br>' +
+						'DUE DATE: ' + d.dueDate + '</br>' +
+						'COMPLAINT TYPE: ' + d.complaintType + '</br>' +
+						'COMPLAINT DETAILS: ' + d.descriptor + '</br>' +
+						'AVG DAYS TO CLOSE: ' + d.daysToClose + '</br>' +
+						'AVG DAYS PAST DUE: ' + d.pastDue
 					)
 					if (d3.event.pageX > (width - 200)) {
 					   tooltipFacades.style("left", (d3.event.pageX - 350) + "px");
@@ -570,14 +569,14 @@ function ready(){
 				
 				safeSlider.onchange = function(){
 						if(this.checked){
-							d3.selectAll(".pointSafe").filter(function(d) {
-								return d.filingStatus == "SAFE";
+							d3.selectAll(".pointDirty").filter(function(d) {
+								return d.filingStatus == "Dirty Conditions";
 							})
 							.style("display", "block");	
 
 						} else {
-							d3.selectAll(".pointSafe").filter(function(d) {
-								return d.filingStatus == "SAFE";
+							d3.selectAll(".pointDirty").filter(function(d) {
+								return d.filingStatus == "Dirty Conditions";
 							})
 							.style("display", "none");
 										
@@ -586,14 +585,14 @@ function ready(){
 				
 				swarmpSlider.onchange = function(){
 						if(this.checked){
-							d3.selectAll(".pointSWARMP").filter(function(d) {
-								return d.filingStatus == "SWARMP";
+							d3.selectAll(".pointMissed").filter(function(d) {
+								return d.filingStatus == "Missed Collection";
 							})
 							.style("display", "block");	
 
 						} else {
-							d3.selectAll(".pointSWARMP").filter(function(d) {
-								return d.filingStatus == "SWARMP";
+							d3.selectAll(".pointMissed").filter(function(d) {
+								return d.filingStatus == "Missed Collection";
 							})
 							.style("display", "none");
 										
@@ -602,14 +601,14 @@ function ready(){
 
 				swarmpExpSlider.onchange = function(){
 						if(this.checked){
-							d3.selectAll(".pointSWARMPexp").filter(function(d) {
-								return d.filingStatus == "SWARMP (EXPIRED)";
+							d3.selectAll(".pointSanitation").filter(function(d) {
+								return d.filingStatus == "Sanitation Condition";
 							})
 							.style("display", "block");	
 
 						} else {
-							d3.selectAll(".pointSWARMPexp").filter(function(d) {
-								return d.filingStatus == "SWARMP (EXPIRED)";
+							d3.selectAll(".pointSanitation").filter(function(d) {
+								return d.filingStatus == "Sanitation Condition";
 							})
 							.style("display", "none");
 										
@@ -618,14 +617,14 @@ function ready(){
 
 				unsafeSlider.onchange = function(){
 						if(this.checked){
-							d3.selectAll(".pointUnsafe").filter(function(d) {
-								return d.filingStatus == "UNSAFE";
+							d3.selectAll(".Derelict").filter(function(d) {
+								return d.filingStatus == "Derelict Vehicles";
 							})
 							.style("display", "block");	
 
 						} else {
-							d3.selectAll(".pointUnsafe").filter(function(d) {
-								return d.filingStatus == "UNSAFE";
+							d3.selectAll(".pointDerelict").filter(function(d) {
+								return d.filingStatus == "Derelict Vehicles";
 							})
 							.style("display", "none");
 										
@@ -634,14 +633,14 @@ function ready(){
 
 				noRptSlider.onchange = function(){
 						if(this.checked){
-							d3.selectAll(".pointNoRptFiled").filter(function(d) {
-								return d.filingStatus == "No Report Filed";
+							d3.selectAll(".pointOther").filter(function(d) {
+								return d.filingStatus == "Other";
 							})
 							.style("display", "block");	
 
 						} else {
-							d3.selectAll(".pointNoRptFiled").filter(function(d) {
-								return d.filingStatus == "No Report Filed";
+							d3.selectAll(".pointOther").filter(function(d) {
+								return d.filingStatus == "Other";
 							})
 							.style("display", "none");
 										
@@ -653,20 +652,20 @@ function ready(){
 	
 	
 	 //d3.csv("data/facadeLL11.csv",function(data){
-		d3.csv("../../dsny_data/dsny_new_2020.csv",function(data){
+		d3.csv("../../dsny_data/dsny_new_2020_only.csv",function(data){
 				points = data.filter(function(d) {
-					if( ((+d["latitude"] != 0) && (+d["longitude"] !=0 )) && ([d.year] == 2020 )) {
+					if( ((+d["latitude"] != 0) && (+d["longitude"] !=0 ))) {
 						return d;
 					}
 				}).map(function(d){
 				d.latLng = [+d["latitude"],+d["longitude"]];
-				d.address = d["address"];
+				d.address = d["adress"];
 				d.Borough = d["borough"];
 				d.communityBoard = d["community_board"];
 				d.createdDate = d["created_date"];
 				d.closedDate = d["closed_date"];
 				d.dueDate = d["due_date"];
-				d.complaintType = d["complaint_type"];
+				d.complaintType = d["complaint_type_cal"];
 				d.descriptor = d["descriptors"];
 				d.daysToClose = [d.number_of_days_to_close];
 				d.status = d["status_cal"];
@@ -674,14 +673,14 @@ function ready(){
 			return d;
 			});
 			
-			pointsOverlaySQFT.addTo(map);
+			pointsOverlayComplaint.addTo(map);
 			
 			//d3.selectAll(".pointShed").style("display", "block");
-			d3.selectAll(".pointSafe").style("display", "block");
-			d3.selectAll(".pointSWARRP").style("display", "block");
-			d3.selectAll(".pointSWARRPexp").style("display", "block");
-			d3.selectAll(".pointUnsafe").style("display", "block");
-			d3.selectAll(".pointNoRptFiled").style("display", "none");
+			d3.selectAll(".pointDirty").style("display", "block");
+			d3.selectAll(".pointMissed").style("display", "block");
+			d3.selectAll(".pointSanitation").style("display", "block");
+			d3.selectAll(".pointDerelict").style("display", "block");
+			d3.selectAll(".pointOther").style("display", "none");
 			
 						
 

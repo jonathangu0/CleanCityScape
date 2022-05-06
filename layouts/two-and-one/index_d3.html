@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="style2_d3.css" type="text/css" media="screen" />
 </head>
 
-<div id="main-wrapper">
+<div id="rmain-wrapper">
     
 <div id="metrics">
     <!-- <div id="instruct"></div> -->
@@ -48,7 +48,9 @@
             <!-- <li data-metric="TOT_PERMITS" class="selected TOT_PERMITS">Total Permits</li> -->
         <!-- </ul> -->
     <!-- </div> -->
-    <div class="clr"></div>
+    <div id="main-wrapper">
+        <div class="clr"></div>
+    </div>
 </div><!-- @end #metrics -->    
 
 		
@@ -122,7 +124,7 @@
 var width = window.innerWidth,
     height = window.innerHeight;
     console.log(width);
-    center = [width / 1.5, height / 2.4],
+    center = [width / 1.5, height / 2.1],
     defaultFill = "#e0e0e0";
 
 var baseColors = { 
@@ -153,7 +155,7 @@ var commuteById = d3.map();
 var projection = d3.geo.mercator()
     .scale(61000)
 	.center( [-73.85,40.71] )
-    .translate([width / 1.5, height / 2.4]);
+    .translate([width / 1.5, height / 2.1]);
 
 var path = d3.geo.path()
     .projection(projection);

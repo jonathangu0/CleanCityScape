@@ -337,7 +337,7 @@ input:checked + .slider:before {
 				<div id="map">
 				<svg></svg>
 					<div id="ui-container" class="ui" style="z-index: 401">
-						<h5><b>2020 OPEN COMPLAINT STATUS</b></h5>
+						<h5><b>OPEN COMPLAINT SINCE 2020</b></h5>
 						<h6>(TOGGLE LAYERS ON & OFF)</h6>
 
 						<span style="display:inline-block;">
@@ -379,7 +379,7 @@ input:checked + .slider:before {
 
 						<span style="display:inline-block;">
 							<label class="switch">
-								<input type="checkbox" checked="true" id="chkGraffiti">
+								<input type="checkbox"  id="chkGraffiti">
 								<span class="slider" id="sliderGraffiti"></span>
 							</label>
 							<span class="en" id="sliderTxt">Graffiti</span>
@@ -696,8 +696,8 @@ function ready(){
 	});
 	
 	
-	 //d3.csv("data/facadeLL11.csv",function(data){
-		d3.csv("../../dsny_data/dsny_new_2020_only_open.csv",function(data){
+	 
+		d3.csv("../../dsny_data/dsny_new_2020_open.csv",function(data){
 				points = data.filter(function(d) {
 					if( ((+d["latitude"] != 0) && (+d["longitude"] !=0 ))) {
 						return d;
@@ -722,12 +722,11 @@ function ready(){
 			
 			pointsOverlayComplaint.addTo(map);
 			
-			//d3.selectAll(".pointShed").style("display", "block");
 			d3.selectAll(".pointDirty").style("display", "block");
 			d3.selectAll(".pointMissed").style("display", "block");
 			d3.selectAll(".pointSanitation").style("display", "block");
 			d3.selectAll(".pointDerelict").style("display", "block");
-			d3.selectAll(".pointGraffiti").style("display", "block");
+			d3.selectAll(".pointGraffiti").style("display", "none");
 			d3.selectAll(".pointOther").style("display", "none");
 			
 						

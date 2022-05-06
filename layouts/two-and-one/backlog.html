@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<head>
+    <title>B Complaints Backlog</title>
+    <link rel="stylesheet" href="data_backlog/style2.css" type="text/css" media="screen" />
+	
+		<style>
+			.legend {
+				font-size: 12px;
+			}
+			.floor {
+				  fill: #d6d6d6;
+			  }
+		</style>
+		
+		
+		
+	
+</head>
+
+
+<div id="rmain-wrapper">
+    
+<div id="metrics">
+    <div id="motor">
+        <h2 style="margin-top:5px; margin-left:15px; font-size:18px;">OPEN COMPLAINT BACKLOG (NO GRAFFITI)</h2>
+		<h2 style="font-size:16px; margin-left:15px; font-style: italic;">AVERAGE AGE (DAYS)</h2><br/>
+		<h3 style="font-size:14px; margin-left:15px;">CITYWIDE AVERAGE: <font color="#e21d1d"><span id="citiAvg"></span></font> DAYS</h3>
+		<h3 style="font-size:14px; margin-left:15px;">CITYWIDE TOTAL: <font color="#e21d1d"><span id="citiCount"></span></font> OPEN COMPLAINTS SINCE 2020</h3>
+		<h3 style="font-size:14px; margin-left:15px;">CD<font color="#e21d1d"><span id="maxCD"></span></font> HAS THE HIGHEST AVERAGE AGE (<font color="#e21d1d"><span id="maxAvg"></span></font>) </h3>
+		<h3 style="font-size:14px; margin-left:15px;">CD<font color="#e21d1d"><span id="maxCountCD"></span></font> HAS THE HIGHEST OPEN COMPLAINTS REMAINING (<font color="#e21d1d"><span id="maxCountVal"></span></font>) </h3>
+		<h3 style="font-size:14px; margin-left:15px;">DATA UPDATED ON <font color="#e21d1d"><span id="today"></span></font></h3>
+	</div>
+	<div id="main-wrapper">
+		<div class="clr"></div>
+</div>
+</div><!-- @end #metrics -->    
+		
+
+<div id="tooltip" class="tooltip">
+    <h3 class="name"></h3>
+	    <div data-metric="AvgAge" class="line">
+			Average Age:
+			<div class="AvgAge_val val"></div>
+		</div>
+		<div data-metric="ComplaintCount" class="line">
+			# Open Complaints:
+			<div class="ComplaintCount_val val"></div>
+		</div>
+</div>   
+   
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://d3js.org/queue.v1.min.js"></script>
+<script src="https://d3js.org/topojson.v1.min.js"></script>
+<script src="https://d3js.org/d3-format.v1.min.js"></script>
+
+<script>
+var width = window.innerWidth,
+    height = window.innerHeight;
+    center = [width / 1.5, height / 2],
+    defaultFill = "#E1E1E1";
+
+var commuteById = d3.map();
+var projection = d3.geo.mercator()
+    .scale(61000)
+	.center( [-73.85,40.71] )
+    .translate([width / 1.5, height / 3]);
+	
+var path = d3.geo.path()
+    .projection(projection);
+
+var svg = d3.select("body #main-wrapper").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .append("g");
+		
+svg.on("wheel.zoom", null);
+svg.on("mousewheel.zoom", null);
+svg.append("rect")
+    .attr("class", "overlay")
+    .attr("width", width)
+    .attr("height", height);
+svg.append("svg:image")
+    .attr("xlink:href", "images/progress-anim.gif")
+    .attr("id", "progress-image")
+    .attr("width", 43)
+    .attr("height", 11)
+    .attr("x", width / 2)
+    .attr("y", height / 2);
+    
+var g = svg.append("g");
+    
+var tooltip = d3.select("#tooltip")
+ .attr("class", "tooltip")
+ .style("opacity", 0);
+var CURR_SELECT = ["AvgAge"];
+var COMP_CNT = ["ComplaintCount"];
+
+//Load layer and data
+queue()
+    .defer(d3.json, "data_backlog/data/CD_topoJSON.json")
+	.defer(d3.json, "data_backlog/data/CD_toJoin_topoJSON.json")
+	.defer(d3.csv, "data_backlog/data/ActiveB_AvgAgeCD.csv")
+    .await(ready);
+function ready(error, CD_topoJSON, CD_toJoin_topoJSON, data) {
+
+	data.forEach(function(d) {
+		d.AvgAge = +d.AvgAge;
+		d.ComplaintCount = +d.ComplaintCount;
+		d.CD = +d.CD;
+		commuteById.set(d.FIPS, d);
+	});
+	var citiAvg = d3.mean(data, function(d) {
+		return d.AvgAge;
+	});
+	var citiCount = d3.sum(data, function(d) {
+		return d.ComplaintCount;
+	});
+	var minAvg = d3.min(data, function(d) {
+		return d.AvgAge;
+	});
+	var maxAvg = d3.max(data, function(d) { 
+		return d.AvgAge; 
+	});
+
+	var maxCountVal = d3.max(data, function(d) { 
+		return d.ComplaintCount; 
+	});
+
+	var maxCD = data.filter (function(d) {
+		if (d.AvgAge == maxAvg) {
+			return d.AvgAge;
+		}
+	})[0].CD;
+
+	var maxCountCD = data.filter (function(d) {
+		if (d.ComplaintCount == maxCountVal) {
+			return d.ComplaintCount;
+		}
+	})[0].CD;
+	
+	console.log(maxCountCD)
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth()+1;
+	var yyyy = today.getFullYear();
+	today = mm + '/' + dd + '/' + yyyy;
+	
+	
+	d3.select("#citiAvg").html(d3.format(".1f")(citiAvg));
+	d3.select("#citiCount").html(citiCount);
+	d3.select("#maxAvg").html(maxAvg);
+	d3.select("#maxCD").html(maxCD);
+	d3.select("#maxCountCD").html(maxCountCD);
+	d3.select("#maxCountVal").html(maxCountVal);
+	d3.select("#today").html(today);
+	
+	g.selectAll(".floor")
+			.data(topojson.feature(CD_topoJSON, CD_topoJSON.objects.collection).features)
+		.enter()
+			.append("path")
+			.attr("class","floor")
+			.attr("d", path);
+    g.append("g")
+        .attr("class", "collection")
+        .selectAll("path")
+          .data(topojson.feature(CD_toJoin_topoJSON, CD_toJoin_topoJSON.objects.collection).features)
+        .enter().append("path")
+          .attr("d", path)
+          
+          .on("mouseover", function(d) {
+               d3.select(this.parentNode.appendChild(this)).classed("selected", true);
+               tooltip.transition().duration(100)
+                 .style("opacity", 1)
+               if (d3.event.pageX > (width - 200)) {
+                   tooltip.style("left", (d3.event.pageX - 210) + "px");
+               } else {
+                   tooltip.style("left", (d3.event.pageX + 20) + "px")
+                        .style("top", (d3.event.pageY -30) + "px");
+               }
+               if (d3.event.pageY > (height - 150)) {
+                   tooltip.style("top", (d3.event.pageY -140) + "px");
+               } else {
+                   tooltip.style("top", (d3.event.pageY -30) + "px");
+               }
+				tooltip.select(".name").text(commuteById.get(d.id)['name']);
+				tooltip.select(".AvgAge_val.val").text(commuteById.get(d.id)["AvgAge"])
+				tooltip.select(".ComplaintCount_val.val").text(commuteById.get(d.id)["ComplaintCount"])
+ 
+             })
+          .on("mouseout", function() {
+              d3.select(this).classed("selected", false);
+              tooltip.transition().duration(300)
+                .style("opacity", 0);
+              });
+			  
+	var color = d3.scale.linear()
+		.domain([minAvg, maxAvg])
+		.range(["#D3E5E8", "#2E648C"])
+		.interpolate(d3.interpolateLab);
+		
+	svg.selectAll(".collection path")
+		.attr("fill", function(d) {return color(commuteById.get(d.id)[CURR_SELECT[0]]); });
+		
+	var ext_color_domain = [minAvg, 23.7, 42.6, 61.4, 80.3, 99.1, maxAvg]
+	var legend_labels = ["LOW", "", "", "", "", "", "HIGH"]
+    
+	var legend = svg.selectAll("g.legend")
+	.data(ext_color_domain)
+	.enter().append("g")
+	.style("font-size", "16px")
+	.style("font-family", "Arial, Helvetica, sans-serif")
+	.attr("class", "legend");
+	
+	var ls_w = 25, ls_h = 25;
+	legend.append("rect")
+		.attr("x", 10)
+		.attr("y", function(d, i){return height - (i*ls_h) - (-1*ls_h);})
+		<!-- .attr('transform', 'translate(10, -720)') /* XY position of legend*/ -->
+		.attr('transform', 'translate(10, -529)') /* XY position of legend*/
+		.attr("width", ls_w)
+		.attr("height", ls_h)
+		.style("fill", function(d, i){return color(d);})
+		.style("opacity", 0.8);
+	legend.append("text")
+		.attr("x", 40)
+		.attr("y", function(d, i){return height - (i*ls_h) - ls_h - (-69);})
+		<!-- .attr('transform', 'translate(10, -720)') /* XY position of legend*/ -->
+		.attr('transform', 'translate(10, -529)') /* XY position of legend*/
+		.text(function(d, i){return legend_labels[i];});
+	d3.select(self.frameElement).style("height", height + "px");
+
+    svg.select("#progress-image").remove();
+}
+</script>

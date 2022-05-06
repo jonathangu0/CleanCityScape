@@ -25,15 +25,18 @@
 		<ul>
 			<li data-metric="HC01_EST_VC04" class="selected HC01_EST_VC04">Derelict Vehicles</li>
 			<li data-metric="HC01_EST_VC05">Missed Collection</li>
-			<li data-metric="HC01_EST_VC10">Illegal Dumping</li>
-			<li data-metric="HC01_EST_VC11">Graffiti</li>
-			<li data-metric="HC01_EST_VC12">Snow</li>
-			<li data-metric="HC01_EST_VC13">Obstruction</li>
-			<li data-metric="HC01_EST_VC14">Dead Animal</li>
-            <li data-metric="HC01_EST_VC15">Residential Disposal Complaint</li>
-            <li data-metric="HC01_EST_VC16">Other</li>
-            <li data-metric="HC01_EST_VC17">Total</li>
+			<li data-metric="HC01_EST_VC10">Dirty Condition</li>
+			<li data-metric="HC01_EST_VC11">Illegal Dumping</li>
+			<li data-metric="HC01_EST_VC12">Graffiti</li>
+			<li data-metric="HC01_EST_VC13">Snow</li>
+			<li data-metric="HC01_EST_VC14">Obstruction</li>
+            <li data-metric="HC01_EST_VC15">Dead Animal</li>
+            <li data-metric="HC01_EST_VC16">Residential Disposal Complaint</li>
+            <li data-metric="HC01_EST_VC17">Other</li>
+            <li data-metric="HC01_EST_VC18">Total</li>
         </ul>
+        <br>
+        <br>
 	<em>The data represents 2022 complaints issued as of now per Community District. Click on the complaint type (top 7) to turn the layer on/off. Hover mouse over the map to view the number of permits per type and the citywide percentage per Community District.</em>   
     </div>
  
@@ -63,44 +66,49 @@
         <div class="HC01_EST_VC05_val val"></div>
     </div>
     <div data-metric="HC01_EST_VC10" class="line">
-        <div class="HC01_EST_VC10 symbol"></div> Illegal Dumping
+        <div class="HC01_EST_VC10 symbol"></div> Dirty Condition
         <div class="HC01_EST_VC10_val moe"></div>
         <div class="HC01_EST_VC10_val val"></div>
     </div>
 	<div data-metric="HC01_EST_VC11" class="line">
-        <div class="HC01_EST_VC11 symbol"></div> Graffiti
+        <div class="HC01_EST_VC11 symbol"></div> Illegal Dumping
         <div class="HC01_EST_VC11_val moe"></div> 
         <div class="HC01_EST_VC11_val val"></div>
     </div>
     <div data-metric="HC01_EST_VC12" class="line">
-        <div class="HC01_EST_VC12 symbol"></div> Snow
+        <div class="HC01_EST_VC12 symbol"></div> Graffiti
         <div class="HC01_EST_VC12_val moe"></div> 
         <div class="HC01_EST_VC12_val val"></div>
     </div>
 	<div data-metric="HC01_EST_VC13" class="line">
-        <div class="HC01_EST_VC13 symbol"></div> Obstruction
+        <div class="HC01_EST_VC13 symbol"></div> Snow
         <div class="HC01_EST_VC13_val moe"></div>
         <div class="HC01_EST_VC13_val val"></div>
     </div>
     <div data-metric="HC01_EST_VC14" class="line">
-        <div class="HC01_EST_VC14 symbol"></div> Dead Animal
+        <div class="HC01_EST_VC14 symbol"></div> Obstruction
         <div class="HC01_EST_VC14_val moe"></div>
         <div class="HC01_EST_VC14_val val"></div>
     </div>
     <div data-metric="HC01_EST_VC15" class="line">
-        <div class="HC01_EST_VC15 symbol"></div> Residential Disposal Complaint
+        <div class="HC01_EST_VC15 symbol"></div> Dead Animal
         <div class="HC01_EST_VC15_val moe"></div>
         <div class="HC01_EST_VC15_val val"></div>
     </div>
     <div data-metric="HC01_EST_VC16" class="line">
-        <div class="HC01_EST_VC16 symbol"></div> Other
+        <div class="HC01_EST_VC16 symbol"></div> Residential Disposal Complaint
         <div class="HC01_EST_VC16_val moe"></div>
         <div class="HC01_EST_VC16_val val"></div>
     </div>
     <div data-metric="HC01_EST_VC17" class="line">
-        <div class="HC01_EST_VC17 symbol"></div> Total
+        <div class="HC01_EST_VC17 symbol"></div> Other
         <div class="HC01_EST_VC17_val moe"></div>
         <div class="HC01_EST_VC17_val val"></div>
+    </div>
+    <div data-metric="HC01_EST_VC18" class="line">
+        <div class="HC01_EST_VC18 symbol"></div> Total
+        <div class="HC01_EST_VC18_val moe"></div>
+        <div class="HC01_EST_VC18_val val"></div>
     </div>
 </div>   
    
@@ -110,22 +118,25 @@
 
 <script>
 
-var width = 960,
-    height = 600,
-    center = [width / 2, height / 2],
+
+var width = window.innerWidth,
+    height = window.innerHeight;
+    console.log(width);
+    center = [width / 1.4, height / 2],
     defaultFill = "#e0e0e0";
 
 var baseColors = { 
-    "HC01_EST_VC04": d3.scale.linear().domain([0,110]).range(["#ffffff", "#8dd3c7"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC05": d3.scale.linear().domain([0,200]).range(["#ffffff", "#fdb462"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC10": d3.scale.linear().domain([0,1700]).range(["#ffffff", "#C0504D"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC11": d3.scale.linear().domain([0,400]).range(["#ffffff", "#bc80bd"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC12": d3.scale.linear().domain([0,50]).range(["#ffffff", "#80b1d3"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC13": d3.scale.linear().domain([0,50]).range(["#ffffff", "#fdb462"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC14": d3.scale.linear().domain([0,1700]).range(["#ffffff", "#b3de69"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC15": d3.scale.linear().domain([0,1700]).range(["#ffffff", "#b3de69"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC16": d3.scale.linear().domain([0,1700]).range(["#ffffff", "#b3de69"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC17": d3.scale.linear().domain([0,1700]).range(["#ffffff", "#b3de69"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC04": d3.scale.linear().domain([0,350]).range(["#ffffff", "#8dd3c7"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC05": d3.scale.linear().domain([0,450]).range(["#ffffff", "#fdb462"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC10": d3.scale.linear().domain([0,400]).range(["#ffffff", "#C0504D"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC11": d3.scale.linear().domain([0,250]).range(["#ffffff", "#bc80bd"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC12": d3.scale.linear().domain([0,350]).range(["#ffffff", "#80b1d3"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC13": d3.scale.linear().domain([0,100]).range(["#ffffff", "#fdb462"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC14": d3.scale.linear().domain([0,100]).range(["#ffffff", "#b3de69"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC15": d3.scale.linear().domain([0,100]).range(["#ffffff", "#de697d"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC16": d3.scale.linear().domain([0,100]).range(["#ffffff", "#8c69de"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC17": d3.scale.linear().domain([0,200]).range(["#ffffff", "#69de6f"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC18": d3.scale.linear().domain([0,2700]).range(["#ffffff", "#0004f3"]).interpolate(d3.interpolateLab),
 };
 
 // var opacityScale = d3.scale.linear()
@@ -142,7 +153,7 @@ var commuteById = d3.map();
 var projection = d3.geo.mercator()
     .scale(61000)
 	.center( [-73.85,40.71] )
-    .translate([width / 1.5, height / 2]);
+    .translate([width / 1.4, height / 2]);
 
 var path = d3.geo.path()
     .projection(projection);
@@ -186,7 +197,7 @@ var CURR_SELECT = ["HC01_EST_VC04"];
 
 queue()
     .defer(d3.json, "../../data_dc/CD_topoJSON.json")
-    .defer(d3.csv, "../../data_dc/Permits_2016.csv", typeAndSet)
+    .defer(d3.csv, "../../data_dc/Complaint_2022.csv", typeAndSet)
     .await(ready);
 
 
@@ -222,16 +233,24 @@ function ready(error, CD_topoJSON) {
                tooltip.select(".HC01_EST_VC10_val.val").text(d3.round(commuteById.get(d.id)["HC01_EST_VC10"]))
                tooltip.select(".HC01_EST_VC11_val.val").text(d3.round(commuteById.get(d.id)["HC01_EST_VC11"]))
                tooltip.select(".HC01_EST_VC12_val.val").text(d3.round(commuteById.get(d.id)["HC01_EST_VC12"]))
-               //tooltip.select(".HC01_EST_VC13_val.val").text(d3.round(commuteById.get(d.id)["HC01_EST_VC13"]))
+               tooltip.select(".HC01_EST_VC13_val.val").text(d3.round(commuteById.get(d.id)["HC01_EST_VC13"]))
                tooltip.select(".HC01_EST_VC14_val.val").text(d3.round(commuteById.get(d.id)["HC01_EST_VC14"]))
+               tooltip.select(".HC01_EST_VC15_val.val").text(d3.round(commuteById.get(d.id)["HC01_EST_VC15"]))
+               tooltip.select(".HC01_EST_VC16_val.val").text(d3.round(commuteById.get(d.id)["HC01_EST_VC16"]))
+               tooltip.select(".HC01_EST_VC17_val.val").text(d3.round(commuteById.get(d.id)["HC01_EST_VC17"]))
+               tooltip.select(".HC01_EST_VC18_val.val").text(d3.round(commuteById.get(d.id)["HC01_EST_VC18"]))
                
                tooltip.select(".HC01_EST_VC04_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC04"] + "%")
                tooltip.select(".HC01_EST_VC05_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC05"] + "%")
                tooltip.select(".HC01_EST_VC10_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC10"] + "%")
                tooltip.select(".HC01_EST_VC11_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC11"] + "%")
                tooltip.select(".HC01_EST_VC12_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC12"] + "%")
-               //tooltip.select(".HC01_EST_VC13_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC13"] + "%")
+               tooltip.select(".HC01_EST_VC13_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC13"] + "%")
                tooltip.select(".HC01_EST_VC14_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC14"] + "%")
+               tooltip.select(".HC01_EST_VC15_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC15"] + "%")
+               tooltip.select(".HC01_EST_VC16_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC16"] + "%")
+               tooltip.select(".HC01_EST_VC17_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC17"] + "%")
+            //    tooltip.select(".HC01_EST_VC18_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC18"] + "%")
                
              })
           .on("mouseout", function() {
@@ -354,16 +373,24 @@ function typeAndSet(d) {
     d.HC01_EST_VC10 = +d.HC01_EST_VC10;
     d.HC01_EST_VC11 = +d.HC01_EST_VC11;
     d.HC01_EST_VC12 = +d.HC01_EST_VC12;
-    //d.HC01_EST_VC13 = +d.HC01_EST_VC13;
+    d.HC01_EST_VC13 = +d.HC01_EST_VC13;
     d.HC01_EST_VC14 = +d.HC01_EST_VC14;
+    d.HC01_EST_VC15 = +d.HC01_EST_VC15;
+    d.HC01_EST_VC16 = +d.HC01_EST_VC16;
+    d.HC01_EST_VC17 = +d.HC01_EST_VC17;
+    d.HC01_EST_VC18 = +d.HC01_EST_VC18;
     
     d.HC01_MOE_VC04 = +d.HC01_MOE_VC04;
     d.HC01_MOE_VC05 = +d.HC01_MOE_VC05;
     d.HC01_MOE_VC10 = +d.HC01_MOE_VC10;
     d.HC01_MOE_VC11 = +d.HC01_MOE_VC11;
     d.HC01_MOE_VC12 = +d.HC01_MOE_VC12;
-    //d.HC01_MOE_VC13 = +d.HC01_MOE_VC13;
+    d.HC01_MOE_VC13 = +d.HC01_MOE_VC13;
     d.HC01_MOE_VC14 = +d.HC01_MOE_VC14;
+    d.HC01_MOE_VC15 = +d.HC01_MOE_VC15;
+    d.HC01_MOE_VC16 = +d.HC01_MOE_VC16;
+    d.HC01_MOE_VC17 = +d.HC01_MOE_VC17;
+    d.HC01_MOE_VC18 = +d.HC01_MOE_VC18;
     commuteById.set(d.FIPS, d);
     
 }

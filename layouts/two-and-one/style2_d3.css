@@ -112,8 +112,12 @@ path.HC01_EST_VC05, #metrics ul li.selected.HC01_EST_VC05, .tooltip .HC01_EST_VC
 path.HC01_EST_VC10, #metrics ul li.selected.HC01_EST_VC10, .tooltip .HC01_EST_VC10 { fill: #C0504D; background: #C0504D; }
 path.HC01_EST_VC11, #metrics ul li.selected.HC01_EST_VC11, .tooltip .HC01_EST_VC11 { fill: #bc80bd; background: #bc80bd; }
 path.HC01_EST_VC12, #metrics ul li.selected.HC01_EST_VC12, .tooltip .HC01_EST_VC12 { fill: #80b1d3; background: #80b1d3; }
-path.HC01_EST_VC13, #metrics ul li.selected.HC01_EST_VC13, .tooltip .HC01_EST_VC13 { fill: #fdb462; background: #fdb462; }
+path.HC01_EST_VC13, #metrics ul li.selected.HC01_EST_VC13, .tooltip .HC01_EST_VC13 { fill: #fdb462; background: #fde862; }
 path.HC01_EST_VC14, #metrics ul li.selected.HC01_EST_VC14, .tooltip .HC01_EST_VC14 { fill: #b3de69; background: #b3de69; }
-path.NODATA { fill: #fff; }
+path.HC01_EST_VC15, #metrics ul li.selected.HC01_EST_VC15, .tooltip .HC01_EST_VC15 { fill: #de697d; background: #de697d; }
+path.HC01_EST_VC16, #metrics ul li.selected.HC01_EST_VC16, .tooltip .HC01_EST_VC16 { fill: #8c69de; background: #8c69de; }
+path.HC01_EST_VC17, #metrics ul li.selected.HC01_EST_VC17, .tooltip .HC01_EST_VC17 { fill: #69de6f; background: #69de6f; }
+path.HC01_EST_VC18, #metrics ul li.selected.HC01_EST_VC18, .tooltip .HC01_EST_VC18 { fill: #0004f3; background: #0004f3; }
+path.NODATA { fill: rgba(255, 255, 255, 0.977); }
 
 .clr { clear: both; }

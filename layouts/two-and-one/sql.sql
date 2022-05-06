@@ -263,9 +263,22 @@ group by year, month order  by 1,2)
  to 'C:\Users\fguo\Documents\work\ad-hoc\20220504dsny\dsny_new_year_month_efficient.csv' header csv delimiter ','
  */
 -- select * from dsny_new_time limit 10
+/*
 copy (
 select community_board, avg(duration), count(*) from dsny_new 
 where community_board is not null and status_cal = 'Open' and complaint_type not like 'Graff%' and year >=2022
 group by community_board
 )
 to 'C:\Users\fguo\Documents\work\ad-hoc\20220504dsny\dsny_new_commu_backlog.csv' header csv delimiter ','
+*/
+/*
+select avg(duration), count(*) from dsny_new 
+where community_board is not null and status_cal = 'Open' and complaint_type not like 'Graff%' and year >=2022
+*/
+
+copy (
+select *,case when complaint_type not in ('Dirty Conditions','Missed Collection',
+'Sanitation Condition','Derelict Vehicles','Graffiti') then 'Other'
+else complaint_type end as complaint_type_cal from dsny_new where year >= 2021 and status_cal = 'Open'
+	) 
+	to 'C:\Users\fguo\Documents\work\ad-hoc\20220504dsny\dsny_new_2020_open.csv' header csv delimiter ','

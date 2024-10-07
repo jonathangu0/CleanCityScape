@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>DSNY COMPLAINT 2022</title>
+    <title>DSNY COMPLAINT 2024</title>
     <link rel="stylesheet" href="style2_d3.css" type="text/css" media="screen" />
 </head>
 
@@ -23,21 +23,23 @@
 
 
 		<ul>
-			<li data-metric="HC01_EST_VC04" class="selected HC01_EST_VC04">Derelict Vehicles</li>
-			<li data-metric="HC01_EST_VC05">Missed Collection</li>
-			<li data-metric="HC01_EST_VC10">Dirty Condition</li>
-			<li data-metric="HC01_EST_VC11">Illegal Dumping</li>
-			<li data-metric="HC01_EST_VC12">Graffiti</li>
-			<li data-metric="HC01_EST_VC13">Snow</li>
-			<li data-metric="HC01_EST_VC14">Obstruction</li>
-            <li data-metric="HC01_EST_VC15">Dead Animal</li>
-            <li data-metric="HC01_EST_VC16">Residential Disposal Complaint</li>
-            <li data-metric="HC01_EST_VC17">Other</li>
-            <li data-metric="HC01_EST_VC18">Total</li>
+			<li data-metric="HC01_EST_VC04" class="selected HC01_EST_VC04">Dirty Condition</li>
+			<li data-metric="HC01_EST_VC05">Derelict Vehicles</li>
+			<li data-metric="HC01_EST_VC10">Illegal Dumping</li>
+			<li data-metric="HC01_EST_VC11">Missed Collection</li>
+			<li data-metric="HC01_EST_VC12">Vendor Enforcement</li>
+			<li data-metric="HC01_EST_VC13">Obstruction</li>
+			<li data-metric="HC01_EST_VC14">Graffiti</li>
+            <li data-metric="HC01_EST_VC15">Residential Disposal Complaint</li>
+            <li data-metric="HC01_EST_VC16">Dead Animal</li>
+            <li data-metric="HC01_EST_VC17">Sweeping Complaint</li>
+            <li data-metric="HC01_EST_VC18">Snow</li>
+            <li data-metric="HC01_EST_VC19">Litter Basket Complaint</li>
+            <li data-metric="HC01_EST_VC20">Other</li>
+            <li data-metric="HC01_EST_VC21">Total</li>
         </ul>
-        <br>
-        <br>
-	<em>The data represents 2022 complaints filed as of report run date 5/5/2022 per Community District. Click on the complaint type to turn the layer on/off. Hover mouse over the map to view the number of complaints per type and the percentage per Community District.</em>   
+        
+	<em>The data represents 2024 complaints filed as of report run date 10/3/2024 per Community District. Data are showing top 12 the most complaints received since 2024. Click on the complaint type to turn the layer on/off. Hover mouse over the map to view the number of complaints per type and the percentage per Community District.</em>   
     </div>
  
     <!-- <div id="non-motor"> -->
@@ -58,59 +60,74 @@
 <div id="tooltip" class="tooltip">
     <h3 class="name"></h3>
     <div data-metric="HC01_EST_VC04" class="line">
-        <div class="HC01_EST_VC04 symbol"></div> Derelict Vehicles 
+        <div class="HC01_EST_VC04 symbol"></div> Dirty Condition 
         <div class="HC01_EST_VC04_val moe"></div>
         <div class="HC01_EST_VC04_val val"></div>
     </div>
     <div data-metric="HC01_EST_VC05" class="line">
-        <div class="HC01_EST_VC05 symbol"></div> Missed Collection
+        <div class="HC01_EST_VC05 symbol"></div> Derelict Vehicles
         <div class="HC01_EST_VC05_val moe"></div>
         <div class="HC01_EST_VC05_val val"></div>
     </div>
     <div data-metric="HC01_EST_VC10" class="line">
-        <div class="HC01_EST_VC10 symbol"></div> Dirty Condition
+        <div class="HC01_EST_VC10 symbol"></div> Illegal Dumping
         <div class="HC01_EST_VC10_val moe"></div>
         <div class="HC01_EST_VC10_val val"></div>
     </div>
 	<div data-metric="HC01_EST_VC11" class="line">
-        <div class="HC01_EST_VC11 symbol"></div> Illegal Dumping
+        <div class="HC01_EST_VC11 symbol"></div> Missed Collection
         <div class="HC01_EST_VC11_val moe"></div> 
         <div class="HC01_EST_VC11_val val"></div>
     </div>
     <div data-metric="HC01_EST_VC12" class="line">
-        <div class="HC01_EST_VC12 symbol"></div> Graffiti
+        <div class="HC01_EST_VC12 symbol"></div> Vendor Enforcement
         <div class="HC01_EST_VC12_val moe"></div> 
         <div class="HC01_EST_VC12_val val"></div>
     </div>
 	<div data-metric="HC01_EST_VC13" class="line">
-        <div class="HC01_EST_VC13 symbol"></div> Snow
+        <div class="HC01_EST_VC13 symbol"></div> Obstruction
         <div class="HC01_EST_VC13_val moe"></div>
         <div class="HC01_EST_VC13_val val"></div>
     </div>
     <div data-metric="HC01_EST_VC14" class="line">
-        <div class="HC01_EST_VC14 symbol"></div> Obstruction
+        <div class="HC01_EST_VC14 symbol"></div> Graffiti
         <div class="HC01_EST_VC14_val moe"></div>
         <div class="HC01_EST_VC14_val val"></div>
     </div>
     <div data-metric="HC01_EST_VC15" class="line">
-        <div class="HC01_EST_VC15 symbol"></div> Dead Animal
+        <div class="HC01_EST_VC15 symbol"></div> Residential Disposal Complaint
         <div class="HC01_EST_VC15_val moe"></div>
         <div class="HC01_EST_VC15_val val"></div>
     </div>
     <div data-metric="HC01_EST_VC16" class="line">
-        <div class="HC01_EST_VC16 symbol"></div> Residential Disposal Complaint
+        <div class="HC01_EST_VC16 symbol"></div> Dead Animal
         <div class="HC01_EST_VC16_val moe"></div>
         <div class="HC01_EST_VC16_val val"></div>
     </div>
     <div data-metric="HC01_EST_VC17" class="line">
-        <div class="HC01_EST_VC17 symbol"></div> Other
+        <div class="HC01_EST_VC17 symbol"></div> Sweeping Complaint
         <div class="HC01_EST_VC17_val moe"></div>
         <div class="HC01_EST_VC17_val val"></div>
     </div>
     <div data-metric="HC01_EST_VC18" class="line">
-        <div class="HC01_EST_VC18 symbol"></div> Total
+        <div class="HC01_EST_VC18 symbol"></div> Snow
         <div class="HC01_EST_VC18_val moe"></div>
         <div class="HC01_EST_VC18_val val"></div>
+    </div>
+    <div data-metric="HC01_EST_VC19" class="line">
+        <div class="HC01_EST_VC19 symbol"></div> Litter Basket Complaint
+        <div class="HC01_EST_VC19_val moe"></div>
+        <div class="HC01_EST_VC19_val val"></div>
+    </div>
+    <div data-metric="HC01_EST_VC20" class="line">
+        <div class="HC01_EST_VC20 symbol"></div> Other
+        <div class="HC01_EST_VC20_val moe"></div>
+        <div class="HC01_EST_VC20_val val"></div>
+    </div>
+    <div data-metric="HC01_EST_VC21" class="line">
+        <div class="HC01_EST_VC21 symbol"></div> Total
+        <div class="HC01_EST_VC21_val moe"></div>
+        <div class="HC01_EST_VC21_val val"></div>
     </div>
 </div>   
    
@@ -128,17 +145,20 @@ var width = window.innerWidth,
     defaultFill = "#e0e0e0";
 
 var baseColors = { 
-    "HC01_EST_VC04": d3.scale.linear().domain([0,350]).range(["#ffffff", "#8dd3c7"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC05": d3.scale.linear().domain([0,450]).range(["#ffffff", "#fdb462"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC10": d3.scale.linear().domain([0,400]).range(["#ffffff", "#C0504D"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC11": d3.scale.linear().domain([0,250]).range(["#ffffff", "#bc80bd"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC12": d3.scale.linear().domain([0,350]).range(["#ffffff", "#80b1d3"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC13": d3.scale.linear().domain([0,100]).range(["#ffffff", "#fdb462"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC14": d3.scale.linear().domain([0,100]).range(["#ffffff", "#b3de69"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC15": d3.scale.linear().domain([0,100]).range(["#ffffff", "#de697d"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC16": d3.scale.linear().domain([0,100]).range(["#ffffff", "#8c69de"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC17": d3.scale.linear().domain([0,200]).range(["#ffffff", "#69de6f"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC18": d3.scale.linear().domain([0,2700]).range(["#ffffff", "#0004f3"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC04": d3.scale.linear().domain([0,1900]).range(["#ffffff", "#8dd3c7"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC05": d3.scale.linear().domain([0,2200]).range(["#ffffff", "#fdb462"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC10": d3.scale.linear().domain([0,1550]).range(["#ffffff", "#C0504D"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC11": d3.scale.linear().domain([0,1150]).range(["#ffffff", "#bc80bd"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC12": d3.scale.linear().domain([0,5550]).range(["#ffffff", "#80b1d3"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC13": d3.scale.linear().domain([0,1500]).range(["#ffffff", "#fdb462"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC14": d3.scale.linear().domain([0,3200]).range(["#ffffff", "#b3de69"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC15": d3.scale.linear().domain([0,700]).range(["#ffffff", "#de697d"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC16": d3.scale.linear().domain([0,400]).range(["#ffffff", "#8c69de"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC17": d3.scale.linear().domain([0,400]).range(["#ffffff", "#69de6f"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC18": d3.scale.linear().domain([0,250]).range(["#ffffff", "#27acf4"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC19": d3.scale.linear().domain([0,250]).range(["#ffffff", "#9f1515"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC20": d3.scale.linear().domain([0,850]).range(["#ffffff", "#f66363"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC21": d3.scale.linear().domain([0,9850]).range(["#ffffff", "#0004f3"]).interpolate(d3.interpolateLab),
 };
 
 // var opacityScale = d3.scale.linear()
@@ -199,7 +219,7 @@ var CURR_SELECT = ["HC01_EST_VC04"];
 
 queue()
     .defer(d3.json, "../../data_dc/CD_topoJSON.json")
-    .defer(d3.csv, "../../data_dc/Complaint_2022.csv", typeAndSet)
+    .defer(d3.csv, "../../data_dc/Complaint_2024.csv", typeAndSet)
     .await(ready);
 
 
@@ -241,6 +261,9 @@ function ready(error, CD_topoJSON) {
                tooltip.select(".HC01_EST_VC16_val.val").text(d3.round(commuteById.get(d.id)["HC01_EST_VC16"]))
                tooltip.select(".HC01_EST_VC17_val.val").text(d3.round(commuteById.get(d.id)["HC01_EST_VC17"]))
                tooltip.select(".HC01_EST_VC18_val.val").text(d3.round(commuteById.get(d.id)["HC01_EST_VC18"]))
+               tooltip.select(".HC01_EST_VC19_val.val").text(d3.round(commuteById.get(d.id)["HC01_EST_VC19"]))
+               tooltip.select(".HC01_EST_VC20_val.val").text(d3.round(commuteById.get(d.id)["HC01_EST_VC20"]))
+               tooltip.select(".HC01_EST_VC21_val.val").text(d3.round(commuteById.get(d.id)["HC01_EST_VC21"]))
                
                tooltip.select(".HC01_EST_VC04_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC04"] + "%")
                tooltip.select(".HC01_EST_VC05_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC05"] + "%")
@@ -252,6 +275,9 @@ function ready(error, CD_topoJSON) {
                tooltip.select(".HC01_EST_VC15_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC15"] + "%")
                tooltip.select(".HC01_EST_VC16_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC16"] + "%")
                tooltip.select(".HC01_EST_VC17_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC17"] + "%")
+               tooltip.select(".HC01_EST_VC18_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC18"] + "%")
+               tooltip.select(".HC01_EST_VC19_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC19"] + "%")
+               tooltip.select(".HC01_EST_VC20_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC20"] + "%")
             //    tooltip.select(".HC01_EST_VC18_val.moe").html(commuteById.get(d.id)["HC01_MOE_VC18"] + "%")
                
              })
@@ -381,6 +407,9 @@ function typeAndSet(d) {
     d.HC01_EST_VC16 = +d.HC01_EST_VC16;
     d.HC01_EST_VC17 = +d.HC01_EST_VC17;
     d.HC01_EST_VC18 = +d.HC01_EST_VC18;
+    d.HC01_EST_VC19 = +d.HC01_EST_VC19;
+    d.HC01_EST_VC20 = +d.HC01_EST_VC20;
+    d.HC01_EST_VC21 = +d.HC01_EST_VC21;
     
     d.HC01_MOE_VC04 = +d.HC01_MOE_VC04;
     d.HC01_MOE_VC05 = +d.HC01_MOE_VC05;
@@ -393,6 +422,9 @@ function typeAndSet(d) {
     d.HC01_MOE_VC16 = +d.HC01_MOE_VC16;
     d.HC01_MOE_VC17 = +d.HC01_MOE_VC17;
     d.HC01_MOE_VC18 = +d.HC01_MOE_VC18;
+    d.HC01_MOE_VC19 = +d.HC01_MOE_VC19;
+    d.HC01_MOE_VC20 = +d.HC01_MOE_VC20;
+    d.HC01_MOE_VC21 = +d.HC01_MOE_VC21;
     commuteById.set(d.FIPS, d);
     
 }

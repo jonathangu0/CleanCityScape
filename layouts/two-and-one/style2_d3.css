@@ -21,7 +21,9 @@ path:hover {
 	stroke-width: 2px;
 	fill-opacity: .7;
 }
-#metrics { width: 920px; margin: 0 auto 15px 0; font-family: Helvetica, sans-serif; }
+#metrics { 
+  width: 920px; 
+  margin: 0 auto 15px 0; font-family: Helvetica, sans-serif; }
 /* #metrics #instruct {  */
     /* text-align: left;  */
     /* margin-bottom: 10px; */
@@ -59,7 +61,7 @@ path:hover {
 	margin: 10px 10px 0 0;
 	padding: 4px 0;
 	display: block;
-	width: 200px;
+	width: 500px;
 	text-align: left;
 	font-size: 10px;
 	position: relative;
@@ -69,7 +71,7 @@ path:hover {
 div.tooltip {
     position: absolute;
     text-align: left;
-    width: 170px;
+    width: 240px;
     padding: 10px;
     font-size: 10px;
     font-family: Helvetica, sans-serif;
@@ -117,7 +119,10 @@ path.HC01_EST_VC14, #metrics ul li.selected.HC01_EST_VC14, .tooltip .HC01_EST_VC
 path.HC01_EST_VC15, #metrics ul li.selected.HC01_EST_VC15, .tooltip .HC01_EST_VC15 { fill: #de697d; background: #de697d; }
 path.HC01_EST_VC16, #metrics ul li.selected.HC01_EST_VC16, .tooltip .HC01_EST_VC16 { fill: #8c69de; background: #8c69de; }
 path.HC01_EST_VC17, #metrics ul li.selected.HC01_EST_VC17, .tooltip .HC01_EST_VC17 { fill: #69de6f; background: #69de6f; }
-path.HC01_EST_VC18, #metrics ul li.selected.HC01_EST_VC18, .tooltip .HC01_EST_VC18 { fill: #0004f3; background: #0004f3; }
+path.HC01_EST_VC18, #metrics ul li.selected.HC01_EST_VC18, .tooltip .HC01_EST_VC18 { fill: #27acf4; background: #27acf4; }
+path.HC01_EST_VC19, #metrics ul li.selected.HC01_EST_VC19, .tooltip .HC01_EST_VC19 { fill: #9f1515; background: #9f1515; }
+path.HC01_EST_VC20, #metrics ul li.selected.HC01_EST_VC20, .tooltip .HC01_EST_VC20 { fill: #f66363; background: #f66363; }
+path.HC01_EST_VC21, #metrics ul li.selected.HC01_EST_VC21, .tooltip .HC01_EST_VC21 { fill: #0004f3; background: #0004f3; }
 path.NODATA { fill: rgba(255, 255, 255, 0.977); }
 
 .clr { clear: both; }

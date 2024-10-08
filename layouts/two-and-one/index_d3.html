@@ -139,26 +139,27 @@
 
 
 var width = window.innerWidth,
-    height = window.innerHeight;
-    console.log(width);
+    height = window.innerHeight * 0.95;
+    console.log("here it is");
+    console.log(height);
     center = [width / 1.5, height / 2.1],
     defaultFill = "#e0e0e0";
 
 var baseColors = { 
-    "HC01_EST_VC04": d3.scale.linear().domain([0,1900]).range(["#ffffff", "#8dd3c7"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC05": d3.scale.linear().domain([0,2200]).range(["#ffffff", "#fdb462"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC10": d3.scale.linear().domain([0,1550]).range(["#ffffff", "#C0504D"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC11": d3.scale.linear().domain([0,1150]).range(["#ffffff", "#bc80bd"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC12": d3.scale.linear().domain([0,5550]).range(["#ffffff", "#80b1d3"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC13": d3.scale.linear().domain([0,1500]).range(["#ffffff", "#fdb462"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC14": d3.scale.linear().domain([0,3200]).range(["#ffffff", "#b3de69"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC15": d3.scale.linear().domain([0,700]).range(["#ffffff", "#de697d"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC16": d3.scale.linear().domain([0,400]).range(["#ffffff", "#8c69de"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC17": d3.scale.linear().domain([0,400]).range(["#ffffff", "#69de6f"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC18": d3.scale.linear().domain([0,250]).range(["#ffffff", "#27acf4"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC19": d3.scale.linear().domain([0,250]).range(["#ffffff", "#9f1515"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC20": d3.scale.linear().domain([0,850]).range(["#ffffff", "#f66363"]).interpolate(d3.interpolateLab),
-    "HC01_EST_VC21": d3.scale.linear().domain([0,9850]).range(["#ffffff", "#0004f3"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC04": d3.scale.linear().domain([0,950]).range(["#ffffff", "#8dd3c7"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC05": d3.scale.linear().domain([0,1100]).range(["#ffffff", "#fdb462"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC10": d3.scale.linear().domain([0,750]).range(["#ffffff", "#C0504D"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC11": d3.scale.linear().domain([0,570]).range(["#ffffff", "#bc80bd"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC12": d3.scale.linear().domain([0,1150]).range(["#ffffff", "#80b1d3"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC13": d3.scale.linear().domain([0,750]).range(["#ffffff", "#fdb462"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC14": d3.scale.linear().domain([0,700]).range(["#ffffff", "#b3de69"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC15": d3.scale.linear().domain([0,350]).range(["#ffffff", "#de697d"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC16": d3.scale.linear().domain([0,300]).range(["#ffffff", "#8c69de"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC17": d3.scale.linear().domain([0,200]).range(["#ffffff", "#69de6f"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC18": d3.scale.linear().domain([0,120]).range(["#ffffff", "#27acf4"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC19": d3.scale.linear().domain([0,120]).range(["#ffffff", "#9f1515"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC20": d3.scale.linear().domain([0,450]).range(["#ffffff", "#f66363"]).interpolate(d3.interpolateLab),
+    "HC01_EST_VC21": d3.scale.linear().domain([0,7550]).range(["#ffffff", "#0004f3"]).interpolate(d3.interpolateLab),
 };
 
 // var opacityScale = d3.scale.linear()

@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <link href="../../build/nv.d3.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style3_d3.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../../assets/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/keen-dashboards.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js" charset="utf-8"></script>
     <script src="../../build/nv.d3.js"></script>
 
@@ -23,10 +26,11 @@
     </style>
 </head>
 <body>
+  <div class="row">
   <div id="rmain-wrapper">
     
     <div id="metrics">
-      <div >
+      <div class="row">
         <ul>
           <li data-metric="HC01_EST_VC04" class="selected HC01_EST_VC04">Top 10 CM Citywide</li>
           <li data-metric="HC01_EST_VC05">Manhattan</li>
@@ -41,12 +45,13 @@
             <div class="clr"></div>
         </div>
     </div>
-
+    </div>
+<div class="col-6">
 <div id="chart1" class='with-3d-shadow with-transitions'>
     
     <svg></svg>
 </div>
-
+</div>
 <script>
     historicalBarChart = [
      {

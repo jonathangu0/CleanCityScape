@@ -22,32 +22,32 @@ body {
 	pointer-events: all;
 }
 
-.pointDirty{
+.pointGraffiti{
 	fill: #59a14f;
 	fill-opacity: .7;
 	stroke: #fff;
 
 }
-.pointMissed{
+.pointLot{
 	fill: #f28e2c;
 	fill-opacity: .7;
 	stroke: #fff;
 
 }
-.pointSanitation{
+.pointIllegalDumping{
 	fill: #b55a9d;
 	fill-opacity: .7;
 	stroke: #fff;
 
 }
-.pointDerelict{
+.pointDirty{
 	fill: #DF3B20;
 	fill-opacity: .7;
 	stroke: #fff;
 
 }
 
-.pointGraffiti{
+.pointObstruction{
 	fill: #5561ec;
 	fill-opacity: .7;
 	stroke: #fff;
@@ -274,39 +274,39 @@ svg {
   transition: .4s;
 }
 
-input:checked + #sliderDirty {
+input:checked + #sliderGraffiti {
   background-color: #59a14f;
 }
 
-input:focus + #sliderDirty {
+input:focus + #sliderGraffiti {
   box-shadow: 0 0 1px #59a14f;
 }
-input:checked + #sliderMissed {
+input:checked + #sliderLot {
   background-color: #f28e2c;
 }
 
-input:focus + #sliderMissed {
+input:focus + #sliderLot {
   box-shadow: 0 0 1px #f28e2c;
 }
-input:checked + #sliderSanitation {
+input:checked + #sliderIllegalDumping {
   background-color: #b55a9d;
 }
 
-input:focus + #sliderSanitation {
+input:focus + #sliderIllegalDumping {
   box-shadow: 0 0 1px #b55a9d;
 }
-input:checked + #sliderDerelict {
+input:checked + #sliderDirty {
   background-color: #DF3B20;
 }
 
-input:focus + #sliderDerelict {
+input:focus + #sliderDirty {
   box-shadow: 0 0 1px #DF3B20;
 }
-input:checked + #sliderGraffiti {
+input:checked + #sliderObstruction {
   background-color: #5561ec;
 }
 
-input:focus + #sliderGraffiti {
+input:focus + #sliderObstruction {
   box-shadow: 0 0 1px #5561ec;
 }
 input:checked + #sliderOther {
@@ -342,47 +342,47 @@ input:checked + .slider:before {
 
 						<span style="display:inline-block;">
 						<label class="switch">
-							<input type="checkbox" checked="true" id="chkDirty">
-							<span class="slider" id="sliderDirty"></span>						
+							<input type="checkbox" checked="true" id="chkGraffiti">
+							<span class="slider" id="sliderGraffiti"></span>						
 						</label>
 						
-						<span class="en" id="sliderTxt">Dirty Condition</span>
+						<span class="en" id="sliderTxt">Graffiti</span>
 						</span>
 						<br/>
 
 						<span style="display:inline-block;">
 							<label class="switch">
-								<input type="checkbox" checked="true" id="chkMissed">
-								<span class="slider" id="sliderMissed"></span>
+								<input type="checkbox" checked="true" id="chkLot">
+								<span class="slider" id="sliderLot"></span>
 							</label>
-							<span class="en" id="sliderTxt">Missed Collection</span>
+							<span class="en" id="sliderTxt">Lot Condition</span>
 						</span>
 						<br/>
 
 						<span style="display:inline-block;">
 							<label class="switch">
-								<input type="checkbox" checked="true" id="chkSanitation">
-								<span class="slider" id="sliderSanitation"></span>
+								<input type="checkbox" checked="true" id="chkIllegalDumping">
+								<span class="slider" id="sliderIllegalDumping"></span>
 							</label>
-							<span class="en" id="sliderTxt">Sanitation Condition</span>
+							<span class="en" id="sliderTxt">Illegal Dumping</span>
 						</span>
 						<br/>
 
 						<span style="display:inline-block;">
 							<label class="switch">
-								<input type="checkbox" checked="true" id="chkDerelict">
-								<span class="slider" id="sliderDerelict"></span>
+								<input type="checkbox" checked="true" id="chkDirty">
+								<span class="slider" id="sliderDirty"></span>
 							</label>
-							<span class="en" id="sliderTxt">Derelict Vehicles</span>
+							<span class="en" id="sliderTxt">Dirty Condition</span>
 						</span>
 						<br/>
 
 						<span style="display:inline-block;">
 							<label class="switch">
-								<input type="checkbox"  id="chkGraffiti">
-								<span class="slider" id="sliderGraffiti"></span>
+								<input type="checkbox"  id="chkObstruction">
+								<span class="slider" id="sliderObstruction"></span>
 							</label>
-							<span class="en" id="sliderTxt">Graffiti</span>
+							<span class="en" id="sliderTxt">Obstruction</span>
 						</span>
 						<br/>
 						
@@ -435,7 +435,6 @@ input:checked + .slider:before {
 				</div>
 			  </div>
 	</div>
-	<p class="small text-muted" style=" position:relative; bottom:0px;">Built by DOB Analytics <a href="https://www1.nyc.gov/site/buildings/dob/analytics-reports.page" target="_blank">Dev Squad</a></p>	
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
@@ -471,7 +470,10 @@ $(document).ready(function(){
     L.Control.include({
       _refocusOnMap: L.Util.falseFn // Do nothing.
     });	
-var map = L.map('map').setView([40.72215448921957, -73.98616799064006], 11);
+var map = L.map('map', {
+	dragging: true,
+	scrollWheelZoom: false
+}).setView([40.72215448921957, -73.98616799064006], 11);
 L.tileLayer('http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}',{
             maxZoom: 20,
             subdomains:['mt0','mt1','mt2','mt3']
@@ -524,20 +526,20 @@ function ready(){
 			.attr('cy',function(d){return proj.latLngToLayerPoint(d.latLng).y;})
 			.attr('class', function(d){
 				switch(d.complaintType){
-					case 'Dirty Conditions':
-						return 'pointDirty';
-						break;
-					case 'Missed Collection':
-						return 'pointMissed';
-						break;
-					case 'Sanitation Condition':
-						return 'pointSanitation';
-						break;
-					case 'Derelict Vehicles':
-						return 'pointDerelict';
-						break;
 					case 'Graffiti':
 						return 'pointGraffiti';
+						break;
+					case 'Lot Condition':
+						return 'pointLot';
+						break;
+					case 'Illegal Dumping':
+						return 'pointIllegalDumping';
+						break;
+					case 'Dirty Condition':
+						return 'pointDirty';
+						break;
+					case 'Obstruction':
+						return 'pointObstruction';
 						break;
 					case 'Other':
 						return 'pointOther';
@@ -557,10 +559,10 @@ function ready(){
 						'CREATED DATE: ' + d.createdDate + '</br>' +
 						'CLOSED DATE: ' + d.closedDate + '</br>' +
 						'DUE DATE: ' + d.dueDate + '</br>' +
-						'COMPLAINT TYPE: ' + d.complaintType + '(' + d.complaintOtherType + ')' + '</br>' +
-						'COMPLAINT DETAILS: ' + d.descriptor + '</br>' +
+						'COMPLAINT TYPE: ' + d.complaintType + ' ' + d.complaintOtherType +  '</br>' +
+						'COMPLAINT DETAILS: ' + d.descriptor + '</br>' 
 						// 'AVG DAYS TO CLOSE: ' + d.daysToClose + '</br>' +
-						'DAYS SINCE CREATION: ' + d.duration
+						//'DAYS SINCE CREATION: ' + d.duration
 					)
 					if (d3.event.pageX > (width - 200)) {
 					   tooltipFacades.style("left", (d3.event.pageX - 350) + "px");
@@ -568,7 +570,7 @@ function ready(){
 					   tooltipFacades.style("left", (d3.event.pageX + 20) + "px")
 							.style("top", (d3.event.pageY -30) + "px");
 					}
-					if (d3.event.pageY > (height - 150)) {
+					if (d3.event.pageY > (height - 130)) {
 					   tooltipFacades.style("top", (d3.event.pageY -100) + "px");
 					} else {
 					   tooltipFacades.style("top", (d3.event.pageY -30) + "px");
@@ -592,77 +594,13 @@ function ready(){
 
 
 
-			var dirtySlider = document.querySelector('input[id="chkDirty"]');
-				missedSlider = document.querySelector('input[id="chkMissed"]');
-				sanitationSlider = document.querySelector('input[id="chkSanitation"]');
-				derelictSlider = document.querySelector('input[id="chkDerelict"]');
-				graffitiSlider = document.querySelector('input[id="chkGraffiti');
+			var graffitiSlider = document.querySelector('input[id="chkGraffiti"]');
+				lotSlider = document.querySelector('input[id="chkLot"]');
+				illegalDumpingSlider = document.querySelector('input[id="chkIllegalDumping"]');
+				dirtySlider = document.querySelector('input[id="chkDirty"]');
+				obstructionSlider = document.querySelector('input[id="chkObstruction');
 				otherSlider = document.querySelector('input[id="chkOther"]');
 				
-				dirtySlider.onchange = function(){
-						if(this.checked){
-							d3.selectAll(".pointDirty").filter(function(d) {
-								return d.complaintType == "Dirty Conditions";
-							})
-							.style("display", "block");	
-
-						} else {
-							d3.selectAll(".pointDirty").filter(function(d) {
-								return d.complaintType == "Dirty Conditions";
-							})
-							.style("display", "none");
-										
-						}
-				};		
-				
-				missedSlider.onchange = function(){
-						if(this.checked){
-							d3.selectAll(".pointMissed").filter(function(d) {
-								return d.complaintType == "Missed Collection";
-							})
-							.style("display", "block");	
-
-						} else {
-							d3.selectAll(".pointMissed").filter(function(d) {
-								return d.complaintType == "Missed Collection";
-							})
-							.style("display", "none");
-										
-						}
-				};
-
-				sanitationSlider.onchange = function(){
-						if(this.checked){
-							d3.selectAll(".pointSanitation").filter(function(d) {
-								return d.complaintType == "Sanitation Condition";
-							})
-							.style("display", "block");	
-
-						} else {
-							d3.selectAll(".pointSanitation").filter(function(d) {
-								return d.complaintType == "Sanitation Condition";
-							})
-							.style("display", "none");
-										
-						}
-				};
-
-				derelictSlider.onchange = function(){
-						if(this.checked){
-							d3.selectAll(".pointDerelict").filter(function(d) {
-								return d.complaintType == "Derelict Vehicles";
-							})
-							.style("display", "block");	
-
-						} else {
-							d3.selectAll(".pointDerelict").filter(function(d) {
-								return d.complaintType == "Derelict Vehicles";
-							})
-							.style("display", "none");
-										
-						}
-				};
-
 				graffitiSlider.onchange = function(){
 						if(this.checked){
 							d3.selectAll(".pointGraffiti").filter(function(d) {
@@ -673,6 +611,70 @@ function ready(){
 						} else {
 							d3.selectAll(".pointGraffiti").filter(function(d) {
 								return d.complaintType == "Graffiti";
+							})
+							.style("display", "none");
+										
+						}
+				};		
+				
+				lotSlider.onchange = function(){
+						if(this.checked){
+							d3.selectAll(".pointLot").filter(function(d) {
+								return d.complaintType == "Lot Condition";
+							})
+							.style("display", "block");	
+
+						} else {
+							d3.selectAll(".pointLot").filter(function(d) {
+								return d.complaintType == "Lot Condition";
+							})
+							.style("display", "none");
+										
+						}
+				};
+
+				illegalDumpingSlider.onchange = function(){
+						if(this.checked){
+							d3.selectAll(".pointIllegalDumping").filter(function(d) {
+								return d.complaintType == "Illegal Dumping";
+							})
+							.style("display", "block");	
+
+						} else {
+							d3.selectAll(".pointIllegalDumping").filter(function(d) {
+								return d.complaintType == "Illegal Dumping";
+							})
+							.style("display", "none");
+										
+						}
+				};
+
+				dirtySlider.onchange = function(){
+						if(this.checked){
+							d3.selectAll(".pointDirty").filter(function(d) {
+								return d.complaintType == "Dirty Condition";
+							})
+							.style("display", "block");	
+
+						} else {
+							d3.selectAll(".pointDirty").filter(function(d) {
+								return d.complaintType == "Dirty Condition";
+							})
+							.style("display", "none");
+										
+						}
+				};
+
+				obstructionSlider.onchange = function(){
+						if(this.checked){
+							d3.selectAll(".pointObstruction").filter(function(d) {
+								return d.complaintType == "Obstruction";
+							})
+							.style("display", "block");	
+
+						} else {
+							d3.selectAll(".pointObstruction").filter(function(d) {
+								return d.complaintType == "Obstruction";
 							})
 							.style("display", "none");
 										
@@ -700,24 +702,32 @@ function ready(){
 	
 	
 	 
-		d3.csv("../../dsny_data/dsny_new_2020_open.csv",function(data){
+	d3.csv("https://data.cityofnewyork.us/resource/erm2-nwe9.csv?$limit=8000&$where=created_date%3E=%272024-01-01T00:00:00.000%27%20and%20agency=%27DSNY%27%20and%20not%20status%20=%20%27Closed%27",function(data){
 				points = data.filter(function(d) {
 					if( ((+d["latitude"] != 0) && (+d["longitude"] !=0 ))) {
 						return d;
 					}
 				}).map(function(d){
 				d.latLng = [+d["latitude"],+d["longitude"]];
-				d.address = d["adress"];
+				d.address = d["incident_address"];
 				d.Borough = d["borough"];
 				d.communityBoard = d["community_board"];
-				d.createdDate = d["created_date"];
-				d.closedDate = d["closed_date"];
-				d.dueDate = d["due_date"];
-				d.complaintType = d["complaint_type_cal"];
-				d.complaintOtherType = d["complaint_type"]
-				d.descriptor = d["descriptors"];
+				d.createdDate = d["created_date"].substring(0,10);
+				d.closedDate = d["closed_date"].substring(0,10);
+				d.dueDate = d["due_date"].substring(0,10);
+				d.complaintType = d["complaint_type"] == 'Dirty Condition'?'Dirty Condition':
+				d["complaint_type"]=='Graffiti'?'Graffiti':d["complaint_type"]=='Illegal Dumping'?
+				'Illegal Dumping':d["complaint_type"] =='Lot Condition'?'Lot Condition':
+				d["complaint_type"]=='Obstruction'?'Obstruction':'Other';
+
+				d.complaintOtherType = d["complaint_type"] =='Dirty Condition' ||
+										d["complaint_type"] =='Graffiti' ||
+										d["complaint_type"] =='Illegal Dumping' ||
+										d["complaint_type"] =='Lot Condition' ||
+										d["complaint_type"] =='Obstruction' ? "":"("+d["complaint_type"]+")";
+				d.descriptor = d["descriptor"];
 				d.daysToClose = [d.number_of_days_to_close];
-				d.status = d["status_cal"];
+				d.status = d["status"];
 				d.pastDue = d["number_of_past_due_days"];
 				d.duration = d["duration"]
 			return d;
@@ -725,11 +735,11 @@ function ready(){
 			
 			pointsOverlayComplaint.addTo(map);
 			
+			d3.selectAll(".pointGraffiti").style("display", "block");
+			d3.selectAll(".pointLot").style("display", "block");
+			d3.selectAll(".pointIllegalDumping").style("display", "block");
 			d3.selectAll(".pointDirty").style("display", "block");
-			d3.selectAll(".pointMissed").style("display", "block");
-			d3.selectAll(".pointSanitation").style("display", "block");
-			d3.selectAll(".pointDerelict").style("display", "block");
-			d3.selectAll(".pointGraffiti").style("display", "none");
+			d3.selectAll(".pointObstruction").style("display", "none");
 			d3.selectAll(".pointOther").style("display", "none");
 			
 						
